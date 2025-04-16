@@ -1,0 +1,1467 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#include "UObject/GeneratedCppIncludes.h"
+#include "OVRPlatform/Public/OVRPlatformSubsystem.h"
+#include "OVRPlatform/Public/OVRPlatformModels.h"
+#include "Runtime/Engine/Classes/Engine/GameInstance.h"
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+void EmptyLinkFunctionForGeneratedCodeOVRPlatformSubsystem() {}
+
+// Begin Cross Module References
+ENGINE_API UClass* Z_Construct_UClass_UGameInstanceSubsystem();
+OVRPLATFORM_API UClass* Z_Construct_UClass_UOvrPlatformSubsystem();
+OVRPLATFORM_API UClass* Z_Construct_UClass_UOvrPlatformSubsystem_NoRegister();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AbuseReport_ReportButtonPressed__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_ApplicationLifecycle_LaunchIntentChanged__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AssetFile_DownloadUpdate__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiNotReady__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiReady__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_Initialized__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_InSessionChanged__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_PresenterDataChanged__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStarted__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStopped__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ViewersDataChanged__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_InvitationsSent__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_JoinIntentReceived__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_LeaveIntentReceived__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_HTTP_Transfer__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Livestreaming_StatusChange__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_ConnectionStatusChanged__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_SessionsChanged__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Party_PartyUpdate__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_MicrophoneAvailabilityStateUpdate__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_SystemVoipState__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetDataChannelMessageUpdate__DelegateSignature();
+OVRPLATFORM_API UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetSurfaceUpdate__DelegateSignature();
+OVRPLATFORM_API UScriptStruct* Z_Construct_UScriptStruct_FOvrAssetFileDownloadUpdate();
+OVRPLATFORM_API UScriptStruct* Z_Construct_UScriptStruct_FOvrCowatchingState();
+OVRPLATFORM_API UScriptStruct* Z_Construct_UScriptStruct_FOvrCowatchViewerUpdate();
+OVRPLATFORM_API UScriptStruct* Z_Construct_UScriptStruct_FOvrGroupPresenceJoinIntent();
+OVRPLATFORM_API UScriptStruct* Z_Construct_UScriptStruct_FOvrGroupPresenceLeaveIntent();
+OVRPLATFORM_API UScriptStruct* Z_Construct_UScriptStruct_FOvrHttpTransferUpdate();
+OVRPLATFORM_API UScriptStruct* Z_Construct_UScriptStruct_FOvrLaunchInvitePanelFlowResult();
+OVRPLATFORM_API UScriptStruct* Z_Construct_UScriptStruct_FOvrLivestreamingStatus();
+OVRPLATFORM_API UScriptStruct* Z_Construct_UScriptStruct_FOvrNetSyncConnection();
+OVRPLATFORM_API UScriptStruct* Z_Construct_UScriptStruct_FOvrNetSyncSessionsChangedNotification();
+OVRPLATFORM_API UScriptStruct* Z_Construct_UScriptStruct_FOvrPartyUpdateNotification();
+OVRPLATFORM_API UScriptStruct* Z_Construct_UScriptStruct_FOvrSystemVoipState();
+UPackage* Z_Construct_UPackage__Script_OVRPlatform();
+// End Cross Module References
+
+// Begin Delegate FOvrNotification_AbuseReport_ReportButtonPressed
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AbuseReport_ReportButtonPressed__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_AbuseReport_ReportButtonPressed_Parms
+	{
+		FString ReportButtonPressed;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Comment", "// OVR Platform Notifications\n" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "OVR Platform Notifications" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReportButtonPressed_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStrPropertyParams NewProp_ReportButtonPressed;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AbuseReport_ReportButtonPressed__DelegateSignature_Statics::NewProp_ReportButtonPressed = { "ReportButtonPressed", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_AbuseReport_ReportButtonPressed_Parms, ReportButtonPressed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReportButtonPressed_MetaData), NewProp_ReportButtonPressed_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AbuseReport_ReportButtonPressed__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AbuseReport_ReportButtonPressed__DelegateSignature_Statics::NewProp_ReportButtonPressed,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AbuseReport_ReportButtonPressed__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AbuseReport_ReportButtonPressed__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_AbuseReport_ReportButtonPressed__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AbuseReport_ReportButtonPressed__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AbuseReport_ReportButtonPressed__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AbuseReport_ReportButtonPressed__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_AbuseReport_ReportButtonPressed_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AbuseReport_ReportButtonPressed__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AbuseReport_ReportButtonPressed__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AbuseReport_ReportButtonPressed__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_AbuseReport_ReportButtonPressed_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AbuseReport_ReportButtonPressed__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AbuseReport_ReportButtonPressed__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_AbuseReport_ReportButtonPressed_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_AbuseReport_ReportButtonPressed, const FString& ReportButtonPressed)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_AbuseReport_ReportButtonPressed_Parms
+	{
+		FString ReportButtonPressed;
+	};
+	_Script_OVRPlatform_eventOvrNotification_AbuseReport_ReportButtonPressed_Parms Parms;
+	Parms.ReportButtonPressed=ReportButtonPressed;
+	OvrNotification_AbuseReport_ReportButtonPressed.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_AbuseReport_ReportButtonPressed
+
+// Begin Delegate FOvrNotification_ApplicationLifecycle_LaunchIntentChanged
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_ApplicationLifecycle_LaunchIntentChanged__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_ApplicationLifecycle_LaunchIntentChanged_Parms
+	{
+		FString LaunchIntentChanged;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LaunchIntentChanged_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStrPropertyParams NewProp_LaunchIntentChanged;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_ApplicationLifecycle_LaunchIntentChanged__DelegateSignature_Statics::NewProp_LaunchIntentChanged = { "LaunchIntentChanged", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_ApplicationLifecycle_LaunchIntentChanged_Parms, LaunchIntentChanged), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LaunchIntentChanged_MetaData), NewProp_LaunchIntentChanged_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_ApplicationLifecycle_LaunchIntentChanged__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_ApplicationLifecycle_LaunchIntentChanged__DelegateSignature_Statics::NewProp_LaunchIntentChanged,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_ApplicationLifecycle_LaunchIntentChanged__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_ApplicationLifecycle_LaunchIntentChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_ApplicationLifecycle_LaunchIntentChanged__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_ApplicationLifecycle_LaunchIntentChanged__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_ApplicationLifecycle_LaunchIntentChanged__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_ApplicationLifecycle_LaunchIntentChanged__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_ApplicationLifecycle_LaunchIntentChanged_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_ApplicationLifecycle_LaunchIntentChanged__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_ApplicationLifecycle_LaunchIntentChanged__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_ApplicationLifecycle_LaunchIntentChanged__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_ApplicationLifecycle_LaunchIntentChanged_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_ApplicationLifecycle_LaunchIntentChanged__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_ApplicationLifecycle_LaunchIntentChanged__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_ApplicationLifecycle_LaunchIntentChanged_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_ApplicationLifecycle_LaunchIntentChanged, const FString& LaunchIntentChanged)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_ApplicationLifecycle_LaunchIntentChanged_Parms
+	{
+		FString LaunchIntentChanged;
+	};
+	_Script_OVRPlatform_eventOvrNotification_ApplicationLifecycle_LaunchIntentChanged_Parms Parms;
+	Parms.LaunchIntentChanged=LaunchIntentChanged;
+	OvrNotification_ApplicationLifecycle_LaunchIntentChanged.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_ApplicationLifecycle_LaunchIntentChanged
+
+// Begin Delegate FOvrNotification_AssetFile_DownloadUpdate
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AssetFile_DownloadUpdate__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_AssetFile_DownloadUpdate_Parms
+	{
+		FOvrAssetFileDownloadUpdate DownloadUpdate;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DownloadUpdate_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_DownloadUpdate;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AssetFile_DownloadUpdate__DelegateSignature_Statics::NewProp_DownloadUpdate = { "DownloadUpdate", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_AssetFile_DownloadUpdate_Parms, DownloadUpdate), Z_Construct_UScriptStruct_FOvrAssetFileDownloadUpdate, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DownloadUpdate_MetaData), NewProp_DownloadUpdate_MetaData) }; // 2688062432
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AssetFile_DownloadUpdate__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AssetFile_DownloadUpdate__DelegateSignature_Statics::NewProp_DownloadUpdate,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AssetFile_DownloadUpdate__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AssetFile_DownloadUpdate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_AssetFile_DownloadUpdate__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AssetFile_DownloadUpdate__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AssetFile_DownloadUpdate__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AssetFile_DownloadUpdate__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_AssetFile_DownloadUpdate_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AssetFile_DownloadUpdate__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AssetFile_DownloadUpdate__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AssetFile_DownloadUpdate__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_AssetFile_DownloadUpdate_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AssetFile_DownloadUpdate__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AssetFile_DownloadUpdate__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_AssetFile_DownloadUpdate_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_AssetFile_DownloadUpdate, FOvrAssetFileDownloadUpdate const& DownloadUpdate)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_AssetFile_DownloadUpdate_Parms
+	{
+		FOvrAssetFileDownloadUpdate DownloadUpdate;
+	};
+	_Script_OVRPlatform_eventOvrNotification_AssetFile_DownloadUpdate_Parms Parms;
+	Parms.DownloadUpdate=DownloadUpdate;
+	OvrNotification_AssetFile_DownloadUpdate.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_AssetFile_DownloadUpdate
+
+// Begin Delegate FOvrNotification_Cowatching_ApiNotReady
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiNotReady__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Cowatching_ApiNotReady_Parms
+	{
+		FString ApiNotReady;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ApiNotReady_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStrPropertyParams NewProp_ApiNotReady;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiNotReady__DelegateSignature_Statics::NewProp_ApiNotReady = { "ApiNotReady", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_Cowatching_ApiNotReady_Parms, ApiNotReady), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ApiNotReady_MetaData), NewProp_ApiNotReady_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiNotReady__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiNotReady__DelegateSignature_Statics::NewProp_ApiNotReady,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiNotReady__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiNotReady__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_Cowatching_ApiNotReady__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiNotReady__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiNotReady__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiNotReady__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Cowatching_ApiNotReady_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiNotReady__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiNotReady__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiNotReady__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Cowatching_ApiNotReady_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiNotReady__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiNotReady__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_Cowatching_ApiNotReady_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_Cowatching_ApiNotReady, const FString& ApiNotReady)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Cowatching_ApiNotReady_Parms
+	{
+		FString ApiNotReady;
+	};
+	_Script_OVRPlatform_eventOvrNotification_Cowatching_ApiNotReady_Parms Parms;
+	Parms.ApiNotReady=ApiNotReady;
+	OvrNotification_Cowatching_ApiNotReady.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_Cowatching_ApiNotReady
+
+// Begin Delegate FOvrNotification_Cowatching_ApiReady
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiReady__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Cowatching_ApiReady_Parms
+	{
+		FString ApiReady;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ApiReady_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStrPropertyParams NewProp_ApiReady;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiReady__DelegateSignature_Statics::NewProp_ApiReady = { "ApiReady", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_Cowatching_ApiReady_Parms, ApiReady), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ApiReady_MetaData), NewProp_ApiReady_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiReady__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiReady__DelegateSignature_Statics::NewProp_ApiReady,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiReady__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiReady__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_Cowatching_ApiReady__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiReady__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiReady__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiReady__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Cowatching_ApiReady_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiReady__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiReady__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiReady__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Cowatching_ApiReady_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiReady__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiReady__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_Cowatching_ApiReady_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_Cowatching_ApiReady, const FString& ApiReady)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Cowatching_ApiReady_Parms
+	{
+		FString ApiReady;
+	};
+	_Script_OVRPlatform_eventOvrNotification_Cowatching_ApiReady_Parms Parms;
+	Parms.ApiReady=ApiReady;
+	OvrNotification_Cowatching_ApiReady.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_Cowatching_ApiReady
+
+// Begin Delegate FOvrNotification_Cowatching_InSessionChanged
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_InSessionChanged__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Cowatching_InSessionChanged_Parms
+	{
+		FOvrCowatchingState InSessionChanged;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InSessionChanged_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_InSessionChanged;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_InSessionChanged__DelegateSignature_Statics::NewProp_InSessionChanged = { "InSessionChanged", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_Cowatching_InSessionChanged_Parms, InSessionChanged), Z_Construct_UScriptStruct_FOvrCowatchingState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InSessionChanged_MetaData), NewProp_InSessionChanged_MetaData) }; // 526404365
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_InSessionChanged__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_InSessionChanged__DelegateSignature_Statics::NewProp_InSessionChanged,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_InSessionChanged__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_InSessionChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_Cowatching_InSessionChanged__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_InSessionChanged__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_InSessionChanged__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_InSessionChanged__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Cowatching_InSessionChanged_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_InSessionChanged__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_InSessionChanged__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_InSessionChanged__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Cowatching_InSessionChanged_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_InSessionChanged__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_InSessionChanged__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_Cowatching_InSessionChanged_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_Cowatching_InSessionChanged, FOvrCowatchingState const& InSessionChanged)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Cowatching_InSessionChanged_Parms
+	{
+		FOvrCowatchingState InSessionChanged;
+	};
+	_Script_OVRPlatform_eventOvrNotification_Cowatching_InSessionChanged_Parms Parms;
+	Parms.InSessionChanged=InSessionChanged;
+	OvrNotification_Cowatching_InSessionChanged.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_Cowatching_InSessionChanged
+
+// Begin Delegate FOvrNotification_Cowatching_Initialized
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_Initialized__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Cowatching_Initialized_Parms
+	{
+		FString Initialized;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Initialized_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStrPropertyParams NewProp_Initialized;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_Initialized__DelegateSignature_Statics::NewProp_Initialized = { "Initialized", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_Cowatching_Initialized_Parms, Initialized), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Initialized_MetaData), NewProp_Initialized_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_Initialized__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_Initialized__DelegateSignature_Statics::NewProp_Initialized,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_Initialized__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_Initialized__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_Cowatching_Initialized__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_Initialized__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_Initialized__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_Initialized__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Cowatching_Initialized_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_Initialized__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_Initialized__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_Initialized__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Cowatching_Initialized_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_Initialized__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_Initialized__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_Cowatching_Initialized_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_Cowatching_Initialized, const FString& Initialized)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Cowatching_Initialized_Parms
+	{
+		FString Initialized;
+	};
+	_Script_OVRPlatform_eventOvrNotification_Cowatching_Initialized_Parms Parms;
+	Parms.Initialized=Initialized;
+	OvrNotification_Cowatching_Initialized.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_Cowatching_Initialized
+
+// Begin Delegate FOvrNotification_Cowatching_PresenterDataChanged
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_PresenterDataChanged__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Cowatching_PresenterDataChanged_Parms
+	{
+		FString PresenterDataChanged;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PresenterDataChanged_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStrPropertyParams NewProp_PresenterDataChanged;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_PresenterDataChanged__DelegateSignature_Statics::NewProp_PresenterDataChanged = { "PresenterDataChanged", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_Cowatching_PresenterDataChanged_Parms, PresenterDataChanged), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PresenterDataChanged_MetaData), NewProp_PresenterDataChanged_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_PresenterDataChanged__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_PresenterDataChanged__DelegateSignature_Statics::NewProp_PresenterDataChanged,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_PresenterDataChanged__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_PresenterDataChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_Cowatching_PresenterDataChanged__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_PresenterDataChanged__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_PresenterDataChanged__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_PresenterDataChanged__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Cowatching_PresenterDataChanged_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_PresenterDataChanged__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_PresenterDataChanged__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_PresenterDataChanged__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Cowatching_PresenterDataChanged_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_PresenterDataChanged__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_PresenterDataChanged__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_Cowatching_PresenterDataChanged_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_Cowatching_PresenterDataChanged, const FString& PresenterDataChanged)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Cowatching_PresenterDataChanged_Parms
+	{
+		FString PresenterDataChanged;
+	};
+	_Script_OVRPlatform_eventOvrNotification_Cowatching_PresenterDataChanged_Parms Parms;
+	Parms.PresenterDataChanged=PresenterDataChanged;
+	OvrNotification_Cowatching_PresenterDataChanged.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_Cowatching_PresenterDataChanged
+
+// Begin Delegate FOvrNotification_Cowatching_SessionStarted
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStarted__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Cowatching_SessionStarted_Parms
+	{
+		FString SessionStarted;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SessionStarted_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStrPropertyParams NewProp_SessionStarted;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStarted__DelegateSignature_Statics::NewProp_SessionStarted = { "SessionStarted", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_Cowatching_SessionStarted_Parms, SessionStarted), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SessionStarted_MetaData), NewProp_SessionStarted_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStarted__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStarted__DelegateSignature_Statics::NewProp_SessionStarted,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStarted__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStarted__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_Cowatching_SessionStarted__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStarted__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStarted__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStarted__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Cowatching_SessionStarted_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStarted__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStarted__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStarted__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Cowatching_SessionStarted_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStarted__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStarted__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_Cowatching_SessionStarted_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_Cowatching_SessionStarted, const FString& SessionStarted)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Cowatching_SessionStarted_Parms
+	{
+		FString SessionStarted;
+	};
+	_Script_OVRPlatform_eventOvrNotification_Cowatching_SessionStarted_Parms Parms;
+	Parms.SessionStarted=SessionStarted;
+	OvrNotification_Cowatching_SessionStarted.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_Cowatching_SessionStarted
+
+// Begin Delegate FOvrNotification_Cowatching_SessionStopped
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStopped__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Cowatching_SessionStopped_Parms
+	{
+		FString SessionStopped;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SessionStopped_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStrPropertyParams NewProp_SessionStopped;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStopped__DelegateSignature_Statics::NewProp_SessionStopped = { "SessionStopped", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_Cowatching_SessionStopped_Parms, SessionStopped), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SessionStopped_MetaData), NewProp_SessionStopped_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStopped__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStopped__DelegateSignature_Statics::NewProp_SessionStopped,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStopped__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStopped__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_Cowatching_SessionStopped__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStopped__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStopped__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStopped__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Cowatching_SessionStopped_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStopped__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStopped__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStopped__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Cowatching_SessionStopped_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStopped__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStopped__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_Cowatching_SessionStopped_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_Cowatching_SessionStopped, const FString& SessionStopped)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Cowatching_SessionStopped_Parms
+	{
+		FString SessionStopped;
+	};
+	_Script_OVRPlatform_eventOvrNotification_Cowatching_SessionStopped_Parms Parms;
+	Parms.SessionStopped=SessionStopped;
+	OvrNotification_Cowatching_SessionStopped.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_Cowatching_SessionStopped
+
+// Begin Delegate FOvrNotification_Cowatching_ViewersDataChanged
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ViewersDataChanged__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Cowatching_ViewersDataChanged_Parms
+	{
+		FOvrCowatchViewerUpdate ViewersDataChanged;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ViewersDataChanged_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_ViewersDataChanged;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ViewersDataChanged__DelegateSignature_Statics::NewProp_ViewersDataChanged = { "ViewersDataChanged", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_Cowatching_ViewersDataChanged_Parms, ViewersDataChanged), Z_Construct_UScriptStruct_FOvrCowatchViewerUpdate, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ViewersDataChanged_MetaData), NewProp_ViewersDataChanged_MetaData) }; // 1948000371
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ViewersDataChanged__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ViewersDataChanged__DelegateSignature_Statics::NewProp_ViewersDataChanged,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ViewersDataChanged__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ViewersDataChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_Cowatching_ViewersDataChanged__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ViewersDataChanged__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ViewersDataChanged__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ViewersDataChanged__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Cowatching_ViewersDataChanged_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ViewersDataChanged__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ViewersDataChanged__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ViewersDataChanged__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Cowatching_ViewersDataChanged_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ViewersDataChanged__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ViewersDataChanged__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_Cowatching_ViewersDataChanged_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_Cowatching_ViewersDataChanged, FOvrCowatchViewerUpdate const& ViewersDataChanged)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Cowatching_ViewersDataChanged_Parms
+	{
+		FOvrCowatchViewerUpdate ViewersDataChanged;
+	};
+	_Script_OVRPlatform_eventOvrNotification_Cowatching_ViewersDataChanged_Parms Parms;
+	Parms.ViewersDataChanged=ViewersDataChanged;
+	OvrNotification_Cowatching_ViewersDataChanged.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_Cowatching_ViewersDataChanged
+
+// Begin Delegate FOvrNotification_GroupPresence_InvitationsSent
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_InvitationsSent__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_GroupPresence_InvitationsSent_Parms
+	{
+		FOvrLaunchInvitePanelFlowResult InvitationsSent;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InvitationsSent_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_InvitationsSent;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_InvitationsSent__DelegateSignature_Statics::NewProp_InvitationsSent = { "InvitationsSent", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_GroupPresence_InvitationsSent_Parms, InvitationsSent), Z_Construct_UScriptStruct_FOvrLaunchInvitePanelFlowResult, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InvitationsSent_MetaData), NewProp_InvitationsSent_MetaData) }; // 1165985407
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_InvitationsSent__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_InvitationsSent__DelegateSignature_Statics::NewProp_InvitationsSent,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_InvitationsSent__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_InvitationsSent__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_GroupPresence_InvitationsSent__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_InvitationsSent__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_InvitationsSent__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_InvitationsSent__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_GroupPresence_InvitationsSent_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_InvitationsSent__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_InvitationsSent__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_InvitationsSent__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_GroupPresence_InvitationsSent_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_InvitationsSent__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_InvitationsSent__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_GroupPresence_InvitationsSent_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_GroupPresence_InvitationsSent, FOvrLaunchInvitePanelFlowResult const& InvitationsSent)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_GroupPresence_InvitationsSent_Parms
+	{
+		FOvrLaunchInvitePanelFlowResult InvitationsSent;
+	};
+	_Script_OVRPlatform_eventOvrNotification_GroupPresence_InvitationsSent_Parms Parms;
+	Parms.InvitationsSent=InvitationsSent;
+	OvrNotification_GroupPresence_InvitationsSent.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_GroupPresence_InvitationsSent
+
+// Begin Delegate FOvrNotification_GroupPresence_JoinIntentReceived
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_JoinIntentReceived__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_GroupPresence_JoinIntentReceived_Parms
+	{
+		FOvrGroupPresenceJoinIntent JoinIntentReceived;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_JoinIntentReceived_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_JoinIntentReceived;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_JoinIntentReceived__DelegateSignature_Statics::NewProp_JoinIntentReceived = { "JoinIntentReceived", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_GroupPresence_JoinIntentReceived_Parms, JoinIntentReceived), Z_Construct_UScriptStruct_FOvrGroupPresenceJoinIntent, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_JoinIntentReceived_MetaData), NewProp_JoinIntentReceived_MetaData) }; // 2233080800
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_JoinIntentReceived__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_JoinIntentReceived__DelegateSignature_Statics::NewProp_JoinIntentReceived,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_JoinIntentReceived__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_JoinIntentReceived__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_GroupPresence_JoinIntentReceived__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_JoinIntentReceived__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_JoinIntentReceived__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_JoinIntentReceived__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_GroupPresence_JoinIntentReceived_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_JoinIntentReceived__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_JoinIntentReceived__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_JoinIntentReceived__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_GroupPresence_JoinIntentReceived_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_JoinIntentReceived__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_JoinIntentReceived__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_GroupPresence_JoinIntentReceived_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_GroupPresence_JoinIntentReceived, FOvrGroupPresenceJoinIntent const& JoinIntentReceived)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_GroupPresence_JoinIntentReceived_Parms
+	{
+		FOvrGroupPresenceJoinIntent JoinIntentReceived;
+	};
+	_Script_OVRPlatform_eventOvrNotification_GroupPresence_JoinIntentReceived_Parms Parms;
+	Parms.JoinIntentReceived=JoinIntentReceived;
+	OvrNotification_GroupPresence_JoinIntentReceived.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_GroupPresence_JoinIntentReceived
+
+// Begin Delegate FOvrNotification_GroupPresence_LeaveIntentReceived
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_LeaveIntentReceived__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_GroupPresence_LeaveIntentReceived_Parms
+	{
+		FOvrGroupPresenceLeaveIntent LeaveIntentReceived;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LeaveIntentReceived_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_LeaveIntentReceived;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_LeaveIntentReceived__DelegateSignature_Statics::NewProp_LeaveIntentReceived = { "LeaveIntentReceived", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_GroupPresence_LeaveIntentReceived_Parms, LeaveIntentReceived), Z_Construct_UScriptStruct_FOvrGroupPresenceLeaveIntent, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LeaveIntentReceived_MetaData), NewProp_LeaveIntentReceived_MetaData) }; // 766644315
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_LeaveIntentReceived__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_LeaveIntentReceived__DelegateSignature_Statics::NewProp_LeaveIntentReceived,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_LeaveIntentReceived__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_LeaveIntentReceived__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_GroupPresence_LeaveIntentReceived__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_LeaveIntentReceived__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_LeaveIntentReceived__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_LeaveIntentReceived__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_GroupPresence_LeaveIntentReceived_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_LeaveIntentReceived__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_LeaveIntentReceived__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_LeaveIntentReceived__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_GroupPresence_LeaveIntentReceived_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_LeaveIntentReceived__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_LeaveIntentReceived__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_GroupPresence_LeaveIntentReceived_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_GroupPresence_LeaveIntentReceived, FOvrGroupPresenceLeaveIntent const& LeaveIntentReceived)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_GroupPresence_LeaveIntentReceived_Parms
+	{
+		FOvrGroupPresenceLeaveIntent LeaveIntentReceived;
+	};
+	_Script_OVRPlatform_eventOvrNotification_GroupPresence_LeaveIntentReceived_Parms Parms;
+	Parms.LeaveIntentReceived=LeaveIntentReceived;
+	OvrNotification_GroupPresence_LeaveIntentReceived.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_GroupPresence_LeaveIntentReceived
+
+// Begin Delegate FOvrNotification_HTTP_Transfer
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_HTTP_Transfer__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_HTTP_Transfer_Parms
+	{
+		FOvrHttpTransferUpdate Transfer;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Transfer_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_Transfer;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_HTTP_Transfer__DelegateSignature_Statics::NewProp_Transfer = { "Transfer", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_HTTP_Transfer_Parms, Transfer), Z_Construct_UScriptStruct_FOvrHttpTransferUpdate, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Transfer_MetaData), NewProp_Transfer_MetaData) }; // 4219394007
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_HTTP_Transfer__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_HTTP_Transfer__DelegateSignature_Statics::NewProp_Transfer,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_HTTP_Transfer__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_HTTP_Transfer__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_HTTP_Transfer__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_HTTP_Transfer__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_HTTP_Transfer__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_HTTP_Transfer__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_HTTP_Transfer_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_HTTP_Transfer__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_HTTP_Transfer__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_HTTP_Transfer__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_HTTP_Transfer_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_HTTP_Transfer__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_HTTP_Transfer__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_HTTP_Transfer_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_HTTP_Transfer, FOvrHttpTransferUpdate const& Transfer)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_HTTP_Transfer_Parms
+	{
+		FOvrHttpTransferUpdate Transfer;
+	};
+	_Script_OVRPlatform_eventOvrNotification_HTTP_Transfer_Parms Parms;
+	Parms.Transfer=Transfer;
+	OvrNotification_HTTP_Transfer.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_HTTP_Transfer
+
+// Begin Delegate FOvrNotification_Livestreaming_StatusChange
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Livestreaming_StatusChange__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Livestreaming_StatusChange_Parms
+	{
+		FOvrLivestreamingStatus StatusChange;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StatusChange_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_StatusChange;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Livestreaming_StatusChange__DelegateSignature_Statics::NewProp_StatusChange = { "StatusChange", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_Livestreaming_StatusChange_Parms, StatusChange), Z_Construct_UScriptStruct_FOvrLivestreamingStatus, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StatusChange_MetaData), NewProp_StatusChange_MetaData) }; // 2766482718
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Livestreaming_StatusChange__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Livestreaming_StatusChange__DelegateSignature_Statics::NewProp_StatusChange,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Livestreaming_StatusChange__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Livestreaming_StatusChange__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_Livestreaming_StatusChange__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Livestreaming_StatusChange__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Livestreaming_StatusChange__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Livestreaming_StatusChange__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Livestreaming_StatusChange_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Livestreaming_StatusChange__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Livestreaming_StatusChange__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Livestreaming_StatusChange__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Livestreaming_StatusChange_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Livestreaming_StatusChange__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Livestreaming_StatusChange__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_Livestreaming_StatusChange_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_Livestreaming_StatusChange, FOvrLivestreamingStatus const& StatusChange)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Livestreaming_StatusChange_Parms
+	{
+		FOvrLivestreamingStatus StatusChange;
+	};
+	_Script_OVRPlatform_eventOvrNotification_Livestreaming_StatusChange_Parms Parms;
+	Parms.StatusChange=StatusChange;
+	OvrNotification_Livestreaming_StatusChange.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_Livestreaming_StatusChange
+
+// Begin Delegate FOvrNotification_NetSync_ConnectionStatusChanged
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_ConnectionStatusChanged__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_NetSync_ConnectionStatusChanged_Parms
+	{
+		FOvrNetSyncConnection ConnectionStatusChanged;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ConnectionStatusChanged_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_ConnectionStatusChanged;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_ConnectionStatusChanged__DelegateSignature_Statics::NewProp_ConnectionStatusChanged = { "ConnectionStatusChanged", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_NetSync_ConnectionStatusChanged_Parms, ConnectionStatusChanged), Z_Construct_UScriptStruct_FOvrNetSyncConnection, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ConnectionStatusChanged_MetaData), NewProp_ConnectionStatusChanged_MetaData) }; // 907806618
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_ConnectionStatusChanged__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_ConnectionStatusChanged__DelegateSignature_Statics::NewProp_ConnectionStatusChanged,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_ConnectionStatusChanged__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_ConnectionStatusChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_NetSync_ConnectionStatusChanged__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_ConnectionStatusChanged__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_ConnectionStatusChanged__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_ConnectionStatusChanged__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_NetSync_ConnectionStatusChanged_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_ConnectionStatusChanged__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_ConnectionStatusChanged__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_ConnectionStatusChanged__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_NetSync_ConnectionStatusChanged_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_ConnectionStatusChanged__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_ConnectionStatusChanged__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_NetSync_ConnectionStatusChanged_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_NetSync_ConnectionStatusChanged, FOvrNetSyncConnection const& ConnectionStatusChanged)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_NetSync_ConnectionStatusChanged_Parms
+	{
+		FOvrNetSyncConnection ConnectionStatusChanged;
+	};
+	_Script_OVRPlatform_eventOvrNotification_NetSync_ConnectionStatusChanged_Parms Parms;
+	Parms.ConnectionStatusChanged=ConnectionStatusChanged;
+	OvrNotification_NetSync_ConnectionStatusChanged.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_NetSync_ConnectionStatusChanged
+
+// Begin Delegate FOvrNotification_NetSync_SessionsChanged
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_SessionsChanged__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_NetSync_SessionsChanged_Parms
+	{
+		FOvrNetSyncSessionsChangedNotification SessionsChanged;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SessionsChanged_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_SessionsChanged;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_SessionsChanged__DelegateSignature_Statics::NewProp_SessionsChanged = { "SessionsChanged", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_NetSync_SessionsChanged_Parms, SessionsChanged), Z_Construct_UScriptStruct_FOvrNetSyncSessionsChangedNotification, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SessionsChanged_MetaData), NewProp_SessionsChanged_MetaData) }; // 2106561868
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_SessionsChanged__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_SessionsChanged__DelegateSignature_Statics::NewProp_SessionsChanged,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_SessionsChanged__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_SessionsChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_NetSync_SessionsChanged__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_SessionsChanged__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_SessionsChanged__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_SessionsChanged__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_NetSync_SessionsChanged_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_SessionsChanged__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_SessionsChanged__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_SessionsChanged__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_NetSync_SessionsChanged_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_SessionsChanged__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_SessionsChanged__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_NetSync_SessionsChanged_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_NetSync_SessionsChanged, FOvrNetSyncSessionsChangedNotification const& SessionsChanged)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_NetSync_SessionsChanged_Parms
+	{
+		FOvrNetSyncSessionsChangedNotification SessionsChanged;
+	};
+	_Script_OVRPlatform_eventOvrNotification_NetSync_SessionsChanged_Parms Parms;
+	Parms.SessionsChanged=SessionsChanged;
+	OvrNotification_NetSync_SessionsChanged.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_NetSync_SessionsChanged
+
+// Begin Delegate FOvrNotification_Party_PartyUpdate
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Party_PartyUpdate__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Party_PartyUpdate_Parms
+	{
+		FOvrPartyUpdateNotification PartyUpdate;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PartyUpdate_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_PartyUpdate;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Party_PartyUpdate__DelegateSignature_Statics::NewProp_PartyUpdate = { "PartyUpdate", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_Party_PartyUpdate_Parms, PartyUpdate), Z_Construct_UScriptStruct_FOvrPartyUpdateNotification, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PartyUpdate_MetaData), NewProp_PartyUpdate_MetaData) }; // 1870196289
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Party_PartyUpdate__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Party_PartyUpdate__DelegateSignature_Statics::NewProp_PartyUpdate,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Party_PartyUpdate__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Party_PartyUpdate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_Party_PartyUpdate__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Party_PartyUpdate__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Party_PartyUpdate__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Party_PartyUpdate__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Party_PartyUpdate_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Party_PartyUpdate__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Party_PartyUpdate__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Party_PartyUpdate__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Party_PartyUpdate_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Party_PartyUpdate__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Party_PartyUpdate__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_Party_PartyUpdate_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_Party_PartyUpdate, FOvrPartyUpdateNotification const& PartyUpdate)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Party_PartyUpdate_Parms
+	{
+		FOvrPartyUpdateNotification PartyUpdate;
+	};
+	_Script_OVRPlatform_eventOvrNotification_Party_PartyUpdate_Parms Parms;
+	Parms.PartyUpdate=PartyUpdate;
+	OvrNotification_Party_PartyUpdate.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_Party_PartyUpdate
+
+// Begin Delegate FOvrNotification_Voip_MicrophoneAvailabilityStateUpdate
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_MicrophoneAvailabilityStateUpdate__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Voip_MicrophoneAvailabilityStateUpdate_Parms
+	{
+		FString MicrophoneAvailabilityStateUpdate;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MicrophoneAvailabilityStateUpdate_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStrPropertyParams NewProp_MicrophoneAvailabilityStateUpdate;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_MicrophoneAvailabilityStateUpdate__DelegateSignature_Statics::NewProp_MicrophoneAvailabilityStateUpdate = { "MicrophoneAvailabilityStateUpdate", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_Voip_MicrophoneAvailabilityStateUpdate_Parms, MicrophoneAvailabilityStateUpdate), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MicrophoneAvailabilityStateUpdate_MetaData), NewProp_MicrophoneAvailabilityStateUpdate_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_MicrophoneAvailabilityStateUpdate__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_MicrophoneAvailabilityStateUpdate__DelegateSignature_Statics::NewProp_MicrophoneAvailabilityStateUpdate,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_MicrophoneAvailabilityStateUpdate__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_MicrophoneAvailabilityStateUpdate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_Voip_MicrophoneAvailabilityStateUpdate__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_MicrophoneAvailabilityStateUpdate__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_MicrophoneAvailabilityStateUpdate__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_MicrophoneAvailabilityStateUpdate__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Voip_MicrophoneAvailabilityStateUpdate_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_MicrophoneAvailabilityStateUpdate__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_MicrophoneAvailabilityStateUpdate__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_MicrophoneAvailabilityStateUpdate__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Voip_MicrophoneAvailabilityStateUpdate_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_MicrophoneAvailabilityStateUpdate__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_MicrophoneAvailabilityStateUpdate__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_Voip_MicrophoneAvailabilityStateUpdate_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_Voip_MicrophoneAvailabilityStateUpdate, const FString& MicrophoneAvailabilityStateUpdate)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Voip_MicrophoneAvailabilityStateUpdate_Parms
+	{
+		FString MicrophoneAvailabilityStateUpdate;
+	};
+	_Script_OVRPlatform_eventOvrNotification_Voip_MicrophoneAvailabilityStateUpdate_Parms Parms;
+	Parms.MicrophoneAvailabilityStateUpdate=MicrophoneAvailabilityStateUpdate;
+	OvrNotification_Voip_MicrophoneAvailabilityStateUpdate.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_Voip_MicrophoneAvailabilityStateUpdate
+
+// Begin Delegate FOvrNotification_Voip_SystemVoipState
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_SystemVoipState__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Voip_SystemVoipState_Parms
+	{
+		FOvrSystemVoipState SystemVoipState;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SystemVoipState_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_SystemVoipState;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_SystemVoipState__DelegateSignature_Statics::NewProp_SystemVoipState = { "SystemVoipState", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_Voip_SystemVoipState_Parms, SystemVoipState), Z_Construct_UScriptStruct_FOvrSystemVoipState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SystemVoipState_MetaData), NewProp_SystemVoipState_MetaData) }; // 4146871731
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_SystemVoipState__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_SystemVoipState__DelegateSignature_Statics::NewProp_SystemVoipState,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_SystemVoipState__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_SystemVoipState__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_Voip_SystemVoipState__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_SystemVoipState__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_SystemVoipState__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_SystemVoipState__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Voip_SystemVoipState_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_SystemVoipState__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_SystemVoipState__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_SystemVoipState__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Voip_SystemVoipState_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_SystemVoipState__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_SystemVoipState__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_Voip_SystemVoipState_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_Voip_SystemVoipState, FOvrSystemVoipState const& SystemVoipState)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Voip_SystemVoipState_Parms
+	{
+		FOvrSystemVoipState SystemVoipState;
+	};
+	_Script_OVRPlatform_eventOvrNotification_Voip_SystemVoipState_Parms Parms;
+	Parms.SystemVoipState=SystemVoipState;
+	OvrNotification_Voip_SystemVoipState.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_Voip_SystemVoipState
+
+// Begin Delegate FOvrNotification_Vrcamera_GetDataChannelMessageUpdate
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetDataChannelMessageUpdate__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Vrcamera_GetDataChannelMessageUpdate_Parms
+	{
+		FString GetDataChannelMessageUpdate;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GetDataChannelMessageUpdate_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStrPropertyParams NewProp_GetDataChannelMessageUpdate;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetDataChannelMessageUpdate__DelegateSignature_Statics::NewProp_GetDataChannelMessageUpdate = { "GetDataChannelMessageUpdate", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_Vrcamera_GetDataChannelMessageUpdate_Parms, GetDataChannelMessageUpdate), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GetDataChannelMessageUpdate_MetaData), NewProp_GetDataChannelMessageUpdate_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetDataChannelMessageUpdate__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetDataChannelMessageUpdate__DelegateSignature_Statics::NewProp_GetDataChannelMessageUpdate,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetDataChannelMessageUpdate__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetDataChannelMessageUpdate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_Vrcamera_GetDataChannelMessageUpdate__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetDataChannelMessageUpdate__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetDataChannelMessageUpdate__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetDataChannelMessageUpdate__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Vrcamera_GetDataChannelMessageUpdate_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetDataChannelMessageUpdate__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetDataChannelMessageUpdate__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetDataChannelMessageUpdate__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Vrcamera_GetDataChannelMessageUpdate_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetDataChannelMessageUpdate__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetDataChannelMessageUpdate__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_Vrcamera_GetDataChannelMessageUpdate_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_Vrcamera_GetDataChannelMessageUpdate, const FString& GetDataChannelMessageUpdate)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Vrcamera_GetDataChannelMessageUpdate_Parms
+	{
+		FString GetDataChannelMessageUpdate;
+	};
+	_Script_OVRPlatform_eventOvrNotification_Vrcamera_GetDataChannelMessageUpdate_Parms Parms;
+	Parms.GetDataChannelMessageUpdate=GetDataChannelMessageUpdate;
+	OvrNotification_Vrcamera_GetDataChannelMessageUpdate.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_Vrcamera_GetDataChannelMessageUpdate
+
+// Begin Delegate FOvrNotification_Vrcamera_GetSurfaceUpdate
+struct Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetSurfaceUpdate__DelegateSignature_Statics
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Vrcamera_GetSurfaceUpdate_Parms
+	{
+		FString GetSurfaceUpdate;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GetSurfaceUpdate_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStrPropertyParams NewProp_GetSurfaceUpdate;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetSurfaceUpdate__DelegateSignature_Statics::NewProp_GetSurfaceUpdate = { "GetSurfaceUpdate", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OVRPlatform_eventOvrNotification_Vrcamera_GetSurfaceUpdate_Parms, GetSurfaceUpdate), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GetSurfaceUpdate_MetaData), NewProp_GetSurfaceUpdate_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetSurfaceUpdate__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetSurfaceUpdate__DelegateSignature_Statics::NewProp_GetSurfaceUpdate,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetSurfaceUpdate__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetSurfaceUpdate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_OVRPlatform, nullptr, "OvrNotification_Vrcamera_GetSurfaceUpdate__DelegateSignature", nullptr, nullptr, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetSurfaceUpdate__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetSurfaceUpdate__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetSurfaceUpdate__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Vrcamera_GetSurfaceUpdate_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetSurfaceUpdate__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetSurfaceUpdate__DelegateSignature_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetSurfaceUpdate__DelegateSignature_Statics::_Script_OVRPlatform_eventOvrNotification_Vrcamera_GetSurfaceUpdate_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetSurfaceUpdate__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetSurfaceUpdate__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOvrNotification_Vrcamera_GetSurfaceUpdate_DelegateWrapper(const FMulticastScriptDelegate& OvrNotification_Vrcamera_GetSurfaceUpdate, const FString& GetSurfaceUpdate)
+{
+	struct _Script_OVRPlatform_eventOvrNotification_Vrcamera_GetSurfaceUpdate_Parms
+	{
+		FString GetSurfaceUpdate;
+	};
+	_Script_OVRPlatform_eventOvrNotification_Vrcamera_GetSurfaceUpdate_Parms Parms;
+	Parms.GetSurfaceUpdate=GetSurfaceUpdate;
+	OvrNotification_Vrcamera_GetSurfaceUpdate.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// End Delegate FOvrNotification_Vrcamera_GetSurfaceUpdate
+
+// Begin Class UOvrPlatformSubsystem Function StartMessagePump
+struct Z_Construct_UFunction_UOvrPlatformSubsystem_StartMessagePump_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "OvrPlatform|Subsystem" },
+		{ "Comment", "/**\n     * The subsystem waits for your authorization to start processing messages, allowing\n     * you to register your callbacks first.\n     */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "The subsystem waits for your authorization to start processing messages, allowing\nyou to register your callbacks first." },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOvrPlatformSubsystem_StartMessagePump_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UOvrPlatformSubsystem, nullptr, "StartMessagePump", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOvrPlatformSubsystem_StartMessagePump_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOvrPlatformSubsystem_StartMessagePump_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UOvrPlatformSubsystem_StartMessagePump()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UOvrPlatformSubsystem_StartMessagePump_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UOvrPlatformSubsystem::execStartMessagePump)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->StartMessagePump();
+	P_NATIVE_END;
+}
+// End Class UOvrPlatformSubsystem Function StartMessagePump
+
+// Begin Class UOvrPlatformSubsystem
+void UOvrPlatformSubsystem::StaticRegisterNativesUOvrPlatformSubsystem()
+{
+	UClass* Class = UOvrPlatformSubsystem::StaticClass();
+	static const FNameNativePtrPair Funcs[] = {
+		{ "StartMessagePump", &UOvrPlatformSubsystem::execStartMessagePump },
+	};
+	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+}
+IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UOvrPlatformSubsystem);
+UClass* Z_Construct_UClass_UOvrPlatformSubsystem_NoRegister()
+{
+	return UOvrPlatformSubsystem::StaticClass();
+}
+struct Z_Construct_UClass_UOvrPlatformSubsystem_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "Comment", "// OVR Platform Subsystem\n" },
+		{ "IncludePath", "OVRPlatformSubsystem.h" },
+		{ "IsBlueprintBase", "true" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "OVR Platform Subsystem" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnAbuseReportReportButtonPressed_MetaData[] = {
+		{ "Category", "OvrPlatform|AbuseReport" },
+		{ "Comment", "/** The user has tapped the report button in the panel that appears after pressing the Oculus button. */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "The user has tapped the report button in the panel that appears after pressing the Oculus button." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnApplicationLifecycleLaunchIntentChanged_MetaData[] = {
+		{ "Category", "OvrPlatform|ApplicationLifecycle" },
+		{ "Comment", "/**\n     * This event is triggered when a launch intent is received, whether it's a cold or warm start.\n     * The payload contains the type of intent that was received. To obtain additional details,\n     * you should call the UOvrFunctionsBlueprintLibrary::ApplicationLifecycle_GetLaunchDetails function.\n     */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "This event is triggered when a launch intent is received, whether it's a cold or warm start.\nThe payload contains the type of intent that was received. To obtain additional details,\nyou should call the UOvrFunctionsBlueprintLibrary::ApplicationLifecycle_GetLaunchDetails function." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnAssetFileDownloadUpdate_MetaData[] = {
+		{ "Category", "OvrPlatform|AssetFile" },
+		{ "Comment", "/** Sent to indicate download progress for asset files. */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Sent to indicate download progress for asset files." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnCowatchingApiNotReady_MetaData[] = {
+		{ "Category", "OvrPlatform|Cowatching" },
+		{ "Comment", "/** Sets a callback function that will be triggered when the user is no longer in a copresent state and cowatching actions should not be performed. */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Sets a callback function that will be triggered when the user is no longer in a copresent state and cowatching actions should not be performed." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnCowatchingApiReady_MetaData[] = {
+		{ "Category", "OvrPlatform|Cowatching" },
+		{ "Comment", "/** Sets a callback function that will be triggered when the user is in a copresent state and cowatching is ready to begin. */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Sets a callback function that will be triggered when the user is in a copresent state and cowatching is ready to begin." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnCowatchingInSessionChanged_MetaData[] = {
+		{ "Category", "OvrPlatform|Cowatching" },
+		{ "Comment", "/** Sets a callback function that will be triggered when the current user joins/leaves the cowatching session. */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Sets a callback function that will be triggered when the current user joins/leaves the cowatching session." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnCowatchingInitialized_MetaData[] = {
+		{ "Category", "OvrPlatform|Cowatching" },
+		{ "Comment", "/** Sets a callback function that will be triggered when the cowatching API has been initialized. At this stage, the API is not yet ready for use. */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Sets a callback function that will be triggered when the cowatching API has been initialized. At this stage, the API is not yet ready for use." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnCowatchingPresenterDataChanged_MetaData[] = {
+		{ "Category", "OvrPlatform|Cowatching" },
+		{ "Comment", "/** Sets a callback function that will be triggered when the presenter updates the presenter data. */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Sets a callback function that will be triggered when the presenter updates the presenter data." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnCowatchingSessionStarted_MetaData[] = {
+		{ "Category", "OvrPlatform|Cowatching" },
+		{ "Comment", "/** Sets a callback function that will be triggered when a user has started a cowatching session, and the ID of the session is reflected in the payload. */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Sets a callback function that will be triggered when a user has started a cowatching session, and the ID of the session is reflected in the payload." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnCowatchingSessionStopped_MetaData[] = {
+		{ "Category", "OvrPlatform|Cowatching" },
+		{ "Comment", "/** Sets a callback function that will be triggered when a cowatching session has ended. */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Sets a callback function that will be triggered when a cowatching session has ended." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnCowatchingViewersDataChanged_MetaData[] = {
+		{ "Category", "OvrPlatform|Cowatching" },
+		{ "Comment", "/** Sets a callback function that will be triggered when a user joins or updates their viewer data. */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Sets a callback function that will be triggered when a user joins or updates their viewer data." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnGroupPresenceInvitationsSent_MetaData[] = {
+		{ "Category", "OvrPlatform|GroupPresence" },
+		{ "Comment", "/**\n     * Sent when the user is finished using the invite panel to send out invitations. Contains a list of invitees.\n     * Parameter: Callback is a function that will be called when the invitation sent status changes.\n     * FOvrLaunchInvitePanelFlowResult has 1 member:\n     * UserList field FOvrLaunchInvitePanelFlowResult::InvitedUsers - A list of users that were sent an invitation to the session.\n     */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Sent when the user is finished using the invite panel to send out invitations. Contains a list of invitees.\nParameter: Callback is a function that will be called when the invitation sent status changes.\nFOvrLaunchInvitePanelFlowResult has 1 member:\nUserList field FOvrLaunchInvitePanelFlowResult::InvitedUsers - A list of users that were sent an invitation to the session." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnGroupPresenceJoinIntentReceived_MetaData[] = {
+		{ "Category", "OvrPlatform|GroupPresence" },
+		{ "Comment", "/**\n     * Sent when a user has chosen to join the destination/lobby/match.\n     * Read all the fields to figure out where the user wants to go and take\n     * the appropriate actions to bring them there. If the user is unable to go there,\n     * provide adequate messaging to the user on why they cannot go there.\n     * These notifications should be responded to immediately.\n     * Parameter: Callback is a function that will be called when a user has chosen to join the destination/lobby/match.\n     * FOvrGroupPresenceJoinIntent has 4 members:\n     * string field FOvrGroupPresenceJoinIntent::DeeplinkMessage - An opaque string provided by the developer to help them deeplink to content.\n     * string field FOvrGroupPresenceJoinIntent::DestinationApiName - The destination the current user wants to go to.\n     * string field FOvrGroupPresenceJoinIntent::LobbySessionId - The lobby session the current user wants to go to.\n     * string field FOvrGroupPresenceJoinIntent::MatchSessionId - The match session the current user wants to go to.\n     */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Sent when a user has chosen to join the destination/lobby/match.\nRead all the fields to figure out where the user wants to go and take\nthe appropriate actions to bring them there. If the user is unable to go there,\nprovide adequate messaging to the user on why they cannot go there.\nThese notifications should be responded to immediately.\nParameter: Callback is a function that will be called when a user has chosen to join the destination/lobby/match.\nFOvrGroupPresenceJoinIntent has 4 members:\nstring field FOvrGroupPresenceJoinIntent::DeeplinkMessage - An opaque string provided by the developer to help them deeplink to content.\nstring field FOvrGroupPresenceJoinIntent::DestinationApiName - The destination the current user wants to go to.\nstring field FOvrGroupPresenceJoinIntent::LobbySessionId - The lobby session the current user wants to go to.\nstring field FOvrGroupPresenceJoinIntent::MatchSessionId - The match session the current user wants to go to." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnGroupPresenceLeaveIntentReceived_MetaData[] = {
+		{ "Category", "OvrPlatform|GroupPresence" },
+		{ "Comment", "/**\n     * Sent when the user has chosen to leave the destination/lobby/match from the Oculus menu.\n     * Read the specific fields to check the user is currently from the destination/lobby/match and take the appropriate actions to remove them.\n     * Update the user's presence clearing the appropriate fields to indicate the user has left.\n     * Parameter: Callback is a function that will be called when the user has chosen to leave the destination/lobby/match.\n     * FOvrGroupPresenceLeaveIntent has 3 members:\n     * string field FOvrGroupPresenceLeaveIntent::DestinationApiName - The destination the current user wants to leave.\n     * string field FOvrGroupPresenceLeaveIntent::LobbySessionId - The lobby session the current user wants to leave.\n     * string field FOvrGroupPresenceLeaveIntent::MatchSessionId - The match session the current user wants to leave.\n     */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Sent when the user has chosen to leave the destination/lobby/match from the Oculus menu.\nRead the specific fields to check the user is currently from the destination/lobby/match and take the appropriate actions to remove them.\nUpdate the user's presence clearing the appropriate fields to indicate the user has left.\nParameter: Callback is a function that will be called when the user has chosen to leave the destination/lobby/match.\nFOvrGroupPresenceLeaveIntent has 3 members:\nstring field FOvrGroupPresenceLeaveIntent::DestinationApiName - The destination the current user wants to leave.\nstring field FOvrGroupPresenceLeaveIntent::LobbySessionId - The lobby session the current user wants to leave.\nstring field FOvrGroupPresenceLeaveIntent::MatchSessionId - The match session the current user wants to leave." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnHTTPTransfer_MetaData[] = {
+		{ "Category", "OvrPlatform|HTTP" },
+		{ "Comment", "/** Sent to indicate that more data has been read or an error occured. */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Sent to indicate that more data has been read or an error occured." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnLivestreamingStatusChange_MetaData[] = {
+		{ "Category", "OvrPlatform|Livestreaming" },
+		{ "Comment", "/**\n     * Indicates that the livestreaming session has been updated. You can use this information to\n     * throttle your game performance or increase CPU/GPU performance.  Use\n     * FOvrLivestreamingStatus to extract the updated livestreaming status.\n     */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Indicates that the livestreaming session has been updated. You can use this information to\nthrottle your game performance or increase CPU/GPU performance.  Use\nFOvrLivestreamingStatus to extract the updated livestreaming status." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnNetSyncConnectionStatusChanged_MetaData[] = {
+		{ "Category", "OvrPlatform|NetSync" },
+		{ "Comment", "/** Sent when the status of a connection has changed. The payload will be a type of FOvrNetSyncConnection. */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Sent when the status of a connection has changed. The payload will be a type of FOvrNetSyncConnection." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnNetSyncSessionsChanged_MetaData[] = {
+		{ "Category", "OvrPlatform|NetSync" },
+		{ "Comment", "/**\n     * Sent when the list of known connected sessions has changed. Contains\n     * the new list of sessions. The payload will be a type of FOvrNetSyncSessionsChangedNotification.\n     */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Sent when the list of known connected sessions has changed. Contains\nthe new list of sessions. The payload will be a type of FOvrNetSyncSessionsChangedNotification." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnPartyPartyUpdate_MetaData[] = {
+		{ "Category", "OvrPlatform|Party" },
+		{ "Comment", "/** Indicates that party has been updated. This will return a FOvrPartyUpdateNotification object. */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Indicates that party has been updated. This will return a FOvrPartyUpdateNotification object." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnVoipMicrophoneAvailabilityStateUpdate_MetaData[] = {
+		{ "Category", "OvrPlatform|Voip" },
+		{ "Comment", "/** Indicates that the current microphone availability state has been updated. Use UOvrRequestsBlueprintLibrary::Voip_GetMicrophoneAvailability() to extract the microphone availability state. */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Indicates that the current microphone availability state has been updated. Use UOvrRequestsBlueprintLibrary::Voip_GetMicrophoneAvailability() to extract the microphone availability state." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnVoipSystemVoipState_MetaData[] = {
+		{ "Category", "OvrPlatform|Voip" },
+		{ "Comment", "/**\n     * Sent to indicate that some part of the overall state of SystemVoip\n     * has changed. Use field FOvrSystemVoipState::Status and\n     * the properties of FOvrSystemVoipState to extract the state that triggered the\n     * notification.\n     * Note that the state may have changed further since the notification was\n     * generated, and that you may call the `GetSystemVoip...()` family of functions at any time\n     * to get the current state directly.\n     */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Sent to indicate that some part of the overall state of SystemVoip\nhas changed. Use field FOvrSystemVoipState::Status and\nthe properties of FOvrSystemVoipState to extract the state that triggered the\nnotification.\nNote that the state may have changed further since the notification was\ngenerated, and that you may call the `GetSystemVoip...()` family of functions at any time\nto get the current state directly." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnVrcameraGetDataChannelMessageUpdate_MetaData[] = {
+		{ "Category", "OvrPlatform|Vrcamera" },
+		{ "Comment", "/**\n     * Gets VR camera related WebRTC data channel messages for update. This method is used to retrieve messages that are sent over the WebRTC\n     * data channel, which can include information about the VR camera system, such as its current state or any errors that may have occurred. \n     */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Gets VR camera related WebRTC data channel messages for update. This method is used to retrieve messages that are sent over the WebRTC\ndata channel, which can include information about the VR camera system, such as its current state or any errors that may have occurred." },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnVrcameraGetSurfaceUpdate_MetaData[] = {
+		{ "Category", "OvrPlatform|Vrcamera" },
+		{ "Comment", "/**\n     * Gets the surface and update action from the platform WebRTC for update. This method is used to retrieve information about\n     * the current state of the VR camera system, including any updates that may be required.\n     * See more info about Platform Solutions [here](https://developer.oculus.com/documentation/unreal/ps-platform-intro/).\n     */" },
+		{ "ModuleRelativePath", "Public/OVRPlatformSubsystem.h" },
+		{ "ToolTip", "Gets the surface and update action from the platform WebRTC for update. This method is used to retrieve information about\nthe current state of the VR camera system, including any updates that may be required.\nSee more info about Platform Solutions [here](https://developer.oculus.com/documentation/unreal/ps-platform-intro/)." },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnAbuseReportReportButtonPressed;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnApplicationLifecycleLaunchIntentChanged;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnAssetFileDownloadUpdate;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCowatchingApiNotReady;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCowatchingApiReady;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCowatchingInSessionChanged;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCowatchingInitialized;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCowatchingPresenterDataChanged;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCowatchingSessionStarted;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCowatchingSessionStopped;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCowatchingViewersDataChanged;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnGroupPresenceInvitationsSent;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnGroupPresenceJoinIntentReceived;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnGroupPresenceLeaveIntentReceived;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnHTTPTransfer;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnLivestreamingStatusChange;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnNetSyncConnectionStatusChanged;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnNetSyncSessionsChanged;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnPartyPartyUpdate;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnVoipMicrophoneAvailabilityStateUpdate;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnVoipSystemVoipState;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnVrcameraGetDataChannelMessageUpdate;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnVrcameraGetSurfaceUpdate;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static UObject* (*const DependentSingletons[])();
+	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_UOvrPlatformSubsystem_StartMessagePump, "StartMessagePump" }, // 2084624672
+	};
+	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
+	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UOvrPlatformSubsystem>::IsAbstract,
+	};
+	static const UECodeGen_Private::FClassParams ClassParams;
+};
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnAbuseReportReportButtonPressed = { "OnAbuseReportReportButtonPressed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnAbuseReportReportButtonPressed), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AbuseReport_ReportButtonPressed__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnAbuseReportReportButtonPressed_MetaData), NewProp_OnAbuseReportReportButtonPressed_MetaData) }; // 104377754
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnApplicationLifecycleLaunchIntentChanged = { "OnApplicationLifecycleLaunchIntentChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnApplicationLifecycleLaunchIntentChanged), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_ApplicationLifecycle_LaunchIntentChanged__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnApplicationLifecycleLaunchIntentChanged_MetaData), NewProp_OnApplicationLifecycleLaunchIntentChanged_MetaData) }; // 2084732819
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnAssetFileDownloadUpdate = { "OnAssetFileDownloadUpdate", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnAssetFileDownloadUpdate), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_AssetFile_DownloadUpdate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnAssetFileDownloadUpdate_MetaData), NewProp_OnAssetFileDownloadUpdate_MetaData) }; // 147677870
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnCowatchingApiNotReady = { "OnCowatchingApiNotReady", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnCowatchingApiNotReady), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiNotReady__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnCowatchingApiNotReady_MetaData), NewProp_OnCowatchingApiNotReady_MetaData) }; // 1794125649
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnCowatchingApiReady = { "OnCowatchingApiReady", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnCowatchingApiReady), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ApiReady__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnCowatchingApiReady_MetaData), NewProp_OnCowatchingApiReady_MetaData) }; // 730851346
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnCowatchingInSessionChanged = { "OnCowatchingInSessionChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnCowatchingInSessionChanged), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_InSessionChanged__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnCowatchingInSessionChanged_MetaData), NewProp_OnCowatchingInSessionChanged_MetaData) }; // 898171757
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnCowatchingInitialized = { "OnCowatchingInitialized", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnCowatchingInitialized), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_Initialized__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnCowatchingInitialized_MetaData), NewProp_OnCowatchingInitialized_MetaData) }; // 2812611515
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnCowatchingPresenterDataChanged = { "OnCowatchingPresenterDataChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnCowatchingPresenterDataChanged), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_PresenterDataChanged__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnCowatchingPresenterDataChanged_MetaData), NewProp_OnCowatchingPresenterDataChanged_MetaData) }; // 4073167505
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnCowatchingSessionStarted = { "OnCowatchingSessionStarted", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnCowatchingSessionStarted), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStarted__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnCowatchingSessionStarted_MetaData), NewProp_OnCowatchingSessionStarted_MetaData) }; // 1294355483
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnCowatchingSessionStopped = { "OnCowatchingSessionStopped", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnCowatchingSessionStopped), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_SessionStopped__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnCowatchingSessionStopped_MetaData), NewProp_OnCowatchingSessionStopped_MetaData) }; // 13848145
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnCowatchingViewersDataChanged = { "OnCowatchingViewersDataChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnCowatchingViewersDataChanged), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Cowatching_ViewersDataChanged__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnCowatchingViewersDataChanged_MetaData), NewProp_OnCowatchingViewersDataChanged_MetaData) }; // 382859443
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnGroupPresenceInvitationsSent = { "OnGroupPresenceInvitationsSent", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnGroupPresenceInvitationsSent), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_InvitationsSent__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnGroupPresenceInvitationsSent_MetaData), NewProp_OnGroupPresenceInvitationsSent_MetaData) }; // 3419665710
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnGroupPresenceJoinIntentReceived = { "OnGroupPresenceJoinIntentReceived", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnGroupPresenceJoinIntentReceived), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_JoinIntentReceived__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnGroupPresenceJoinIntentReceived_MetaData), NewProp_OnGroupPresenceJoinIntentReceived_MetaData) }; // 1962590799
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnGroupPresenceLeaveIntentReceived = { "OnGroupPresenceLeaveIntentReceived", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnGroupPresenceLeaveIntentReceived), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_GroupPresence_LeaveIntentReceived__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnGroupPresenceLeaveIntentReceived_MetaData), NewProp_OnGroupPresenceLeaveIntentReceived_MetaData) }; // 4237822913
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnHTTPTransfer = { "OnHTTPTransfer", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnHTTPTransfer), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_HTTP_Transfer__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnHTTPTransfer_MetaData), NewProp_OnHTTPTransfer_MetaData) }; // 295440947
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnLivestreamingStatusChange = { "OnLivestreamingStatusChange", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnLivestreamingStatusChange), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Livestreaming_StatusChange__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnLivestreamingStatusChange_MetaData), NewProp_OnLivestreamingStatusChange_MetaData) }; // 3492411728
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnNetSyncConnectionStatusChanged = { "OnNetSyncConnectionStatusChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnNetSyncConnectionStatusChanged), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_ConnectionStatusChanged__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnNetSyncConnectionStatusChanged_MetaData), NewProp_OnNetSyncConnectionStatusChanged_MetaData) }; // 2261891614
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnNetSyncSessionsChanged = { "OnNetSyncSessionsChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnNetSyncSessionsChanged), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_NetSync_SessionsChanged__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnNetSyncSessionsChanged_MetaData), NewProp_OnNetSyncSessionsChanged_MetaData) }; // 1521553621
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnPartyPartyUpdate = { "OnPartyPartyUpdate", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnPartyPartyUpdate), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Party_PartyUpdate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnPartyPartyUpdate_MetaData), NewProp_OnPartyPartyUpdate_MetaData) }; // 4158220149
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnVoipMicrophoneAvailabilityStateUpdate = { "OnVoipMicrophoneAvailabilityStateUpdate", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnVoipMicrophoneAvailabilityStateUpdate), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_MicrophoneAvailabilityStateUpdate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnVoipMicrophoneAvailabilityStateUpdate_MetaData), NewProp_OnVoipMicrophoneAvailabilityStateUpdate_MetaData) }; // 1712742873
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnVoipSystemVoipState = { "OnVoipSystemVoipState", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnVoipSystemVoipState), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Voip_SystemVoipState__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnVoipSystemVoipState_MetaData), NewProp_OnVoipSystemVoipState_MetaData) }; // 3998201536
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnVrcameraGetDataChannelMessageUpdate = { "OnVrcameraGetDataChannelMessageUpdate", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnVrcameraGetDataChannelMessageUpdate), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetDataChannelMessageUpdate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnVrcameraGetDataChannelMessageUpdate_MetaData), NewProp_OnVrcameraGetDataChannelMessageUpdate_MetaData) }; // 2448527861
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnVrcameraGetSurfaceUpdate = { "OnVrcameraGetSurfaceUpdate", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOvrPlatformSubsystem, OnVrcameraGetSurfaceUpdate), Z_Construct_UDelegateFunction_OVRPlatform_OvrNotification_Vrcamera_GetSurfaceUpdate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnVrcameraGetSurfaceUpdate_MetaData), NewProp_OnVrcameraGetSurfaceUpdate_MetaData) }; // 898347793
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOvrPlatformSubsystem_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnAbuseReportReportButtonPressed,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnApplicationLifecycleLaunchIntentChanged,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnAssetFileDownloadUpdate,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnCowatchingApiNotReady,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnCowatchingApiReady,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnCowatchingInSessionChanged,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnCowatchingInitialized,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnCowatchingPresenterDataChanged,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnCowatchingSessionStarted,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnCowatchingSessionStopped,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnCowatchingViewersDataChanged,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnGroupPresenceInvitationsSent,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnGroupPresenceJoinIntentReceived,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnGroupPresenceLeaveIntentReceived,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnHTTPTransfer,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnLivestreamingStatusChange,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnNetSyncConnectionStatusChanged,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnNetSyncSessionsChanged,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnPartyPartyUpdate,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnVoipMicrophoneAvailabilityStateUpdate,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnVoipSystemVoipState,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnVrcameraGetDataChannelMessageUpdate,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOvrPlatformSubsystem_Statics::NewProp_OnVrcameraGetSurfaceUpdate,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOvrPlatformSubsystem_Statics::PropPointers) < 2048);
+UObject* (*const Z_Construct_UClass_UOvrPlatformSubsystem_Statics::DependentSingletons[])() = {
+	(UObject* (*)())Z_Construct_UClass_UGameInstanceSubsystem,
+	(UObject* (*)())Z_Construct_UPackage__Script_OVRPlatform,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOvrPlatformSubsystem_Statics::DependentSingletons) < 16);
+const UECodeGen_Private::FClassParams Z_Construct_UClass_UOvrPlatformSubsystem_Statics::ClassParams = {
+	&UOvrPlatformSubsystem::StaticClass,
+	nullptr,
+	&StaticCppClassTypeInfo,
+	DependentSingletons,
+	FuncInfo,
+	Z_Construct_UClass_UOvrPlatformSubsystem_Statics::PropPointers,
+	nullptr,
+	UE_ARRAY_COUNT(DependentSingletons),
+	UE_ARRAY_COUNT(FuncInfo),
+	UE_ARRAY_COUNT(Z_Construct_UClass_UOvrPlatformSubsystem_Statics::PropPointers),
+	0,
+	0x009000A0u,
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOvrPlatformSubsystem_Statics::Class_MetaDataParams), Z_Construct_UClass_UOvrPlatformSubsystem_Statics::Class_MetaDataParams)
+};
+UClass* Z_Construct_UClass_UOvrPlatformSubsystem()
+{
+	if (!Z_Registration_Info_UClass_UOvrPlatformSubsystem.OuterSingleton)
+	{
+		UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UOvrPlatformSubsystem.OuterSingleton, Z_Construct_UClass_UOvrPlatformSubsystem_Statics::ClassParams);
+	}
+	return Z_Registration_Info_UClass_UOvrPlatformSubsystem.OuterSingleton;
+}
+template<> OVRPLATFORM_API UClass* StaticClass<UOvrPlatformSubsystem>()
+{
+	return UOvrPlatformSubsystem::StaticClass();
+}
+UOvrPlatformSubsystem::UOvrPlatformSubsystem() {}
+DEFINE_VTABLE_PTR_HELPER_CTOR(UOvrPlatformSubsystem);
+UOvrPlatformSubsystem::~UOvrPlatformSubsystem() {}
+// End Class UOvrPlatformSubsystem
+
+// Begin Registration
+struct Z_CompiledInDeferFile_FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformSubsystem_h_Statics
+{
+	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
+		{ Z_Construct_UClass_UOvrPlatformSubsystem, UOvrPlatformSubsystem::StaticClass, TEXT("UOvrPlatformSubsystem"), &Z_Registration_Info_UClass_UOvrPlatformSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOvrPlatformSubsystem), 3133000279U) },
+	};
+};
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformSubsystem_h_1049129919(TEXT("/Script/OVRPlatform"),
+	Z_CompiledInDeferFile_FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformSubsystem_h_Statics::ClassInfo),
+	nullptr, 0,
+	nullptr, 0);
+// End Registration
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

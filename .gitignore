@@ -75,3 +75,6 @@ DerivedDataCache/*
 
 !MetaSimulation/
 !MetaSimulation/**
+
+!Plugins/MetaXRPlatform/
+!Plugins/MetaXRPlatform/**

@@ -1,0 +1,19 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OVRPlatform\\Module.OVRPlatform.1.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OVRPlatform\\Module.OVRPlatform.2.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OVRPlatform\\Module.OVRPlatform.3.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OVRPlatform\\OVRPlatform.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OVRPlatform\\OVRPlatformCppPageRequests.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OVRPlatform\\OVRPlatformCppRequests.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OVRPlatform\\OVRPlatformEnums.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OVRPlatform\\OVRPlatformFunctions.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OVRPlatform\\OVRPlatformModels.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OVRPlatform\\OVRPlatformPageRequests.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OVRPlatform\\OVRPlatformRequests.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OVRPlatform\\OVRPlatformRequestsSupport.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OVRPlatform\\OVRPlatformSDK.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OVRPlatform\\OVRPlatformSubsystem.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OVRPlatform\\OVRPlatformUtils.cpp.obj"
+	]
+}
