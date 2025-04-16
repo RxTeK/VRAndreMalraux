@@ -30,11 +30,15 @@ struct Z_Construct_UFunction_UOvrPlatformUtilsLibrary_Conv_Int64ToOvrId_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintAutocast", "" },
 		{ "Category", "OculusPlatform|Utils" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n     * Function to auto-convert from int64 to FString.\n     */" },
+#endif
 		{ "CompactNodeTitle", "->" },
 		{ "DisplayName", "ToOvrId (Int64)" },
 		{ "ModuleRelativePath", "Public/OVRPlatformUtils.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Function to auto-convert from int64 to FString." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FInt64PropertyParams NewProp_Id;
@@ -43,7 +47,7 @@ struct Z_Construct_UFunction_UOvrPlatformUtilsLibrary_Conv_Int64ToOvrId_Statics
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FInt64PropertyParams Z_Construct_UFunction_UOvrPlatformUtilsLibrary_Conv_Int64ToOvrId_Statics::NewProp_Id = { "Id", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int64, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrPlatformUtilsLibrary_eventConv_Int64ToOvrId_Parms, Id), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrPlatformUtilsLibrary_Conv_Int64ToOvrId_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrPlatformUtilsLibrary_eventConv_Int64ToOvrId_Parms, ReturnValue), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3320909238
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrPlatformUtilsLibrary_Conv_Int64ToOvrId_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrPlatformUtilsLibrary_eventConv_Int64ToOvrId_Parms, ReturnValue), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3472719273
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOvrPlatformUtilsLibrary_Conv_Int64ToOvrId_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrPlatformUtilsLibrary_Conv_Int64ToOvrId_Statics::NewProp_Id,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrPlatformUtilsLibrary_Conv_Int64ToOvrId_Statics::NewProp_ReturnValue,
@@ -82,11 +86,15 @@ struct Z_Construct_UFunction_UOvrPlatformUtilsLibrary_Conv_OvrIdToString_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintAutocast", "" },
 		{ "Category", "OculusPlatform|Utils" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n     * Function to auto-convert from FOculusId to FString.\n     */" },
+#endif
 		{ "CompactNodeTitle", "->" },
 		{ "DisplayName", "ToString (OvrId)" },
 		{ "ModuleRelativePath", "Public/OVRPlatformUtils.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Function to auto-convert from FOculusId to FString." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Id;
@@ -94,7 +102,7 @@ struct Z_Construct_UFunction_UOvrPlatformUtilsLibrary_Conv_OvrIdToString_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrPlatformUtilsLibrary_Conv_OvrIdToString_Statics::NewProp_Id = { "Id", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrPlatformUtilsLibrary_eventConv_OvrIdToString_Parms, Id), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3320909238
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrPlatformUtilsLibrary_Conv_OvrIdToString_Statics::NewProp_Id = { "Id", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrPlatformUtilsLibrary_eventConv_OvrIdToString_Parms, Id), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3472719273
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UOvrPlatformUtilsLibrary_Conv_OvrIdToString_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrPlatformUtilsLibrary_eventConv_OvrIdToString_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOvrPlatformUtilsLibrary_Conv_OvrIdToString_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrPlatformUtilsLibrary_Conv_OvrIdToString_Statics::NewProp_Id,
@@ -134,12 +142,16 @@ struct Z_Construct_UFunction_UOvrPlatformUtilsLibrary_EqualEqual_OvrIdOvrId_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusPlatform|Utils" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n     * Utility to compare two Oculus ids in blueprint.\n     */" },
+#endif
 		{ "CompactNodeTitle", "==" },
 		{ "DisplayName", "Equal OvrId" },
 		{ "Keywords", "== equal" },
 		{ "ModuleRelativePath", "Public/OVRPlatformUtils.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Utility to compare two Oculus ids in blueprint." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_A_MetaData[] = {
 		{ "NativeConst", "" },
@@ -155,8 +167,8 @@ struct Z_Construct_UFunction_UOvrPlatformUtilsLibrary_EqualEqual_OvrIdOvrId_Stat
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrPlatformUtilsLibrary_EqualEqual_OvrIdOvrId_Statics::NewProp_A = { "A", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrPlatformUtilsLibrary_eventEqualEqual_OvrIdOvrId_Parms, A), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_A_MetaData), NewProp_A_MetaData) }; // 3320909238
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrPlatformUtilsLibrary_EqualEqual_OvrIdOvrId_Statics::NewProp_B = { "B", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrPlatformUtilsLibrary_eventEqualEqual_OvrIdOvrId_Parms, B), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_B_MetaData), NewProp_B_MetaData) }; // 3320909238
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrPlatformUtilsLibrary_EqualEqual_OvrIdOvrId_Statics::NewProp_A = { "A", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrPlatformUtilsLibrary_eventEqualEqual_OvrIdOvrId_Parms, A), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_A_MetaData), NewProp_A_MetaData) }; // 3472719273
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrPlatformUtilsLibrary_EqualEqual_OvrIdOvrId_Statics::NewProp_B = { "B", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrPlatformUtilsLibrary_eventEqualEqual_OvrIdOvrId_Parms, B), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_B_MetaData), NewProp_B_MetaData) }; // 3472719273
 void Z_Construct_UFunction_UOvrPlatformUtilsLibrary_EqualEqual_OvrIdOvrId_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OvrPlatformUtilsLibrary_eventEqualEqual_OvrIdOvrId_Parms*)Obj)->ReturnValue = 1;
@@ -201,9 +213,13 @@ struct Z_Construct_UFunction_UOvrPlatformUtilsLibrary_MakeRandomSessionId_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusPlatform|Utils" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n     * Builds a random id.\n     * @param Prefix - The prefix to use for the random symbol.\n     * @return The supplied prefix followed by a 9 digit random number.\n     */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformUtils.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Builds a random id.\n@param Prefix - The prefix to use for the random symbol.\n@return The supplied prefix followed by a 9 digit random number." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Prefix_MetaData[] = {
 		{ "NativeConst", "" },
@@ -269,10 +285,10 @@ struct Z_Construct_UClass_UOvrPlatformUtilsLibrary_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOvrPlatformUtilsLibrary_Conv_Int64ToOvrId, "Conv_Int64ToOvrId" }, // 3586548308
-		{ &Z_Construct_UFunction_UOvrPlatformUtilsLibrary_Conv_OvrIdToString, "Conv_OvrIdToString" }, // 4180229645
-		{ &Z_Construct_UFunction_UOvrPlatformUtilsLibrary_EqualEqual_OvrIdOvrId, "EqualEqual_OvrIdOvrId" }, // 996622188
-		{ &Z_Construct_UFunction_UOvrPlatformUtilsLibrary_MakeRandomSessionId, "MakeRandomSessionId" }, // 2216487405
+		{ &Z_Construct_UFunction_UOvrPlatformUtilsLibrary_Conv_Int64ToOvrId, "Conv_Int64ToOvrId" }, // 3120502679
+		{ &Z_Construct_UFunction_UOvrPlatformUtilsLibrary_Conv_OvrIdToString, "Conv_OvrIdToString" }, // 1964841769
+		{ &Z_Construct_UFunction_UOvrPlatformUtilsLibrary_EqualEqual_OvrIdOvrId, "EqualEqual_OvrIdOvrId" }, // 2841703354
+		{ &Z_Construct_UFunction_UOvrPlatformUtilsLibrary_MakeRandomSessionId, "MakeRandomSessionId" }, // 3052609037
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -318,14 +334,14 @@ UOvrPlatformUtilsLibrary::~UOvrPlatformUtilsLibrary() {}
 // End Class UOvrPlatformUtilsLibrary
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformUtils_h_Statics
+struct Z_CompiledInDeferFile_FID_GithubProject_VRAndreMalraux_Plugins_MetaXRPlatform_Source_OVRPlatform_Public_OVRPlatformUtils_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOvrPlatformUtilsLibrary, UOvrPlatformUtilsLibrary::StaticClass, TEXT("UOvrPlatformUtilsLibrary"), &Z_Registration_Info_UClass_UOvrPlatformUtilsLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOvrPlatformUtilsLibrary), 3892596714U) },
+		{ Z_Construct_UClass_UOvrPlatformUtilsLibrary, UOvrPlatformUtilsLibrary::StaticClass, TEXT("UOvrPlatformUtilsLibrary"), &Z_Registration_Info_UClass_UOvrPlatformUtilsLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOvrPlatformUtilsLibrary), 2946625637U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformUtils_h_3809949635(TEXT("/Script/OVRPlatform"),
-	Z_CompiledInDeferFile_FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformUtils_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformUtils_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GithubProject_VRAndreMalraux_Plugins_MetaXRPlatform_Source_OVRPlatform_Public_OVRPlatformUtils_h_777327936(TEXT("/Script/OVRPlatform"),
+	Z_CompiledInDeferFile_FID_GithubProject_VRAndreMalraux_Plugins_MetaXRPlatform_Source_OVRPlatform_Public_OVRPlatformUtils_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GithubProject_VRAndreMalraux_Plugins_MetaXRPlatform_Source_OVRPlatform_Public_OVRPlatformUtils_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

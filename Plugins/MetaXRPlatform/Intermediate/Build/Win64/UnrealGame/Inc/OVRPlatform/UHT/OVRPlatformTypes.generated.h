@@ -14,14 +14,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define OVRPLATFORM_OVRPlatformTypes_generated_h
 
-#define FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformTypes_h_19_GENERATED_BODY \
+#define FID_GithubProject_VRAndreMalraux_Plugins_MetaXRPlatform_Source_OVRPlatform_Public_OVRPlatformTypes_h_19_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FOvrId_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> OVRPLATFORM_API UScriptStruct* StaticStruct<struct FOvrId>();
 
-#define FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformTypes_h_53_GENERATED_BODY \
+#define FID_GithubProject_VRAndreMalraux_Plugins_MetaXRPlatform_Source_OVRPlatform_Public_OVRPlatformTypes_h_53_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FOvrVariant_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -29,7 +29,7 @@ template<> OVRPLATFORM_API UScriptStruct* StaticStruct<struct FOvrId>();
 template<> OVRPLATFORM_API UScriptStruct* StaticStruct<struct FOvrVariant>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformTypes_h
+#define CURRENT_FILE_ID FID_GithubProject_VRAndreMalraux_Plugins_MetaXRPlatform_Source_OVRPlatform_Public_OVRPlatformTypes_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
