@@ -74,12 +74,16 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrAbuseReportType_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Represents the type of abuse report, can be categorized as either concerning a user, an object, or being unknown.\n * It can be specified as a field in the FOvrAbuseReportOptions::ReportType option.\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
 		{ "Object.Comment", "/**\n     * This refers to reports that are related to non-user entities, such as a virtual environment or an inanimate object within a platform.\n     * An example provided is a report concerning a \"world,\" which could be a virtual space or environment.\n     */" },
 		{ "Object.Name", "EOvrAbuseReportType::Object" },
 		{ "Object.ToolTip", "This refers to reports that are related to non-user entities, such as a virtual environment or an inanimate object within a platform.\nAn example provided is a report concerning a \"world,\" which could be a virtual space or environment." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Represents the type of abuse report, can be categorized as either concerning a user, an object, or being unknown.\nIt can be specified as a field in the FOvrAbuseReportOptions::ReportType option." },
+#endif
 		{ "Unknown.Name", "EOvrAbuseReportType::Unknown" },
 		{ "User.Comment", "/**\n     * This category is used for reports that directly involve a user's actions or behavior.\n     * This could include reports on harassment, inappropriate behavior, or other violations that\n     * are directly linked to a user's conduct on a platform.\n     */" },
 		{ "User.Name", "EOvrAbuseReportType::User" },
@@ -140,12 +144,16 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrAccountAgeCategory_Statics
 		{ "Ch.Comment", "/** Child age group for users between the ages of 10-12 (or applicable age in user's region). */" },
 		{ "Ch.Name", "EOvrAccountAgeCategory::Ch" },
 		{ "Ch.ToolTip", "Child age group for users between the ages of 10-12 (or applicable age in user's region)." },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * The age category in a Meta account is used to determine eligibility for certain features and services.\n * This information is important for ensuring that users are able to access the appropriate content and functionality based on their age.\n * The values are used in FOvrUserAccountAgeCategory API.\n * See more details [here](https://developer.oculus.com/documentation/unreal/ps-get-age-category-api).\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
 		{ "Tn.Comment", "/** Teenage age group for users between the ages of 13-17 (or applicable age in user's region). */" },
 		{ "Tn.Name", "EOvrAccountAgeCategory::Tn" },
 		{ "Tn.ToolTip", "Teenage age group for users between the ages of 13-17 (or applicable age in user's region)." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The age category in a Meta account is used to determine eligibility for certain features and services.\nThis information is important for ensuring that users are able to access the appropriate content and functionality based on their age.\nThe values are used in FOvrUserAccountAgeCategory API.\nSee more details [here](https://developer.oculus.com/documentation/unreal/ps-get-age-category-api)." },
+#endif
 		{ "Unknown.Name", "EOvrAccountAgeCategory::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -201,7 +209,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrAchievementType_Statics
 		{ "Bitfield.Name", "EOvrAchievementType::Bitfield" },
 		{ "Bitfield.ToolTip", "Bitfield achievements are unlocked when a target number of bits are set within a bitfield." },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Determines the type of the achievement. This enum defines the different types of achievements that can be used in the game.\n * Each type has its own unique characteristics and requirements for unlocking.\n * See more details about achievement [here](https://developer.oculus.com/documentation/unreal/ps-achievements/).\n */" },
+#endif
 		{ "Count.Comment", "/**\n     * Count achievements are unlocked when a counter reaches a defined target. The counter is incremented each time the player completes\n     * the required action, and when it reaches the target value, the achievement is unlocked.\n     */" },
 		{ "Count.Name", "EOvrAchievementType::Count" },
 		{ "Count.ToolTip", "Count achievements are unlocked when a counter reaches a defined target. The counter is incremented each time the player completes\nthe required action, and when it reaches the target value, the achievement is unlocked." },
@@ -209,7 +219,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrAchievementType_Statics
 		{ "Simple.Comment", "/**\n     * Simple achievements are unlocked by a single event or objective completion. They are often used to reward players for\n     * completing specific tasks or milestones within the game.\n     */" },
 		{ "Simple.Name", "EOvrAchievementType::Simple" },
 		{ "Simple.ToolTip", "Simple achievements are unlocked by a single event or objective completion. They are often used to reward players for\ncompleting specific tasks or milestones within the game." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Determines the type of the achievement. This enum defines the different types of achievements that can be used in the game.\nEach type has its own unique characteristics and requirements for unlocking.\nSee more details about achievement [here](https://developer.oculus.com/documentation/unreal/ps-achievements/)." },
+#endif
 		{ "Unknown.Name", "EOvrAchievementType::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -265,12 +277,16 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrAppAgeCategory_Statics
 		{ "Ch.Comment", "/** Child age group for users between the ages of 10-12 (or applicable age in user's region). */" },
 		{ "Ch.Name", "EOvrAppAgeCategory::Ch" },
 		{ "Ch.ToolTip", "Child age group for users between the ages of 10-12 (or applicable age in user's region)." },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * The age category in a Meta account is used to determine eligibility for certain features and services.\n * This information is important for ensuring that users are able to access the appropriate content and functionality based on their age.\n * The values are used in FOvrUserAccountAgeCategory API.\n * See more details [here](https://developer.oculus.com/documentation/unreal/ps-get-age-category-api).\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
 		{ "Nch.Comment", "/** Non-child age group for users ages 13 and up (or applicable age in user's region). */" },
 		{ "Nch.Name", "EOvrAppAgeCategory::Nch" },
 		{ "Nch.ToolTip", "Non-child age group for users ages 13 and up (or applicable age in user's region)." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The age category in a Meta account is used to determine eligibility for certain features and services.\nThis information is important for ensuring that users are able to access the appropriate content and functionality based on their age.\nThe values are used in FOvrUserAccountAgeCategory API.\nSee more details [here](https://developer.oculus.com/documentation/unreal/ps-get-age-category-api)." },
+#endif
 		{ "Unknown.Name", "EOvrAppAgeCategory::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -325,7 +341,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrAppInstallResult_Statics
 		{ "AuthorizationError.Name", "EOvrAppInstallResult::AuthorizationError" },
 		{ "AuthorizationError.ToolTip", "Install of the app failed due to a user authorization error" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Result of installing an app. In case of an error during install process,\n * the error message contains the string representation of this result. This is\n * returned from UOvrRequestsBlueprintLibrary::Application_StartAppDownload(), UOvrRequestsBlueprintLibrary::Application_CancelAppDownload() and UOvrRequestsBlueprintLibrary::Application_InstallAppUpdateAndRelaunch() APIs.\n */" },
+#endif
 		{ "DuplicateRequest.Comment", "/**\n     * Install of the app failed as another install request for this application\n     * is already being processed by the installer\n     */" },
 		{ "DuplicateRequest.Name", "EOvrAppInstallResult::DuplicateRequest" },
 		{ "DuplicateRequest.ToolTip", "Install of the app failed as another install request for this application\nis already being processed by the installer" },
@@ -342,7 +360,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrAppInstallResult_Statics
 		{ "Success.Comment", "/** Install of the app succeeded */" },
 		{ "Success.Name", "EOvrAppInstallResult::Success" },
 		{ "Success.ToolTip", "Install of the app succeeded" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Result of installing an app. In case of an error during install process,\nthe error message contains the string representation of this result. This is\nreturned from UOvrRequestsBlueprintLibrary::Application_StartAppDownload(), UOvrRequestsBlueprintLibrary::Application_CancelAppDownload() and UOvrRequestsBlueprintLibrary::Application_InstallAppUpdateAndRelaunch() APIs." },
+#endif
 		{ "Unknown.Name", "EOvrAppInstallResult::Unknown" },
 		{ "UserCancelled.Comment", "/** Install of the app failed because the user canceled the install operation */" },
 		{ "UserCancelled.Name", "EOvrAppInstallResult::UserCancelled" },
@@ -402,7 +422,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrAppStatus_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * This property indicates the current status of the app on the device. It is important to note that\n * an app can only query its own status, not the status of other apps installed on the device. It can be\n * retrieved by field FOvrAppDownloadProgressResult::StatusCode.\n */" },
+#endif
 		{ "Downloading.Comment", "/** The app is currently being downloaded to the device. This status is active during the download process until it is complete. */" },
 		{ "Downloading.Name", "EOvrAppStatus::Downloading" },
 		{ "Downloading.ToolTip", "The app is currently being downloaded to the device. This status is active during the download process until it is complete." },
@@ -422,7 +444,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrAppStatus_Statics
 		{ "InstallQueued.Name", "EOvrAppStatus::InstallQueued" },
 		{ "InstallQueued.ToolTip", "The installation of the app is scheduled and will commence once any prior installations are completed." },
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This property indicates the current status of the app on the device. It is important to note that\nan app can only query its own status, not the status of other apps installed on the device. It can be\nretrieved by field FOvrAppDownloadProgressResult::StatusCode." },
+#endif
 		{ "Uninstalling.Comment", "/** The app is currently being uninstalled from the device. This status remains until the uninstallation process is complete. */" },
 		{ "Uninstalling.Name", "EOvrAppStatus::Uninstalling" },
 		{ "Uninstalling.ToolTip", "The app is currently being uninstalled from the device. This status remains until the uninstallation process is complete." },
@@ -482,12 +506,16 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrChallengeCreationType_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Describes the creator of the associated challenge. This field indicates who created the challenge, whether\n * it was EOvrChallengeCreationType::UserCreated or EOvrChallengeCreationType::DeveloperCreated.\n * Understanding the creator of the associated challenge can provide valuable context and help participants better\n * understand the nature and purpose of the challenge.\n */" },
+#endif
 		{ "DeveloperCreated.Comment", "/**\n     * The challenge was created by the app developer. This means that the challenge was created by the team behind the app,\n     * and it may be an official challenge or a special event created by the developers to engage with the community or promote specific\n     * features of the app.\n     */" },
 		{ "DeveloperCreated.Name", "EOvrChallengeCreationType::DeveloperCreated" },
 		{ "DeveloperCreated.ToolTip", "The challenge was created by the app developer. This means that the challenge was created by the team behind the app,\nand it may be an official challenge or a special event created by the developers to engage with the community or promote specific\nfeatures of the app." },
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Describes the creator of the associated challenge. This field indicates who created the challenge, whether\nit was EOvrChallengeCreationType::UserCreated or EOvrChallengeCreationType::DeveloperCreated.\nUnderstanding the creator of the associated challenge can provide valuable context and help participants better\nunderstand the nature and purpose of the challenge." },
+#endif
 		{ "Unknown.Name", "EOvrChallengeCreationType::Unknown" },
 		{ "UserCreated.Comment", "/**\n     * The challenge was created by a User. This means that a regular user of the app created the challenge, and it may be\n     * a community-driven challenge or a personal challenge created by the user for themselves or others.\n     */" },
 		{ "UserCreated.Name", "EOvrChallengeCreationType::UserCreated" },
@@ -545,7 +573,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrChallengeViewerFilter_Statics
 		{ "AllVisible.Name", "EOvrChallengeViewerFilter::AllVisible" },
 		{ "AllVisible.ToolTip", "Returns all public ((EOvrChallengeVisibility::Public)) and invite-only (EOvrChallengeVisibility::InviteOnly)\nFOvrChallenges in which the user is a participant or invitee. Excludes private (EOvrChallengeVisibility::Private)\nchallenges. This filter is useful for users who want to see all challenges they are involved in, regardless of their visibility settings." },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * The available filtering options on the FOvrChallenge returned by UOvrRequestsBlueprintLibrary::Challenges_GetList().\n * These filters allow users to customize their search results and retrieve only the challenges that meet specific criteria.\n * See more details of Challenges in [here](https://developer.oculus.com/documentation/unreal/ps-challenges/).\n */" },
+#endif
 		{ "Invited.Comment", "/**\n     * Returns challenges that the user has been invited to. This filter is useful for users who want to see only the challenges\n     * they have been explicitly invited to.\n     */" },
 		{ "Invited.Name", "EOvrChallengeViewerFilter::Invited" },
 		{ "Invited.ToolTip", "Returns challenges that the user has been invited to. This filter is useful for users who want to see only the challenges\nthey have been explicitly invited to." },
@@ -556,7 +586,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrChallengeViewerFilter_Statics
 		{ "ParticipatingOrInvited.Comment", "/**\n     * Returns challenges the user is either participating in or invited to. This filter is useful for users who want to see all challenges\n     * they are involved in, whether as a participant or an invitee.\n     */" },
 		{ "ParticipatingOrInvited.Name", "EOvrChallengeViewerFilter::ParticipatingOrInvited" },
 		{ "ParticipatingOrInvited.ToolTip", "Returns challenges the user is either participating in or invited to. This filter is useful for users who want to see all challenges\nthey are involved in, whether as a participant or an invitee." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The available filtering options on the FOvrChallenge returned by UOvrRequestsBlueprintLibrary::Challenges_GetList().\nThese filters allow users to customize their search results and retrieve only the challenges that meet specific criteria.\nSee more details of Challenges in [here](https://developer.oculus.com/documentation/unreal/ps-challenges/)." },
+#endif
 		{ "Unknown.Name", "EOvrChallengeViewerFilter::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -610,7 +642,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrChallengeVisibility_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * The visibility of the challenge. A challenge may be invite-only, public, or private. The visibility setting determines who can\n * see and participate in the challenge.\n * See more details of Challenges in [here](https://developer.oculus.com/documentation/unreal/ps-challenges/).\n */" },
+#endif
 		{ "InviteOnly.Comment", "/**\n     * Only those invited can participate in it. Everyone can see it, but only those with an invitation can joinand participate in the challenge.\n     * This setting is useful for challenges that are meant to be exclusive or for a specific group of people.\n     */" },
 		{ "InviteOnly.Name", "EOvrChallengeVisibility::InviteOnly" },
 		{ "InviteOnly.ToolTip", "Only those invited can participate in it. Everyone can see it, but only those with an invitation can joinand participate in the challenge.\nThis setting is useful for challenges that are meant to be exclusive or for a specific group of people." },
@@ -621,7 +655,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrChallengeVisibility_Statics
 		{ "Public.Comment", "/**\n     * Everyone can participate and see this challenge. This setting makes the challenge open to anyone who wants to join,\n     * and everyone can see the challenge details and progress. This setting is useful for challenges that are meant to be open and inclusive.\n     */" },
 		{ "Public.Name", "EOvrChallengeVisibility::Public" },
 		{ "Public.ToolTip", "Everyone can participate and see this challenge. This setting makes the challenge open to anyone who wants to join,\nand everyone can see the challenge details and progress. This setting is useful for challenges that are meant to be open and inclusive." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The visibility of the challenge. A challenge may be invite-only, public, or private. The visibility setting determines who can\nsee and participate in the challenge.\nSee more details of Challenges in [here](https://developer.oculus.com/documentation/unreal/ps-challenges/)." },
+#endif
 		{ "Unknown.Name", "EOvrChallengeVisibility::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -674,7 +710,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrKeyValuePairType_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * It's a data structure that represents a pair of values, where one value serves as the key and the other value serves as the corresponding value.\n * It can be used to store a different type of data, allowing for flexibility in how data is stored and retrieved.\n */" },
+#endif
 		{ "Double.Comment", "/**  This member represents the key value as a double-precision floating-point number. It is used to store numerical data with decimal points, such as prices. */" },
 		{ "Double.Name", "EOvrKeyValuePairType::Double" },
 		{ "Double.ToolTip", "This member represents the key value as a double-precision floating-point number. It is used to store numerical data with decimal points, such as prices." },
@@ -685,7 +723,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrKeyValuePairType_Statics
 		{ "String.Comment", "/** This member represents the key value as a string. It is used to store text-based data, such as names. */" },
 		{ "String.Name", "EOvrKeyValuePairType::String" },
 		{ "String.ToolTip", "This member represents the key value as a string. It is used to store text-based data, such as names." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "It's a data structure that represents a pair of values, where one value serves as the key and the other value serves as the corresponding value.\nIt can be used to store a different type of data, allowing for flexibility in how data is stored and retrieved." },
+#endif
 		{ "Unknown.Name", "EOvrKeyValuePairType::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -738,7 +778,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrLaunchResult_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * An enum that specifies the whether the attempt to launch this application via a deeplink was successful.\n * The value is meant to be reported after a deeplink by calling UOvrFunctionsBlueprintLibrary::ApplicationLifecycle_LogDeeplinkResult\n */" },
+#endif
 		{ "FailedGameAlreadyStarted.Comment", "/** The application launch failed because the game has already started. */" },
 		{ "FailedGameAlreadyStarted.Name", "EOvrLaunchResult::FailedGameAlreadyStarted" },
 		{ "FailedGameAlreadyStarted.ToolTip", "The application launch failed because the game has already started." },
@@ -758,7 +800,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrLaunchResult_Statics
 		{ "Success.Comment", "/** The application launched successfully. */" },
 		{ "Success.Name", "EOvrLaunchResult::Success" },
 		{ "Success.ToolTip", "The application launched successfully." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "An enum that specifies the whether the attempt to launch this application via a deeplink was successful.\nThe value is meant to be reported after a deeplink by calling UOvrFunctionsBlueprintLibrary::ApplicationLifecycle_LogDeeplinkResult" },
+#endif
 		{ "Unknown.Name", "EOvrLaunchResult::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -814,7 +858,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrLaunchType_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * It's an enum that defines several different types of launches for an application.\n * It provides a way to differentiate between different types of launches and to access additional information about the launch details.\n * It can be retrieved using field FOvrLaunchDetails::LaunchType to get the launch type information of an application.\n */" },
+#endif
 		{ "Coordinated.Comment", "/**  DEPRECATED  */" },
 		{ "Coordinated.Name", "EOvrLaunchType::Coordinated" },
 		{ "Coordinated.ToolTip", "DEPRECATED" },
@@ -828,7 +874,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrLaunchType_Statics
 		{ "Normal.Comment", "/**  Normal launch from the user's library  */" },
 		{ "Normal.Name", "EOvrLaunchType::Normal" },
 		{ "Normal.ToolTip", "Normal launch from the user's library" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "It's an enum that defines several different types of launches for an application.\nIt provides a way to differentiate between different types of launches and to access additional information about the launch details.\nIt can be retrieved using field FOvrLaunchDetails::LaunchType to get the launch type information of an application." },
+#endif
 		{ "Unknown.Name", "EOvrLaunchType::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -882,7 +930,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrLeaderboardFilterType_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * An enum that defines the different types of filters that can be applied to a leaderboard.\n * It can be used in UOvrRequestsBlueprintLibrary::Leaderboard_GetEntries() to filter the leaderboard entries, such as only friends or specific user IDs.\n */" },
+#endif
 		{ "Friends.Comment", "/** This value indicates that the leaderboard should be filtered to include only friends (bidirectional followers) of the current user. */" },
 		{ "Friends.Name", "EOvrLeaderboardFilterType::Friends" },
 		{ "Friends.ToolTip", "This value indicates that the leaderboard should be filtered to include only friends (bidirectional followers) of the current user." },
@@ -890,7 +940,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrLeaderboardFilterType_Statics
 		{ "None.Comment", "/** No filter enabled on the leaderboard. */" },
 		{ "None.Name", "EOvrLeaderboardFilterType::None" },
 		{ "None.ToolTip", "No filter enabled on the leaderboard." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "An enum that defines the different types of filters that can be applied to a leaderboard.\nIt can be used in UOvrRequestsBlueprintLibrary::Leaderboard_GetEntries() to filter the leaderboard entries, such as only friends or specific user IDs." },
+#endif
 		{ "Unknown.Name", "EOvrLeaderboardFilterType::Unknown" },
 		{ "UserIds.Comment", "/**\n     * Filter the leaderboard to include specific user IDs.\n     * Use this filter to get rankings for users that are competing against each other.\n     * You specify the leaderboard name and whether to start at the top, or for the results to center on the (client) user.\n     * Note that if you specify the results to center on the client user, their leaderboard entry will be included in the returned array, regardless of whether their ID is explicitly specified in the list of IDs.\n     */" },
 		{ "UserIds.Name", "EOvrLeaderboardFilterType::UserIds" },
@@ -952,9 +1004,13 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrLeaderboardStartAt_Statics
 		{ "CenteredOnViewerOrTop.Comment", "/**  This value indicates that the leaderboard entries should start at the viewer's position on the leaderboard, or at the top of the leaderboard if the viewer is not present. */" },
 		{ "CenteredOnViewerOrTop.Name", "EOvrLeaderboardStartAt::CenteredOnViewerOrTop" },
 		{ "CenteredOnViewerOrTop.ToolTip", "This value indicates that the leaderboard entries should start at the viewer's position on the leaderboard, or at the top of the leaderboard if the viewer is not present." },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * An enum that allows you to specify the starting point for the leaderboard entries.\n * It can be used as a params in UOvrRequestsBlueprintLibrary::Leaderboard_GetEntries() to the starting point for the leaderboard entries that are returned in the response.\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "An enum that allows you to specify the starting point for the leaderboard entries.\nIt can be used as a params in UOvrRequestsBlueprintLibrary::Leaderboard_GetEntries() to the starting point for the leaderboard entries that are returned in the response." },
+#endif
 		{ "Top.Comment", "/** This value indicates that the leaderboard entries should start at the top of the leaderboard. */" },
 		{ "Top.Name", "EOvrLeaderboardStartAt::Top" },
 		{ "Top.ToolTip", "This value indicates that the leaderboard entries should start at the top of the leaderboard." },
@@ -1010,7 +1066,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrLivestreamingStartStatus_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * It's an enum that represents the possible outcomes of starting a livestreaming session.\n * This allows the API to return a standardized and well-defined set of values to indicate the outcome of starting a livestreaming session.\n * It can be used in field FOvrLivestreamingStartResult::StreamingResult as type information.\n */" },
+#endif
 		{ "MissingParameters.Comment", "/** This member represents an error where required parameters were missing during the livestreaming start process. */" },
 		{ "MissingParameters.Name", "EOvrLivestreamingStartStatus::MissingParameters" },
 		{ "MissingParameters.ToolTip", "This member represents an error where required parameters were missing during the livestreaming start process." },
@@ -1027,7 +1085,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrLivestreamingStartStatus_Statics
 		{ "Success.Comment", "/** This member represents a successful start of the livestreaming session. */" },
 		{ "Success.Name", "EOvrLivestreamingStartStatus::Success" },
 		{ "Success.ToolTip", "This member represents a successful start of the livestreaming session." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "It's an enum that represents the possible outcomes of starting a livestreaming session.\nThis allows the API to return a standardized and well-defined set of values to indicate the outcome of starting a livestreaming session.\nIt can be used in field FOvrLivestreamingStartResult::StreamingResult as type information." },
+#endif
 		{ "Unknown.Name", "EOvrLivestreamingStartStatus::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -1088,7 +1148,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrLogEventName_Statics
 		{ "AdImpression.Name", "EOvrLogEventName::AdImpression" },
 		{ "AdImpression.ToolTip", "This event is triggered when an advertisement is displayed to the user within the app." },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * It's an enum that represents a list of possible event names that can be used to track user interactions and other important occurrences within an application.\n * These events can be used to track user engagement, conversion rates, and other important metrics within an app. By logging these events, developers can gain valuable insights into how users interact with their app and make data-driven decisions to improve the user experience.\n * The log event parameters can be found in #EOvrLogEventParameter.\n */" },
+#endif
 		{ "Contact.Comment", "/** This event is triggered when a user interacts with a contact form or other contact-related feature within the app. */" },
 		{ "Contact.Name", "EOvrLogEventName::Contact" },
 		{ "Contact.ToolTip", "This event is triggered when a user interacts with a contact form or other contact-related feature within the app." },
@@ -1123,7 +1185,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrLogEventName_Statics
 		{ "SubscriptionRestore.Comment", "/** This event is triggered when a subscription is restored within the app. This could include reactivating a subscription, reinstating a service, or restoring access to a product. */" },
 		{ "SubscriptionRestore.Name", "EOvrLogEventName::SubscriptionRestore" },
 		{ "SubscriptionRestore.ToolTip", "This event is triggered when a subscription is restored within the app. This could include reactivating a subscription, reinstating a service, or restoring access to a product." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "It's an enum that represents a list of possible event names that can be used to track user interactions and other important occurrences within an application.\nThese events can be used to track user engagement, conversion rates, and other important metrics within an app. By logging these events, developers can gain valuable insights into how users interact with their app and make data-driven decisions to improve the user experience.\nThe log event parameters can be found in #EOvrLogEventParameter." },
+#endif
 		{ "Unknown.Name", "EOvrLogEventName::Unknown" },
 		{ "VrAchievementUnlocked.Comment", "/** This event is triggered when a user achieves a level or milestone within the app. */" },
 		{ "VrAchievementUnlocked.Name", "EOvrLogEventName::VrAchievementUnlocked" },
@@ -1285,7 +1349,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrLogEventParameter_Statics
 		{ "AdType.Name", "EOvrLogEventParameter::AdType" },
 		{ "AdType.ToolTip", "This parameter represents the type of advertisement displayed to the user in a VR environment." },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * It's an enum about a list of possible parameters that can be logged for an event. See more information about log event in #EOvrLogEventName.\n * Each member of the enum represents a specific parameter that can be logged. \n */" },
+#endif
 		{ "EventName.Comment", "/** This parameter represents the name of the event being logged. */" },
 		{ "EventName.Name", "EOvrLogEventParameter::EventName" },
 		{ "EventName.ToolTip", "This parameter represents the name of the event being logged." },
@@ -1302,7 +1368,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrLogEventParameter_Statics
 		{ "SessionId.Comment", "/** This parameter represents the unique identifier for a user session in a VR environment. It helps to track and analyze individual user sessions and understand how users are interacting with VR applications and services over time. */" },
 		{ "SessionId.Name", "EOvrLogEventParameter::SessionId" },
 		{ "SessionId.ToolTip", "This parameter represents the unique identifier for a user session in a VR environment. It helps to track and analyze individual user sessions and understand how users are interacting with VR applications and services over time." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "It's an enum about a list of possible parameters that can be logged for an event. See more information about log event in #EOvrLogEventName.\nEach member of the enum represents a specific parameter that can be logged." },
+#endif
 		{ "Unknown.Name", "EOvrLogEventParameter::Unknown" },
 		{ "VrContent.Comment", "/** This parameter represents the specific content being accessed or interacted with in a VR environment. */" },
 		{ "VrContent.Name", "EOvrLogEventParameter::VrContent" },
@@ -1454,12 +1522,16 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrMediaContentType_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * An enum that represents the type of media content being shared, which can be useful for various purposes such as displaying the media content in a specific way or applying certain filters or effects to it.\n * It can be used as a type of parameter in UOvrRequestsBlueprintLibrary::Media_ShareToFacebook().\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
 		{ "Photo.Comment", "/**\n     * Indicates that the media content is a photo.\n     * This value can be used to specify that the media content being shared is a photo.\n     */" },
 		{ "Photo.Name", "EOvrMediaContentType::Photo" },
 		{ "Photo.ToolTip", "Indicates that the media content is a photo.\nThis value can be used to specify that the media content being shared is a photo." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "An enum that represents the type of media content being shared, which can be useful for various purposes such as displaying the media content in a specific way or applying certain filters or effects to it.\nIt can be used as a type of parameter in UOvrRequestsBlueprintLibrary::Media_ShareToFacebook()." },
+#endif
 		{ "Unknown.Name", "EOvrMediaContentType::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -1510,7 +1582,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrMultiplayerErrorErrorKey_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Possible keys of the errors which could occurred when using the [multiplayer features](https://developer.oculus.com/documentation/unreal/ps-multiplayer-overview/).\n * e.g., you may need to use `destination_unavailable` for destinations feature and use `inviter_not_joinable` for invite feature and so on.\n */" },
+#endif
 		{ "DestinationUnavailable.Comment", "/** This error key will be used to tell the user that the travel destination is not available any more. */" },
 		{ "DestinationUnavailable.Name", "EOvrMultiplayerErrorErrorKey::DestinationUnavailable" },
 		{ "DestinationUnavailable.ToolTip", "This error key will be used to tell the user that the travel destination is not available any more." },
@@ -1537,7 +1611,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrMultiplayerErrorErrorKey_Statics
 		{ "NetworkTimeout.Name", "EOvrMultiplayerErrorErrorKey::NetworkTimeout" },
 		{ "NetworkTimeout.ToolTip", "When the predefined network timeout has reached, the ongoing activity would be stopped. The dialog will use this error key to give the user the information." },
 		{ "NoLongerAvailable.Name", "EOvrMultiplayerErrorErrorKey::NoLongerAvailable" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Possible keys of the errors which could occurred when using the [multiplayer features](https://developer.oculus.com/documentation/unreal/ps-multiplayer-overview/).\ne.g., you may need to use `destination_unavailable` for destinations feature and use `inviter_not_joinable` for invite feature and so on." },
+#endif
 		{ "TutorialRequired.Name", "EOvrMultiplayerErrorErrorKey::TutorialRequired" },
 		{ "Unknown.Name", "EOvrMultiplayerErrorErrorKey::Unknown" },
 		{ "UpdateRequired.Name", "EOvrMultiplayerErrorErrorKey::UpdateRequired" },
@@ -1600,7 +1676,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrNetSyncConnectionStatus_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * It represents the possible status of a FOvrNetSyncConnection which\n * allows multiple clients to connect and communicate with each other in real-time.\n * The connection provides a way to manage and facilitate real-time communication and\n * data synchronization between multiple clients in a networked environment.\n */" },
+#endif
 		{ "Connected.Comment", "/** This member indicates that the current status of the network sync connection is connected. */" },
 		{ "Connected.Name", "EOvrNetSyncConnectionStatus::Connected" },
 		{ "Connected.ToolTip", "This member indicates that the current status of the network sync connection is connected." },
@@ -1611,7 +1689,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrNetSyncConnectionStatus_Statics
 		{ "Disconnected.Name", "EOvrNetSyncConnectionStatus::Disconnected" },
 		{ "Disconnected.ToolTip", "This member indicates that the current status of the network sync connection is not connected." },
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "It represents the possible status of a FOvrNetSyncConnection which\nallows multiple clients to connect and communicate with each other in real-time.\nThe connection provides a way to manage and facilitate real-time communication and\ndata synchronization between multiple clients in a networked environment." },
+#endif
 		{ "Unknown.Name", "EOvrNetSyncConnectionStatus::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -1664,7 +1744,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrNetSyncDisconnectReason_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * It represents the possible reasons why the status of a FOvrNetSyncConnection, which\n * allows multiple clients to connect and communicate with each other in real-time, is disconnected.\n * The connection provides a way to manage and facilitate real-time communication and\n * data synchronization between multiple clients in a networked environment.\n */" },
+#endif
 		{ "Failed.Comment", "/** This member indicates that the initial connection request never succeeded. */" },
 		{ "Failed.Name", "EOvrNetSyncDisconnectReason::Failed" },
 		{ "Failed.ToolTip", "This member indicates that the initial connection request never succeeded." },
@@ -1678,7 +1760,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrNetSyncDisconnectReason_Statics
 		{ "ServerTerminated.Comment", "/** This member indicates that the connection of the FOvrNetSyncConnection was shutdown by the server intentionally. */" },
 		{ "ServerTerminated.Name", "EOvrNetSyncDisconnectReason::ServerTerminated" },
 		{ "ServerTerminated.ToolTip", "This member indicates that the connection of the FOvrNetSyncConnection was shutdown by the server intentionally." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "It represents the possible reasons why the status of a FOvrNetSyncConnection, which\nallows multiple clients to connect and communicate with each other in real-time, is disconnected.\nThe connection provides a way to manage and facilitate real-time communication and\ndata synchronization between multiple clients in a networked environment." },
+#endif
 		{ "Unknown.Name", "EOvrNetSyncDisconnectReason::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -1732,7 +1816,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrNetSyncVoipMicSource_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * A network synchronization system allows multiple clients to connect and communicate with each other in real-time.\n * Once a FOvrNetSyncConnection is established, it uses Voice over Internet Protocol to allow users to make\n * voice calls using the internet. The mic source will represent the current source of the mic in the call.\n */" },
+#endif
 		{ "Internal.Comment", "/**\n     * This `enum` member represents an internal net sync connection has been identified as the source from which the data was sent\n     * to the server\n     */" },
 		{ "Internal.Name", "EOvrNetSyncVoipMicSource::Internal" },
 		{ "Internal.ToolTip", "This `enum` member represents an internal net sync connection has been identified as the source from which the data was sent\nto the server" },
@@ -1740,7 +1826,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrNetSyncVoipMicSource_Statics
 		{ "None.Comment", "/**\n     * This `enum` member represents no net sync connection has been identified as the source from which the data was sent\n     * to the server\n     */" },
 		{ "None.Name", "EOvrNetSyncVoipMicSource::None" },
 		{ "None.ToolTip", "This `enum` member represents no net sync connection has been identified as the source from which the data was sent\nto the server" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A network synchronization system allows multiple clients to connect and communicate with each other in real-time.\nOnce a FOvrNetSyncConnection is established, it uses Voice over Internet Protocol to allow users to make\nvoice calls using the internet. The mic source will represent the current source of the mic in the call." },
+#endif
 		{ "Unknown.Name", "EOvrNetSyncVoipMicSource::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -1795,12 +1883,16 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrNetSyncVoipStreamMode_Statics
 		{ "Ambisonic.Name", "EOvrNetSyncVoipStreamMode::Ambisonic" },
 		{ "Ambisonic.ToolTip", "This `enum` member represents the ambisonic steam mode the VoIP stream uses. It is the default value of FOvrNetSyncOptions::VoipStreamDefault.\nSince it allows for the creation of immersive, surround sound experiences that simulate real-world audio environments, it typically used in virtual\nreality (VR) and augmented reality (AR) applications." },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * A network synchronization system allows multiple clients to connect and communicate with each other in real-time.\n * Once a FOvrNetSyncConnection is established, user can choose the stream mode for the connection.\n * The FOvrNetSyncOptions::VoipStreamDefault will be used when a new VoIP(Voice over Internet Protocol) user connects.\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
 		{ "Mono.Comment", "/**\n     * This `enum` member represents the mono steam mode the VoIP stream uses. The advantages mono stream mode has over ambisonic steam mode is\n     * the audio encoding and decoding require less computational resources and thus audio streams require less bandwidth. So it is typically used in\n     * applications with limited network resources.\n     */" },
 		{ "Mono.Name", "EOvrNetSyncVoipStreamMode::Mono" },
 		{ "Mono.ToolTip", "This `enum` member represents the mono steam mode the VoIP stream uses. The advantages mono stream mode has over ambisonic steam mode is\nthe audio encoding and decoding require less computational resources and thus audio streams require less bandwidth. So it is typically used in\napplications with limited network resources." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A network synchronization system allows multiple clients to connect and communicate with each other in real-time.\nOnce a FOvrNetSyncConnection is established, user can choose the stream mode for the connection.\nThe FOvrNetSyncOptions::VoipStreamDefault will be used when a new VoIP(Voice over Internet Protocol) user connects." },
+#endif
 		{ "Unknown.Name", "EOvrNetSyncVoipStreamMode::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -1861,7 +1953,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrOfferTerm_Statics
 		{ "BIWEEKLY.Name", "EOvrOfferTerm::BIWEEKLY" },
 		{ "BIWEEKLY.ToolTip", "Represents that the offer term is biweekly. This means that the offer will be valid for a period of two weeks from the date of purchase." },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * An enumeration that defines the type of the FOvrTrialOffer. This can be utilized to determine the length of time for which the offer is valid.\n *  By setting this field, you can easily manage the duration of your offers and provide a better user experience for your customers.\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
 		{ "MONTHLY.Comment", "/** Represents that the offer term is monthly. This means that the offer will be valid for a period of one month from the date of purchase. */" },
 		{ "MONTHLY.Name", "EOvrOfferTerm::MONTHLY" },
@@ -1872,7 +1966,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrOfferTerm_Statics
 		{ "SEMIANNUAL.Comment", "/** Represents that the offer term is every 6 months. This means that the offer will be valid for a period of six months from the date of purchase. */" },
 		{ "SEMIANNUAL.Name", "EOvrOfferTerm::SEMIANNUAL" },
 		{ "SEMIANNUAL.ToolTip", "Represents that the offer term is every 6 months. This means that the offer will be valid for a period of six months from the date of purchase." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "An enumeration that defines the type of the FOvrTrialOffer. This can be utilized to determine the length of time for which the offer is valid.\n By setting this field, you can easily manage the duration of your offers and provide a better user experience for your customers." },
+#endif
 		{ "Unknown.Name", "EOvrOfferTerm::Unknown" },
 		{ "WEEKLY.Comment", "/** Represents that the offer term is weekly. This means that the offer will be valid for a period of one week from the date of purchase. */" },
 		{ "WEEKLY.Name", "EOvrOfferTerm::WEEKLY" },
@@ -1932,7 +2028,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrOfferType_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * An enumeration that defines the type of the FOvrTrialOffer. This can be utilized to identify the specific type of offer,\n * such as a free trial or an intro offer. By setting this field, you can easily differentiate between different types of offers\n * and provide a better user experience for your customers.\n */" },
+#endif
 		{ "FREETRIAL.Comment", "/** This value indicates that the offer is a free trial, which allows customers to try out a product or service without paying for it. */" },
 		{ "FREETRIAL.Name", "EOvrOfferType::FREETRIAL" },
 		{ "FREETRIAL.ToolTip", "This value indicates that the offer is a free trial, which allows customers to try out a product or service without paying for it." },
@@ -1940,7 +2038,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrOfferType_Statics
 		{ "INTROOFFER.Name", "EOvrOfferType::INTROOFFER" },
 		{ "INTROOFFER.ToolTip", "This value indicates that the offer is an intro offer, which is typically a special promotion or discount offered to new customers." },
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "An enumeration that defines the type of the FOvrTrialOffer. This can be utilized to identify the specific type of offer,\nsuch as a free trial or an intro offer. By setting this field, you can easily differentiate between different types of offers\nand provide a better user experience for your customers." },
+#endif
 		{ "Unknown.Name", "EOvrOfferType::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -1992,7 +2092,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrPartyUpdateAction_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * An enum that specifies the type of action related to the party and the user. For example,\n * field FOvrPartyUpdateNotification::Action contains the information about the user joined or\n * left the party or the user was invited or uninvited to the party.\n */" },
+#endif
 		{ "Invite.Comment", "/** This `enum` member indicates the user was invited to the party. */" },
 		{ "Invite.Name", "EOvrPartyUpdateAction::Invite" },
 		{ "Invite.ToolTip", "This `enum` member indicates the user was invited to the party." },
@@ -2003,7 +2105,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrPartyUpdateAction_Statics
 		{ "Leave.Name", "EOvrPartyUpdateAction::Leave" },
 		{ "Leave.ToolTip", "This `enum` member indicates the user left the party." },
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "An enum that specifies the type of action related to the party and the user. For example,\nfield FOvrPartyUpdateNotification::Action contains the information about the user joined or\nleft the party or the user was invited or uninvited to the party." },
+#endif
 		{ "Uninvite.Comment", "/** This `enum` member indicates the user was uninvited to the party. */" },
 		{ "Uninvite.Name", "EOvrPartyUpdateAction::Uninvite" },
 		{ "Uninvite.ToolTip", "This `enum` member indicates the user was uninvited to the party." },
@@ -2063,7 +2167,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrPermissionGrantStatus_Statics
 		{ "Blocked.Name", "EOvrPermissionGrantStatus::Blocked" },
 		{ "Blocked.ToolTip", "This `enum` member indicates the status of the permission grant was blocked." },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * This `enum` represents the all possible statuses of a premission request. For example,\n * if an user wants to participate in a challenge, the user may request the permission to join\n * the FOvrChallenge first. If the permission grant status is granted, the user can call\n * UOvrRequestsBlueprintLibrary::Challenges_Join() to join the challenge.\n */" },
+#endif
 		{ "Denied.Comment", "/** This `enum` member indicates the status of the permission grant was rejected. */" },
 		{ "Denied.Name", "EOvrPermissionGrantStatus::Denied" },
 		{ "Denied.ToolTip", "This `enum` member indicates the status of the permission grant was rejected." },
@@ -2071,7 +2177,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrPermissionGrantStatus_Statics
 		{ "Granted.Name", "EOvrPermissionGrantStatus::Granted" },
 		{ "Granted.ToolTip", "This `enum` member indicates the status of the permission grant was approved." },
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This `enum` represents the all possible statuses of a premission request. For example,\nif an user wants to participate in a challenge, the user may request the permission to join\nthe FOvrChallenge first. If the permission grant status is granted, the user can call\nUOvrRequestsBlueprintLibrary::Challenges_Join() to join the challenge." },
+#endif
 		{ "Unknown.Name", "EOvrPermissionGrantStatus::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -2124,7 +2232,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrPlatformInitializeResult_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Describes the various results possible when attempting to initialize the platform.\n * Anything other than ::ovrPlatformInitialize_Success should be considered a fatal error\n * with respect to using the platform, as the platform is not guaranteed to be legitimate\n * or work correctly.\n */" },
+#endif
 		{ "FileInvalid.Comment", "/** Oculus Platform SDK files failed to load. */" },
 		{ "FileInvalid.Name", "EOvrPlatformInitializeResult::FileInvalid" },
 		{ "FileInvalid.ToolTip", "Oculus Platform SDK files failed to load." },
@@ -2144,7 +2254,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrPlatformInitializeResult_Statics
 		{ "Success.Comment", "/** Oculus Platform SDK initialization succeeded. */" },
 		{ "Success.Name", "EOvrPlatformInitializeResult::Success" },
 		{ "Success.ToolTip", "Oculus Platform SDK initialization succeeded." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Describes the various results possible when attempting to initialize the platform.\nAnything other than ::ovrPlatformInitialize_Success should be considered a fatal error\nwith respect to using the platform, as the platform is not guaranteed to be legitimate\nor work correctly." },
+#endif
 		{ "UnableToVerify.Comment", "/** Oculus Platform SDK failed to initialize due to unable to verify the application's signature during initialization. */" },
 		{ "UnableToVerify.Name", "EOvrPlatformInitializeResult::UnableToVerify" },
 		{ "UnableToVerify.ToolTip", "Oculus Platform SDK failed to initialize due to unable to verify the application's signature during initialization." },
@@ -2212,7 +2324,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrProductType_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * This `enum` value represents the possible types of a FOvrProduct, which is an item purchased in the application.\n * An In-app purchase (IAP) add-on can be durable, consuable, or a subscription.\n */" },
+#endif
 		{ "CONSUMABLE.Comment", "/** This product is an IAP item that can be consumed only once. It can only be purchased again after it is consumed. */" },
 		{ "CONSUMABLE.Name", "EOvrProductType::CONSUMABLE" },
 		{ "CONSUMABLE.ToolTip", "This product is an IAP item that can be consumed only once. It can only be purchased again after it is consumed." },
@@ -2223,7 +2337,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrProductType_Statics
 		{ "SUBSCRIPTION.Comment", "/** This product represents a subscription. Subscriptions provide a way for users to purchase your app or its premium content by way of a recurring payment model. */" },
 		{ "SUBSCRIPTION.Name", "EOvrProductType::SUBSCRIPTION" },
 		{ "SUBSCRIPTION.ToolTip", "This product represents a subscription. Subscriptions provide a way for users to purchase your app or its premium content by way of a recurring payment model." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This `enum` value represents the possible types of a FOvrProduct, which is an item purchased in the application.\nAn In-app purchase (IAP) add-on can be durable, consuable, or a subscription." },
+#endif
 		{ "Unknown.Name", "EOvrProductType::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -2276,12 +2392,16 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrReportRequestResponse_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * An application user can report abusive behavior or content following the in-app reporting flow.\n * This report request response represents the possible states that the app can respond to the platform\n * notification, i.e., the running application indicates whether they want to show their in-app reporting flow\n * or that they choose to ignore the request via UOvrRequestsBlueprintLibrary::AbuseReport_ReportRequestHandled().\n */" },
+#endif
 		{ "Handled.Comment", "/** This 'enum' member represents the response to the platform notification that the in-app reporting flow request is handled. */" },
 		{ "Handled.Name", "EOvrReportRequestResponse::Handled" },
 		{ "Handled.ToolTip", "This 'enum' member represents the response to the platform notification that the in-app reporting flow request is handled." },
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "An application user can report abusive behavior or content following the in-app reporting flow.\nThis report request response represents the possible states that the app can respond to the platform\nnotification, i.e., the running application indicates whether they want to show their in-app reporting flow\nor that they choose to ignore the request via UOvrRequestsBlueprintLibrary::AbuseReport_ReportRequestHandled()." },
+#endif
 		{ "Unavailable.Comment", "/** This 'enum' member represents the response to the platform notification that the in-app reporting flow is unavailable or non-existent. */" },
 		{ "Unavailable.Name", "EOvrReportRequestResponse::Unavailable" },
 		{ "Unavailable.ToolTip", "This 'enum' member represents the response to the platform notification that the in-app reporting flow is unavailable or non-existent." },
@@ -2340,7 +2460,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrRichPresenceExtraContext_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Display extra information about the user's presence */" },
+#endif
 		{ "CurrentCapacity.Comment", "/** Display the current amount with the user over the max */" },
 		{ "CurrentCapacity.Name", "EOvrRichPresenceExtraContext::CurrentCapacity" },
 		{ "CurrentCapacity.ToolTip", "Display the current amount with the user over the max" },
@@ -2357,7 +2479,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrRichPresenceExtraContext_Statics
 		{ "StartedAgo.Comment", "/** Display how long ago the match/game/race/etc started */" },
 		{ "StartedAgo.Name", "EOvrRichPresenceExtraContext::StartedAgo" },
 		{ "StartedAgo.ToolTip", "Display how long ago the match/game/race/etc started" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Display extra information about the user's presence" },
+#endif
 		{ "Unknown.Name", "EOvrRichPresenceExtraContext::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -2412,11 +2536,15 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrSdkAccountType_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** A user can have multiple sdk accounts associated with it. An FOvrSdkAccount represents the oculus user and the particular x-account that is linked to the  user. SDK accounts can be retrived for a particular user by calling UOvrRequestsBlueprintLibrary::User_GetSdkAccounts(). This enumeration represents the specific type of SDK account that is associated. */" },
+#endif
 		{ "FacebookGameroom.Name", "EOvrSdkAccountType::FacebookGameroom" },
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
 		{ "Oculus.Name", "EOvrSdkAccountType::Oculus" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A user can have multiple sdk accounts associated with it. An FOvrSdkAccount represents the oculus user and the particular x-account that is linked to the  user. SDK accounts can be retrived for a particular user by calling UOvrRequestsBlueprintLibrary::User_GetSdkAccounts(). This enumeration represents the specific type of SDK account that is associated." },
+#endif
 		{ "Unknown.Name", "EOvrSdkAccountType::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -2468,14 +2596,18 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrServiceProvider_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The service provider enum describes the specific provider that is associated with the FOvrLinkedAccount of a FOvrUser. Linked accounts for users represent the third party identities that are used for services or apps in association with user. */" },
+#endif
 		{ "Dropbox.Name", "EOvrServiceProvider::Dropbox" },
 		{ "Facebook.Name", "EOvrServiceProvider::Facebook" },
 		{ "Google.Name", "EOvrServiceProvider::Google" },
 		{ "Instagram.Name", "EOvrServiceProvider::Instagram" },
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
 		{ "RemoteMedia.Name", "EOvrServiceProvider::RemoteMedia" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The service provider enum describes the specific provider that is associated with the FOvrLinkedAccount of a FOvrUser. Linked accounts for users represent the third party identities that are used for services or apps in association with user." },
+#endif
 		{ "Unknown.Name", "EOvrServiceProvider::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -2531,10 +2663,14 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrShareMediaStatus_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "Canceled.Name", "EOvrShareMediaStatus::Canceled" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** ShareMediaStatus enumeration. */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
 		{ "Shared.Name", "EOvrShareMediaStatus::Shared" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "ShareMediaStatus enumeration." },
+#endif
 		{ "Unknown.Name", "EOvrShareMediaStatus::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -2587,10 +2723,14 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrSystemVoipStatus_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "Active.Name", "EOvrSystemVoipStatus::Active" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The system voip status is the priamary status in every FOvrSystemVoipState. The system voip state is used in parties and horizon home to describe the current state of the input/output for voip in an application. You can read more about system voip [here](https://developer.oculus.com/documentation/unreal/ps-parties/#voip-options). */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
 		{ "Suppressed.Name", "EOvrSystemVoipStatus::Suppressed" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The system voip status is the priamary status in every FOvrSystemVoipState. The system voip state is used in parties and horizon home to describe the current state of the input/output for voip in an application. You can read more about system voip [here](https://developer.oculus.com/documentation/unreal/ps-parties/#voip-options)." },
+#endif
 		{ "Unavailable.Name", "EOvrSystemVoipStatus::Unavailable" },
 		{ "Unknown.Name", "EOvrSystemVoipStatus::Unknown" },
 	};
@@ -2644,14 +2784,18 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrTimeWindow_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** How far should we go back in time looking at history. */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
 		{ "NinetyDays.Name", "EOvrTimeWindow::NinetyDays" },
 		{ "OneDay.Name", "EOvrTimeWindow::OneDay" },
 		{ "OneHour.Name", "EOvrTimeWindow::OneHour" },
 		{ "OneWeek.Name", "EOvrTimeWindow::OneWeek" },
 		{ "ThirtyDays.Name", "EOvrTimeWindow::ThirtyDays" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "How far should we go back in time looking at history." },
+#endif
 		{ "Unknown.Name", "EOvrTimeWindow::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -2706,7 +2850,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrUserOrdering_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The ordering that is used when returning a list of users. */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
 		{ "None.Comment", "/** No preference for ordering (could be in any or no order) */" },
 		{ "None.Name", "EOvrUserOrdering::None" },
@@ -2714,7 +2860,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrUserOrdering_Statics
 		{ "PresenceAlphabetical.Comment", "/**\n     * Orders by online users first and then offline users. Within each group the\n     * users are ordered alphabetically by display name\n     */" },
 		{ "PresenceAlphabetical.Name", "EOvrUserOrdering::PresenceAlphabetical" },
 		{ "PresenceAlphabetical.ToolTip", "Orders by online users first and then offline users. Within each group the\nusers are ordered alphabetically by display name" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The ordering that is used when returning a list of users." },
+#endif
 		{ "Unknown.Name", "EOvrUserOrdering::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -2766,7 +2914,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrUserPresenceStatus_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Describe the current status of the user and it can be retrieved with field FOvrUser::PresenceStatus. */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
 		{ "Offline.Comment", "/** The user status is currently offline. */" },
 		{ "Offline.Name", "EOvrUserPresenceStatus::Offline" },
@@ -2774,7 +2924,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrUserPresenceStatus_Statics
 		{ "Online.Comment", "/** The user status is currently online. */" },
 		{ "Online.Name", "EOvrUserPresenceStatus::Online" },
 		{ "Online.ToolTip", "The user status is currently online." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Describe the current status of the user and it can be retrieved with field FOvrUser::PresenceStatus." },
+#endif
 		{ "Unknown.Name", "EOvrUserPresenceStatus::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -2844,9 +2996,13 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrVoipBitrate_Statics
 		{ "B96000.Name", "EOvrVoipBitrate::B96000" },
 		{ "B96000.ToolTip", "Even higher audio quality for music streaming or radio-like quality." },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * It's a set of predefined values that represent different levels of audio quality for Voice over IP (VoIP) connections.\n * It can be used in FOvrVoipOptions::BitrateForNewConnections to set the maximum average bitrate the audio codec should use for new VoIP connections.\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "It's a set of predefined values that represent different levels of audio quality for Voice over IP (VoIP) connections.\nIt can be used in FOvrVoipOptions::BitrateForNewConnections to set the maximum average bitrate the audio codec should use for new VoIP connections." },
+#endif
 		{ "Unknown.Name", "EOvrVoipBitrate::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -2902,7 +3058,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrVoipDtxState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * This is an enum that defines the possible states for the Opus codec's discontinuous transmission (DTX) feature.\n * It allows you to control whether the Opus codec uses DTX to conserve battery power and reduce transmission rate during pauses in the voice chat.\n * It can be used as the type for the FOvrVoipOptions::CreateNewConnectionUseDtx\n */" },
+#endif
 		{ "Disabled.Comment", "/** This state indicates that the DTX feature is disabled. When disabled, the Opus codec will continuously transmit data, even during pauses in the voice chat. */" },
 		{ "Disabled.Name", "EOvrVoipDtxState::Disabled" },
 		{ "Disabled.ToolTip", "This state indicates that the DTX feature is disabled. When disabled, the Opus codec will continuously transmit data, even during pauses in the voice chat." },
@@ -2910,7 +3068,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrVoipDtxState_Statics
 		{ "Enabled.Name", "EOvrVoipDtxState::Enabled" },
 		{ "Enabled.ToolTip", "This state indicates that the DTX feature is enabled. When enabled, the Opus codec will only transmit data when a person is speaking, which can conserve battery power and reduce transmission rate during pauses in the voice chat." },
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This is an enum that defines the possible states for the Opus codec's discontinuous transmission (DTX) feature.\nIt allows you to control whether the Opus codec uses DTX to conserve battery power and reduce transmission rate during pauses in the voice chat.\nIt can be used as the type for the FOvrVoipOptions::CreateNewConnectionUseDtx" },
+#endif
 		{ "Unknown.Name", "EOvrVoipDtxState::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -2962,10 +3122,14 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrVoipMuteState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** VoipMuteState enumeration. */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
 		{ "Muted.Name", "EOvrVoipMuteState::Muted" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "VoipMuteState enumeration." },
+#endif
 		{ "Unknown.Name", "EOvrVoipMuteState::Unknown" },
 		{ "Unmuted.Name", "EOvrVoipMuteState::Unmuted" },
 	};
@@ -3018,12 +3182,16 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrVoipSampleRate_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** VoipSampleRate enumeration. */" },
+#endif
 		{ "HZ24000.Name", "EOvrVoipSampleRate::HZ24000" },
 		{ "HZ44100.Name", "EOvrVoipSampleRate::HZ44100" },
 		{ "HZ48000.Name", "EOvrVoipSampleRate::HZ48000" },
 		{ "ModuleRelativePath", "Public/OVRPlatformEnums.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "VoipSampleRate enumeration." },
+#endif
 		{ "Unknown.Name", "EOvrVoipSampleRate::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -3058,56 +3226,56 @@ UEnum* Z_Construct_UEnum_OVRPlatform_EOvrVoipSampleRate()
 // End Enum EOvrVoipSampleRate
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformEnums_h_Statics
+struct Z_CompiledInDeferFile_FID_GithubProject_VRAndreMalraux_Plugins_MetaXRPlatform_Source_OVRPlatform_Public_OVRPlatformEnums_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EOvrAbuseReportType_StaticEnum, TEXT("EOvrAbuseReportType"), &Z_Registration_Info_UEnum_EOvrAbuseReportType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3556896673U) },
-		{ EOvrAccountAgeCategory_StaticEnum, TEXT("EOvrAccountAgeCategory"), &Z_Registration_Info_UEnum_EOvrAccountAgeCategory, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3276311111U) },
-		{ EOvrAchievementType_StaticEnum, TEXT("EOvrAchievementType"), &Z_Registration_Info_UEnum_EOvrAchievementType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3816928298U) },
-		{ EOvrAppAgeCategory_StaticEnum, TEXT("EOvrAppAgeCategory"), &Z_Registration_Info_UEnum_EOvrAppAgeCategory, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2314652282U) },
-		{ EOvrAppInstallResult_StaticEnum, TEXT("EOvrAppInstallResult"), &Z_Registration_Info_UEnum_EOvrAppInstallResult, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2221563158U) },
-		{ EOvrAppStatus_StaticEnum, TEXT("EOvrAppStatus"), &Z_Registration_Info_UEnum_EOvrAppStatus, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3987841447U) },
-		{ EOvrChallengeCreationType_StaticEnum, TEXT("EOvrChallengeCreationType"), &Z_Registration_Info_UEnum_EOvrChallengeCreationType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4154682203U) },
-		{ EOvrChallengeViewerFilter_StaticEnum, TEXT("EOvrChallengeViewerFilter"), &Z_Registration_Info_UEnum_EOvrChallengeViewerFilter, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2581366048U) },
-		{ EOvrChallengeVisibility_StaticEnum, TEXT("EOvrChallengeVisibility"), &Z_Registration_Info_UEnum_EOvrChallengeVisibility, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1440088292U) },
-		{ EOvrKeyValuePairType_StaticEnum, TEXT("EOvrKeyValuePairType"), &Z_Registration_Info_UEnum_EOvrKeyValuePairType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3892066808U) },
-		{ EOvrLaunchResult_StaticEnum, TEXT("EOvrLaunchResult"), &Z_Registration_Info_UEnum_EOvrLaunchResult, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 742670396U) },
-		{ EOvrLaunchType_StaticEnum, TEXT("EOvrLaunchType"), &Z_Registration_Info_UEnum_EOvrLaunchType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3515398093U) },
-		{ EOvrLeaderboardFilterType_StaticEnum, TEXT("EOvrLeaderboardFilterType"), &Z_Registration_Info_UEnum_EOvrLeaderboardFilterType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 66510001U) },
-		{ EOvrLeaderboardStartAt_StaticEnum, TEXT("EOvrLeaderboardStartAt"), &Z_Registration_Info_UEnum_EOvrLeaderboardStartAt, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1611269473U) },
-		{ EOvrLivestreamingStartStatus_StaticEnum, TEXT("EOvrLivestreamingStartStatus"), &Z_Registration_Info_UEnum_EOvrLivestreamingStartStatus, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 587257287U) },
-		{ EOvrLogEventName_StaticEnum, TEXT("EOvrLogEventName"), &Z_Registration_Info_UEnum_EOvrLogEventName, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 779511201U) },
-		{ EOvrLogEventParameter_StaticEnum, TEXT("EOvrLogEventParameter"), &Z_Registration_Info_UEnum_EOvrLogEventParameter, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3586707751U) },
-		{ EOvrMediaContentType_StaticEnum, TEXT("EOvrMediaContentType"), &Z_Registration_Info_UEnum_EOvrMediaContentType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1606769935U) },
-		{ EOvrMultiplayerErrorErrorKey_StaticEnum, TEXT("EOvrMultiplayerErrorErrorKey"), &Z_Registration_Info_UEnum_EOvrMultiplayerErrorErrorKey, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 242313898U) },
-		{ EOvrNetSyncConnectionStatus_StaticEnum, TEXT("EOvrNetSyncConnectionStatus"), &Z_Registration_Info_UEnum_EOvrNetSyncConnectionStatus, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 12733259U) },
-		{ EOvrNetSyncDisconnectReason_StaticEnum, TEXT("EOvrNetSyncDisconnectReason"), &Z_Registration_Info_UEnum_EOvrNetSyncDisconnectReason, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2662327382U) },
-		{ EOvrNetSyncVoipMicSource_StaticEnum, TEXT("EOvrNetSyncVoipMicSource"), &Z_Registration_Info_UEnum_EOvrNetSyncVoipMicSource, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1002696225U) },
-		{ EOvrNetSyncVoipStreamMode_StaticEnum, TEXT("EOvrNetSyncVoipStreamMode"), &Z_Registration_Info_UEnum_EOvrNetSyncVoipStreamMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3111426676U) },
-		{ EOvrOfferTerm_StaticEnum, TEXT("EOvrOfferTerm"), &Z_Registration_Info_UEnum_EOvrOfferTerm, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3119593985U) },
-		{ EOvrOfferType_StaticEnum, TEXT("EOvrOfferType"), &Z_Registration_Info_UEnum_EOvrOfferType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 736760474U) },
-		{ EOvrPartyUpdateAction_StaticEnum, TEXT("EOvrPartyUpdateAction"), &Z_Registration_Info_UEnum_EOvrPartyUpdateAction, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3618152502U) },
-		{ EOvrPermissionGrantStatus_StaticEnum, TEXT("EOvrPermissionGrantStatus"), &Z_Registration_Info_UEnum_EOvrPermissionGrantStatus, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2973008399U) },
-		{ EOvrPlatformInitializeResult_StaticEnum, TEXT("EOvrPlatformInitializeResult"), &Z_Registration_Info_UEnum_EOvrPlatformInitializeResult, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3172586913U) },
-		{ EOvrProductType_StaticEnum, TEXT("EOvrProductType"), &Z_Registration_Info_UEnum_EOvrProductType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 142306326U) },
-		{ EOvrReportRequestResponse_StaticEnum, TEXT("EOvrReportRequestResponse"), &Z_Registration_Info_UEnum_EOvrReportRequestResponse, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2422182273U) },
-		{ EOvrRichPresenceExtraContext_StaticEnum, TEXT("EOvrRichPresenceExtraContext"), &Z_Registration_Info_UEnum_EOvrRichPresenceExtraContext, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2401183676U) },
-		{ EOvrSdkAccountType_StaticEnum, TEXT("EOvrSdkAccountType"), &Z_Registration_Info_UEnum_EOvrSdkAccountType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3522139040U) },
-		{ EOvrServiceProvider_StaticEnum, TEXT("EOvrServiceProvider"), &Z_Registration_Info_UEnum_EOvrServiceProvider, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 373134564U) },
-		{ EOvrShareMediaStatus_StaticEnum, TEXT("EOvrShareMediaStatus"), &Z_Registration_Info_UEnum_EOvrShareMediaStatus, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4037650206U) },
-		{ EOvrSystemVoipStatus_StaticEnum, TEXT("EOvrSystemVoipStatus"), &Z_Registration_Info_UEnum_EOvrSystemVoipStatus, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2058008943U) },
-		{ EOvrTimeWindow_StaticEnum, TEXT("EOvrTimeWindow"), &Z_Registration_Info_UEnum_EOvrTimeWindow, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1428063092U) },
-		{ EOvrUserOrdering_StaticEnum, TEXT("EOvrUserOrdering"), &Z_Registration_Info_UEnum_EOvrUserOrdering, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3343775366U) },
-		{ EOvrUserPresenceStatus_StaticEnum, TEXT("EOvrUserPresenceStatus"), &Z_Registration_Info_UEnum_EOvrUserPresenceStatus, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3335896890U) },
-		{ EOvrVoipBitrate_StaticEnum, TEXT("EOvrVoipBitrate"), &Z_Registration_Info_UEnum_EOvrVoipBitrate, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1977175825U) },
-		{ EOvrVoipDtxState_StaticEnum, TEXT("EOvrVoipDtxState"), &Z_Registration_Info_UEnum_EOvrVoipDtxState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3268655473U) },
-		{ EOvrVoipMuteState_StaticEnum, TEXT("EOvrVoipMuteState"), &Z_Registration_Info_UEnum_EOvrVoipMuteState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 248964625U) },
-		{ EOvrVoipSampleRate_StaticEnum, TEXT("EOvrVoipSampleRate"), &Z_Registration_Info_UEnum_EOvrVoipSampleRate, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 619096054U) },
+		{ EOvrAbuseReportType_StaticEnum, TEXT("EOvrAbuseReportType"), &Z_Registration_Info_UEnum_EOvrAbuseReportType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3487705059U) },
+		{ EOvrAccountAgeCategory_StaticEnum, TEXT("EOvrAccountAgeCategory"), &Z_Registration_Info_UEnum_EOvrAccountAgeCategory, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3762596333U) },
+		{ EOvrAchievementType_StaticEnum, TEXT("EOvrAchievementType"), &Z_Registration_Info_UEnum_EOvrAchievementType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2827006573U) },
+		{ EOvrAppAgeCategory_StaticEnum, TEXT("EOvrAppAgeCategory"), &Z_Registration_Info_UEnum_EOvrAppAgeCategory, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3688512228U) },
+		{ EOvrAppInstallResult_StaticEnum, TEXT("EOvrAppInstallResult"), &Z_Registration_Info_UEnum_EOvrAppInstallResult, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4052980807U) },
+		{ EOvrAppStatus_StaticEnum, TEXT("EOvrAppStatus"), &Z_Registration_Info_UEnum_EOvrAppStatus, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2965664646U) },
+		{ EOvrChallengeCreationType_StaticEnum, TEXT("EOvrChallengeCreationType"), &Z_Registration_Info_UEnum_EOvrChallengeCreationType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2526220892U) },
+		{ EOvrChallengeViewerFilter_StaticEnum, TEXT("EOvrChallengeViewerFilter"), &Z_Registration_Info_UEnum_EOvrChallengeViewerFilter, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1368506461U) },
+		{ EOvrChallengeVisibility_StaticEnum, TEXT("EOvrChallengeVisibility"), &Z_Registration_Info_UEnum_EOvrChallengeVisibility, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 392116164U) },
+		{ EOvrKeyValuePairType_StaticEnum, TEXT("EOvrKeyValuePairType"), &Z_Registration_Info_UEnum_EOvrKeyValuePairType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2080654888U) },
+		{ EOvrLaunchResult_StaticEnum, TEXT("EOvrLaunchResult"), &Z_Registration_Info_UEnum_EOvrLaunchResult, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2115644417U) },
+		{ EOvrLaunchType_StaticEnum, TEXT("EOvrLaunchType"), &Z_Registration_Info_UEnum_EOvrLaunchType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2083779862U) },
+		{ EOvrLeaderboardFilterType_StaticEnum, TEXT("EOvrLeaderboardFilterType"), &Z_Registration_Info_UEnum_EOvrLeaderboardFilterType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1063099887U) },
+		{ EOvrLeaderboardStartAt_StaticEnum, TEXT("EOvrLeaderboardStartAt"), &Z_Registration_Info_UEnum_EOvrLeaderboardStartAt, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1076103018U) },
+		{ EOvrLivestreamingStartStatus_StaticEnum, TEXT("EOvrLivestreamingStartStatus"), &Z_Registration_Info_UEnum_EOvrLivestreamingStartStatus, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2834835669U) },
+		{ EOvrLogEventName_StaticEnum, TEXT("EOvrLogEventName"), &Z_Registration_Info_UEnum_EOvrLogEventName, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 618616940U) },
+		{ EOvrLogEventParameter_StaticEnum, TEXT("EOvrLogEventParameter"), &Z_Registration_Info_UEnum_EOvrLogEventParameter, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 50319408U) },
+		{ EOvrMediaContentType_StaticEnum, TEXT("EOvrMediaContentType"), &Z_Registration_Info_UEnum_EOvrMediaContentType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2779018762U) },
+		{ EOvrMultiplayerErrorErrorKey_StaticEnum, TEXT("EOvrMultiplayerErrorErrorKey"), &Z_Registration_Info_UEnum_EOvrMultiplayerErrorErrorKey, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 613917319U) },
+		{ EOvrNetSyncConnectionStatus_StaticEnum, TEXT("EOvrNetSyncConnectionStatus"), &Z_Registration_Info_UEnum_EOvrNetSyncConnectionStatus, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2044747699U) },
+		{ EOvrNetSyncDisconnectReason_StaticEnum, TEXT("EOvrNetSyncDisconnectReason"), &Z_Registration_Info_UEnum_EOvrNetSyncDisconnectReason, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 441441288U) },
+		{ EOvrNetSyncVoipMicSource_StaticEnum, TEXT("EOvrNetSyncVoipMicSource"), &Z_Registration_Info_UEnum_EOvrNetSyncVoipMicSource, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 351238367U) },
+		{ EOvrNetSyncVoipStreamMode_StaticEnum, TEXT("EOvrNetSyncVoipStreamMode"), &Z_Registration_Info_UEnum_EOvrNetSyncVoipStreamMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3947542100U) },
+		{ EOvrOfferTerm_StaticEnum, TEXT("EOvrOfferTerm"), &Z_Registration_Info_UEnum_EOvrOfferTerm, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3954945946U) },
+		{ EOvrOfferType_StaticEnum, TEXT("EOvrOfferType"), &Z_Registration_Info_UEnum_EOvrOfferType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3350823063U) },
+		{ EOvrPartyUpdateAction_StaticEnum, TEXT("EOvrPartyUpdateAction"), &Z_Registration_Info_UEnum_EOvrPartyUpdateAction, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 23578914U) },
+		{ EOvrPermissionGrantStatus_StaticEnum, TEXT("EOvrPermissionGrantStatus"), &Z_Registration_Info_UEnum_EOvrPermissionGrantStatus, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 850983514U) },
+		{ EOvrPlatformInitializeResult_StaticEnum, TEXT("EOvrPlatformInitializeResult"), &Z_Registration_Info_UEnum_EOvrPlatformInitializeResult, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2014234612U) },
+		{ EOvrProductType_StaticEnum, TEXT("EOvrProductType"), &Z_Registration_Info_UEnum_EOvrProductType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 84445223U) },
+		{ EOvrReportRequestResponse_StaticEnum, TEXT("EOvrReportRequestResponse"), &Z_Registration_Info_UEnum_EOvrReportRequestResponse, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 347115221U) },
+		{ EOvrRichPresenceExtraContext_StaticEnum, TEXT("EOvrRichPresenceExtraContext"), &Z_Registration_Info_UEnum_EOvrRichPresenceExtraContext, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2327457601U) },
+		{ EOvrSdkAccountType_StaticEnum, TEXT("EOvrSdkAccountType"), &Z_Registration_Info_UEnum_EOvrSdkAccountType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4046207974U) },
+		{ EOvrServiceProvider_StaticEnum, TEXT("EOvrServiceProvider"), &Z_Registration_Info_UEnum_EOvrServiceProvider, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 65093178U) },
+		{ EOvrShareMediaStatus_StaticEnum, TEXT("EOvrShareMediaStatus"), &Z_Registration_Info_UEnum_EOvrShareMediaStatus, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3659505822U) },
+		{ EOvrSystemVoipStatus_StaticEnum, TEXT("EOvrSystemVoipStatus"), &Z_Registration_Info_UEnum_EOvrSystemVoipStatus, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 223237941U) },
+		{ EOvrTimeWindow_StaticEnum, TEXT("EOvrTimeWindow"), &Z_Registration_Info_UEnum_EOvrTimeWindow, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2950352369U) },
+		{ EOvrUserOrdering_StaticEnum, TEXT("EOvrUserOrdering"), &Z_Registration_Info_UEnum_EOvrUserOrdering, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3744441050U) },
+		{ EOvrUserPresenceStatus_StaticEnum, TEXT("EOvrUserPresenceStatus"), &Z_Registration_Info_UEnum_EOvrUserPresenceStatus, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 319713577U) },
+		{ EOvrVoipBitrate_StaticEnum, TEXT("EOvrVoipBitrate"), &Z_Registration_Info_UEnum_EOvrVoipBitrate, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 51185622U) },
+		{ EOvrVoipDtxState_StaticEnum, TEXT("EOvrVoipDtxState"), &Z_Registration_Info_UEnum_EOvrVoipDtxState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2850649278U) },
+		{ EOvrVoipMuteState_StaticEnum, TEXT("EOvrVoipMuteState"), &Z_Registration_Info_UEnum_EOvrVoipMuteState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 254096364U) },
+		{ EOvrVoipSampleRate_StaticEnum, TEXT("EOvrVoipSampleRate"), &Z_Registration_Info_UEnum_EOvrVoipSampleRate, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4186101790U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformEnums_h_3882763445(TEXT("/Script/OVRPlatform"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GithubProject_VRAndreMalraux_Plugins_MetaXRPlatform_Source_OVRPlatform_Public_OVRPlatformEnums_h_2923552862(TEXT("/Script/OVRPlatform"),
 	nullptr, 0,
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformEnums_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformEnums_h_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_GithubProject_VRAndreMalraux_Plugins_MetaXRPlatform_Source_OVRPlatform_Public_OVRPlatformEnums_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GithubProject_VRAndreMalraux_Plugins_MetaXRPlatform_Source_OVRPlatform_Public_OVRPlatformEnums_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

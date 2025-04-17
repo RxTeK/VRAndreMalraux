@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeOVRPlatform_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x60D18664,
+				0xB9DE3277,
 				0xDD318975,
 				METADATA_PARAMS(0, nullptr)
 			};
@@ -75,5 +75,5 @@ void EmptyLinkFunctionForGeneratedCodeOVRPlatform_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_OVRPlatform.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_OVRPlatform(Z_Construct_UPackage__Script_OVRPlatform, TEXT("/Script/OVRPlatform"), Z_Registration_Info_UPackage__Script_OVRPlatform, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x60D18664, 0xDD318975));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_OVRPlatform(Z_Construct_UPackage__Script_OVRPlatform, TEXT("/Script/OVRPlatform"), Z_Registration_Info_UPackage__Script_OVRPlatform, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xB9DE3277, 0xDD318975));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -34,7 +34,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrRequestOutputPins_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Requests output pins. */" },
+#endif
 		{ "Failure.Comment", "/** Failed request.  Check ErrorMsg. */" },
 		{ "Failure.Name", "EOvrRequestOutputPins::Failure" },
 		{ "Failure.ToolTip", "Failed request.  Check ErrorMsg." },
@@ -45,7 +47,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrRequestOutputPins_Statics
 		{ "Then.Comment", "/** Always executes immediately, before the request is sent. */" },
 		{ "Then.Name", "EOvrRequestOutputPins::Then" },
 		{ "Then.ToolTip", "Always executes immediately, before the request is sent." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Requests output pins." },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -96,7 +100,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrPageRequestOutputPins_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Paged array requests output pins. */" },
+#endif
 		{ "Failure.Comment", "/** Failed request.  Check ErrorMsg. */" },
 		{ "Failure.Name", "EOvrPageRequestOutputPins::Failure" },
 		{ "Failure.ToolTip", "Failed request.  Check ErrorMsg." },
@@ -110,7 +116,9 @@ struct Z_Construct_UEnum_OVRPlatform_EOvrPageRequestOutputPins_Statics
 		{ "Then.Comment", "/** Always executes immediately when the node is entered, before any page request is sent. */" },
 		{ "Then.Name", "EOvrPageRequestOutputPins::Then" },
 		{ "Then.ToolTip", "Always executes immediately when the node is entered, before any page request is sent." },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Paged array requests output pins." },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -144,16 +152,16 @@ UEnum* Z_Construct_UEnum_OVRPlatform_EOvrPageRequestOutputPins()
 // End Enum EOvrPageRequestOutputPins
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformRequestsSupport_h_Statics
+struct Z_CompiledInDeferFile_FID_GithubProject_VRAndreMalraux_Plugins_MetaXRPlatform_Source_OVRPlatform_Public_OVRPlatformRequestsSupport_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EOvrRequestOutputPins_StaticEnum, TEXT("EOvrRequestOutputPins"), &Z_Registration_Info_UEnum_EOvrRequestOutputPins, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1393017311U) },
-		{ EOvrPageRequestOutputPins_StaticEnum, TEXT("EOvrPageRequestOutputPins"), &Z_Registration_Info_UEnum_EOvrPageRequestOutputPins, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1972563946U) },
+		{ EOvrRequestOutputPins_StaticEnum, TEXT("EOvrRequestOutputPins"), &Z_Registration_Info_UEnum_EOvrRequestOutputPins, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3223824095U) },
+		{ EOvrPageRequestOutputPins_StaticEnum, TEXT("EOvrPageRequestOutputPins"), &Z_Registration_Info_UEnum_EOvrPageRequestOutputPins, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3740204288U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformRequestsSupport_h_328327210(TEXT("/Script/OVRPlatform"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GithubProject_VRAndreMalraux_Plugins_MetaXRPlatform_Source_OVRPlatform_Public_OVRPlatformRequestsSupport_h_771385273(TEXT("/Script/OVRPlatform"),
 	nullptr, 0,
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformRequestsSupport_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformRequestsSupport_h_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_GithubProject_VRAndreMalraux_Plugins_MetaXRPlatform_Source_OVRPlatform_Public_OVRPlatformRequestsSupport_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GithubProject_VRAndreMalraux_Plugins_MetaXRPlatform_Source_OVRPlatform_Public_OVRPlatformRequestsSupport_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

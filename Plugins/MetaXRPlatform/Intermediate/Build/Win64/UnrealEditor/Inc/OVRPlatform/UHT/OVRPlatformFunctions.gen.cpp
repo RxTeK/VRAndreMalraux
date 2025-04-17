@@ -98,16 +98,20 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_ApplicationLifecycle_
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|ApplicationLifecycle" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n     * Returns information about how the application was started. This function provides details about the launch intent,\n     * such as the type of intent field FOvrLaunchDetails::LaunchType and any additional data that was passed along with it.\n     * By calling this function, you can gain insight into how your application was launched and take appropriate action based on that information.\n     */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns information about how the application was started. This function provides details about the launch intent,\nsuch as the type of intent field FOvrLaunchDetails::LaunchType and any additional data that was passed along with it.\nBy calling this function, you can gain insight into how your application was launched and take appropriate action based on that information." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_ApplicationLifecycle_GetLaunchDetails_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventApplicationLifecycle_GetLaunchDetails_Parms, ReturnValue), Z_Construct_UScriptStruct_FOvrLaunchDetails, METADATA_PARAMS(0, nullptr) }; // 2041137220
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_ApplicationLifecycle_GetLaunchDetails_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventApplicationLifecycle_GetLaunchDetails_Parms, ReturnValue), Z_Construct_UScriptStruct_FOvrLaunchDetails, METADATA_PARAMS(0, nullptr) }; // 534553392
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_ApplicationLifecycle_GetLaunchDetails_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_ApplicationLifecycle_GetLaunchDetails_Statics::NewProp_ReturnValue,
 };
@@ -143,9 +147,13 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_ApplicationLifecycle_
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|ApplicationLifecycle" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n     * Logs if the user successfully deeplinked to a destination. This function takes two parameters: a string tracking ID and a launch result.\n     * The tracking ID is used to identify the specific deeplink attempt, while the launch result indicates whether the deeplink was EOvrLaunchResult::Success or not.\n     * By logging this information, you can track the effectiveness of your deeplinking efforts and make adjustments as needed.\n     * @param TrackingID - The Tracking ID is a unique identifier assigned to each deeplink attempt. It allows developers to track the success or failure of individual deeplink attempts and gain insights into the effectiveness of their deeplinking efforts.\n     * @param Result - An enum that indicates the outcome of an attempt to launch this application through a deeplink, including whether the attempt was EOvrLaunchResult::Success or not, and if not, the specific reasons for the failure.\n     */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Logs if the user successfully deeplinked to a destination. This function takes two parameters: a string tracking ID and a launch result.\nThe tracking ID is used to identify the specific deeplink attempt, while the launch result indicates whether the deeplink was EOvrLaunchResult::Success or not.\nBy logging this information, you can track the effectiveness of your deeplinking efforts and make adjustments as needed.\n@param TrackingID - The Tracking ID is a unique identifier assigned to each deeplink attempt. It allows developers to track the success or failure of individual deeplink attempts and gain insights into the effectiveness of their deeplinking efforts.\n@param Result - An enum that indicates the outcome of an attempt to launch this application through a deeplink, including whether the attempt was EOvrLaunchResult::Success or not, and if not, the specific reasons for the failure." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_TrackingID;
@@ -156,7 +164,7 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_ApplicationLifecycle_
 };
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_ApplicationLifecycle_LogDeeplinkResult_Statics::NewProp_TrackingID = { "TrackingID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventApplicationLifecycle_LogDeeplinkResult_Parms, TrackingID), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_ApplicationLifecycle_LogDeeplinkResult_Statics::NewProp_Result_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_ApplicationLifecycle_LogDeeplinkResult_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventApplicationLifecycle_LogDeeplinkResult_Parms, Result), Z_Construct_UEnum_OVRPlatform_EOvrLaunchResult, METADATA_PARAMS(0, nullptr) }; // 742670396
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_ApplicationLifecycle_LogDeeplinkResult_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventApplicationLifecycle_LogDeeplinkResult_Parms, Result), Z_Construct_UEnum_OVRPlatform_EOvrLaunchResult, METADATA_PARAMS(0, nullptr) }; // 2115644417
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_ApplicationLifecycle_LogDeeplinkResult_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_ApplicationLifecycle_LogDeeplinkResult_Statics::NewProp_TrackingID,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_ApplicationLifecycle_LogDeeplinkResult_Statics::NewProp_Result_Underlying,
@@ -195,16 +203,20 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Platform_GetLoggedInU
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|Platform" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/// Retrieves the unique identifier for the currently logged-in user.\n/// Returns The user's ID if logged in, otherwise returns a zero ID indicating no user is logged in.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Retrieves the unique identifier for the currently logged-in user.\nReturns The user's ID if logged in, otherwise returns a zero ID indicating no user is logged in." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Platform_GetLoggedInUserID_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventPlatform_GetLoggedInUserID_Parms, ReturnValue), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3320909238
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Platform_GetLoggedInUserID_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventPlatform_GetLoggedInUserID_Parms, ReturnValue), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3472719273
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Platform_GetLoggedInUserID_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Platform_GetLoggedInUserID_Statics::NewProp_ReturnValue,
 };
@@ -239,9 +251,13 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Platform_GetLoggedInU
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|Platform" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/// Fetches the locale of the currently logged-in user.\n/// The locale format conforms to BCP47 standards.\n/// Returns The user's locale as a string if available, otherwise an empty string if there's an error or no user is logged in.\n/// More about BCP47 at [here](https://tools.ietf.org/html/bcp47).\n" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Fetches the locale of the currently logged-in user.\nThe locale format conforms to BCP47 standards.\nReturns The user's locale as a string if available, otherwise an empty string if there's an error or no user is logged in.\nMore about BCP47 at [here](https:tools.ietf.org/html/bcp47)." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
@@ -283,9 +299,13 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Platform_IsInitialize
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|Platform" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/// Checks if the Oculus Platform SDK has been successfully initialized.\n/// Returns True if the SDK is initialized, otherwise False.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Checks if the Oculus Platform SDK has been successfully initialized.\nReturns True if the SDK is initialized, otherwise False." },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -332,9 +352,13 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Platform_SetDeveloper
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|Platform" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/// Sets the developer access token used for authenticating API requests.\n/// @param AccessToken The developer access token as a string.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sets the developer access token used for authenticating API requests.\n@param AccessToken The developer access token as a string." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_AccessToken;
@@ -377,16 +401,20 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Accept_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|Voip" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n     * Accepts a VoIP connection from a given user.\n     * @param UserID - The ID of the user to accept the VoIP connection from.\n     */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Accepts a VoIP connection from a given user.\n@param UserID - The ID of the user to accept the VoIP connection from." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_UserID;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Accept_Statics::NewProp_UserID = { "UserID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_Accept_Parms, UserID), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3320909238
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Accept_Statics::NewProp_UserID = { "UserID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_Accept_Parms, UserID), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3472719273
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Accept_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Accept_Statics::NewProp_UserID,
 };
@@ -423,9 +451,13 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetIsConnectionU
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|Voip" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n     * Gets whether or not a voice connection is using discontinuous transmission (DTX).\n     * Both sides must set to using DTX when their connection is established in order for this\n     * to be true. Returns unknown if there is no connection.\n     * @param PeerID - The ID of the peer whose voice connection's DTX status is being queried.\n     */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gets whether or not a voice connection is using discontinuous transmission (DTX).\nBoth sides must set to using DTX when their connection is established in order for this\nto be true. Returns unknown if there is no connection.\n@param PeerID - The ID of the peer whose voice connection's DTX status is being queried." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_PeerID;
@@ -434,9 +466,9 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetIsConnectionU
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetIsConnectionUsingDtx_Statics::NewProp_PeerID = { "PeerID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetIsConnectionUsingDtx_Parms, PeerID), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3320909238
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetIsConnectionUsingDtx_Statics::NewProp_PeerID = { "PeerID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetIsConnectionUsingDtx_Parms, PeerID), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3472719273
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetIsConnectionUsingDtx_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetIsConnectionUsingDtx_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetIsConnectionUsingDtx_Parms, ReturnValue), Z_Construct_UEnum_OVRPlatform_EOvrVoipDtxState, METADATA_PARAMS(0, nullptr) }; // 3268655473
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetIsConnectionUsingDtx_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetIsConnectionUsingDtx_Parms, ReturnValue), Z_Construct_UEnum_OVRPlatform_EOvrVoipDtxState, METADATA_PARAMS(0, nullptr) }; // 2850649278
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetIsConnectionUsingDtx_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetIsConnectionUsingDtx_Statics::NewProp_PeerID,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetIsConnectionUsingDtx_Statics::NewProp_ReturnValue_Underlying,
@@ -475,9 +507,13 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetLocalBitrate_
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|Voip" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n     * Gets the current local bitrate used for the connection to the specified user.  This is set\n     * by the current client. Returns unknown if there is no connection.\n     * @param PeerID - The ID of the peer whose local bitrate is being queried.\n     */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gets the current local bitrate used for the connection to the specified user.  This is set\nby the current client. Returns unknown if there is no connection.\n@param PeerID - The ID of the peer whose local bitrate is being queried." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_PeerID;
@@ -486,9 +522,9 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetLocalBitrate_
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetLocalBitrate_Statics::NewProp_PeerID = { "PeerID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetLocalBitrate_Parms, PeerID), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3320909238
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetLocalBitrate_Statics::NewProp_PeerID = { "PeerID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetLocalBitrate_Parms, PeerID), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3472719273
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetLocalBitrate_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetLocalBitrate_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetLocalBitrate_Parms, ReturnValue), Z_Construct_UEnum_OVRPlatform_EOvrVoipBitrate, METADATA_PARAMS(0, nullptr) }; // 1977175825
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetLocalBitrate_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetLocalBitrate_Parms, ReturnValue), Z_Construct_UEnum_OVRPlatform_EOvrVoipBitrate, METADATA_PARAMS(0, nullptr) }; // 51185622
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetLocalBitrate_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetLocalBitrate_Statics::NewProp_PeerID,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetLocalBitrate_Statics::NewProp_ReturnValue_Underlying,
@@ -526,9 +562,13 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetOutputBufferM
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|Voip" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n     * Returns the size of the internal ringbuffer used by the voip system in elements.  This size is the maximum\n     * number of elements that can ever be returned by UOvrFunctionsBlueprintLibrary::Voip_GetPCM.\n     * \n     * \n     * This function can be safely called from any thread.\n     */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the size of the internal ringbuffer used by the voip system in elements.  This size is the maximum\nnumber of elements that can ever be returned by UOvrFunctionsBlueprintLibrary::Voip_GetPCM.\n\n\nThis function can be safely called from any thread." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FInt64PropertyParams NewProp_ReturnValue;
@@ -571,9 +611,13 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetPCMSize_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|Voip" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n     * Returns the current number of audio samples available to read for the specified user.\n     * This function is inherently racy; it's possible that more data can be added between a\n     * call to this function and a subsequent call to UOvrFunctionsBlueprintLibrary::Voip_GetPCM.\n     * \n     * \n     * This function can be safely called from any thread.\n     * @param SenderID - The ID of the user to get the audio sample count for.\n     */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the current number of audio samples available to read for the specified user.\nThis function is inherently racy; it's possible that more data can be added between a\ncall to this function and a subsequent call to UOvrFunctionsBlueprintLibrary::Voip_GetPCM.\n\n\nThis function can be safely called from any thread.\n@param SenderID - The ID of the user to get the audio sample count for." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_SenderID;
@@ -581,7 +625,7 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetPCMSize_Stati
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetPCMSize_Statics::NewProp_SenderID = { "SenderID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetPCMSize_Parms, SenderID), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3320909238
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetPCMSize_Statics::NewProp_SenderID = { "SenderID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetPCMSize_Parms, SenderID), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3472719273
 const UECodeGen_Private::FInt64PropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetPCMSize_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int64, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetPCMSize_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetPCMSize_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetPCMSize_Statics::NewProp_SenderID,
@@ -620,9 +664,13 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetRemoteBitrate
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|Voip" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n     * Gets the current remote bitrate used for the connection to the specified user.  This is set\n     * by the client on the other side of the connection.  Returns unknown if there is no connection.\n     * @param PeerID - The ID of the peer whose remote bitrate is being queried.\n     */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gets the current remote bitrate used for the connection to the specified user.  This is set\nby the client on the other side of the connection.  Returns unknown if there is no connection.\n@param PeerID - The ID of the peer whose remote bitrate is being queried." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_PeerID;
@@ -631,9 +679,9 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetRemoteBitrate
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetRemoteBitrate_Statics::NewProp_PeerID = { "PeerID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetRemoteBitrate_Parms, PeerID), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3320909238
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetRemoteBitrate_Statics::NewProp_PeerID = { "PeerID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetRemoteBitrate_Parms, PeerID), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3472719273
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetRemoteBitrate_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetRemoteBitrate_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetRemoteBitrate_Parms, ReturnValue), Z_Construct_UEnum_OVRPlatform_EOvrVoipBitrate, METADATA_PARAMS(0, nullptr) }; // 1977175825
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetRemoteBitrate_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetRemoteBitrate_Parms, ReturnValue), Z_Construct_UEnum_OVRPlatform_EOvrVoipBitrate, METADATA_PARAMS(0, nullptr) }; // 51185622
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetRemoteBitrate_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetRemoteBitrate_Statics::NewProp_PeerID,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetRemoteBitrate_Statics::NewProp_ReturnValue_Underlying,
@@ -672,9 +720,13 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSyncTimestamp
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|Voip" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n     * Returns a timestamp used for synchronizing audio samples sent to the\n     * given user with an external data stream.\n     * \n     * Timestamps associated with audio frames are implicitly transmitted to\n     * remote peers; on the receiving side, they can be obtained by using\n     * UOvrFunctionsBlueprintLibrary::Voip_GetPCMWithTimestamp.  UOvrFunctionsBlueprintLibrary::Voip_GetPCMWithTimestamp is used to fetch\n     * those timestamps on the sending side -- an application can insert the\n     * value returned by this function into each data packet and compare it to\n     * the value returned by GetPCMWithTimestamp() on the receiving side in\n     * order to determine the ordering of two events (sampling audio and\n     * composing a data packet).\n     * \n     * Note: the timestamp is generated by an unspecified clock; it's doesn't\n     * generally represent wall-clock time.  Use UOvrFunctionsBlueprintLibrary::Voip_GetSyncTimestampDifference\n     * to convert the difference between two timestamps to microseconds.\n     * \n     * This function assumes that a voice connection to the user already\n     * exists; it returns 0 if that isn't the case.\n     * @param UserID - he ID of the user to which the audio samples are being sent.\n     */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns a timestamp used for synchronizing audio samples sent to the\ngiven user with an external data stream.\n\nTimestamps associated with audio frames are implicitly transmitted to\nremote peers; on the receiving side, they can be obtained by using\nUOvrFunctionsBlueprintLibrary::Voip_GetPCMWithTimestamp.  UOvrFunctionsBlueprintLibrary::Voip_GetPCMWithTimestamp is used to fetch\nthose timestamps on the sending side -- an application can insert the\nvalue returned by this function into each data packet and compare it to\nthe value returned by GetPCMWithTimestamp() on the receiving side in\norder to determine the ordering of two events (sampling audio and\ncomposing a data packet).\n\nNote: the timestamp is generated by an unspecified clock; it's doesn't\ngenerally represent wall-clock time.  Use UOvrFunctionsBlueprintLibrary::Voip_GetSyncTimestampDifference\nto convert the difference between two timestamps to microseconds.\n\nThis function assumes that a voice connection to the user already\nexists; it returns 0 if that isn't the case.\n@param UserID - he ID of the user to which the audio samples are being sent." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_UserID;
@@ -682,7 +734,7 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSyncTimestamp
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSyncTimestamp_Statics::NewProp_UserID = { "UserID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetSyncTimestamp_Parms, UserID), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3320909238
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSyncTimestamp_Statics::NewProp_UserID = { "UserID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetSyncTimestamp_Parms, UserID), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3472719273
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSyncTimestamp_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetSyncTimestamp_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSyncTimestamp_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSyncTimestamp_Statics::NewProp_UserID,
@@ -722,9 +774,13 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSyncTimestamp
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|Voip" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n     * Calculates the difference between two sync timestamps, returned by\n     * either UOvrFunctionsBlueprintLibrary::Voip_GetSyncTimestamp or UOvrFunctionsBlueprintLibrary::Voip_GetPCMWithTimestamp,\n     * and converts it to microseconds.\n     * \n     * Return value will be negative if lhs is smaller than rhs, zero if both\n     * timestamps are the same, and positive otherwise.  The absolute value of\n     * the result is the time in microseconds between two sync timestamps.\n     * @param Lhs - The first sync timestamp to compare.\n     * @param Rhs - The second sync timestamp to compare.\n     */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Calculates the difference between two sync timestamps, returned by\neither UOvrFunctionsBlueprintLibrary::Voip_GetSyncTimestamp or UOvrFunctionsBlueprintLibrary::Voip_GetPCMWithTimestamp,\nand converts it to microseconds.\n\nReturn value will be negative if lhs is smaller than rhs, zero if both\ntimestamps are the same, and positive otherwise.  The absolute value of\nthe result is the time in microseconds between two sync timestamps.\n@param Lhs - The first sync timestamp to compare.\n@param Rhs - The second sync timestamp to compare." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Lhs;
@@ -774,9 +830,13 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSystemVoipMic
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|Voip" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Returns SystemVoip microphone's mute state. */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns SystemVoip microphone's mute state." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
@@ -785,7 +845,7 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSystemVoipMic
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSystemVoipMicrophoneMuted_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSystemVoipMicrophoneMuted_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetSystemVoipMicrophoneMuted_Parms, ReturnValue), Z_Construct_UEnum_OVRPlatform_EOvrVoipMuteState, METADATA_PARAMS(0, nullptr) }; // 248964625
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSystemVoipMicrophoneMuted_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetSystemVoipMicrophoneMuted_Parms, ReturnValue), Z_Construct_UEnum_OVRPlatform_EOvrVoipMuteState, METADATA_PARAMS(0, nullptr) }; // 254096364
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSystemVoipMicrophoneMuted_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSystemVoipMicrophoneMuted_Statics::NewProp_ReturnValue_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSystemVoipMicrophoneMuted_Statics::NewProp_ReturnValue,
@@ -821,9 +881,13 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSystemVoipSta
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|Voip" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Returns SystemVoip status. */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns SystemVoip status." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
@@ -832,7 +896,7 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSystemVoipSta
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSystemVoipStatus_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSystemVoipStatus_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetSystemVoipStatus_Parms, ReturnValue), Z_Construct_UEnum_OVRPlatform_EOvrSystemVoipStatus, METADATA_PARAMS(0, nullptr) }; // 2058008943
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSystemVoipStatus_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_GetSystemVoipStatus_Parms, ReturnValue), Z_Construct_UEnum_OVRPlatform_EOvrSystemVoipStatus, METADATA_PARAMS(0, nullptr) }; // 223237941
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSystemVoipStatus_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSystemVoipStatus_Statics::NewProp_ReturnValue_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSystemVoipStatus_Statics::NewProp_ReturnValue,
@@ -868,9 +932,13 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetMicrophoneMut
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|Voip" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n     * This function is used to enable or disable the local microphone.  When muted, the microphone will not transmit any audio.\n     * Voip connections are unaffected by this state.  New connections can be established or closed whether the microphone is muted or not.\n     * This can be used to implement push-to-talk, or a local mute button.  The default state is unmuted.\n     * \n     * This function can be safely called from any thread.\n     * @param State - A value indicating whether to mute or unmute the local microphone.\n     */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This function is used to enable or disable the local microphone.  When muted, the microphone will not transmit any audio.\nVoip connections are unaffected by this state.  New connections can be established or closed whether the microphone is muted or not.\nThis can be used to implement push-to-talk, or a local mute button.  The default state is unmuted.\n\nThis function can be safely called from any thread.\n@param State - A value indicating whether to mute or unmute the local microphone." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_State_Underlying;
@@ -879,7 +947,7 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetMicrophoneMut
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetMicrophoneMuted_Statics::NewProp_State_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetMicrophoneMuted_Statics::NewProp_State = { "State", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_SetMicrophoneMuted_Parms, State), Z_Construct_UEnum_OVRPlatform_EOvrVoipMuteState, METADATA_PARAMS(0, nullptr) }; // 248964625
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetMicrophoneMuted_Statics::NewProp_State = { "State", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_SetMicrophoneMuted_Parms, State), Z_Construct_UEnum_OVRPlatform_EOvrVoipMuteState, METADATA_PARAMS(0, nullptr) }; // 254096364
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetMicrophoneMuted_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetMicrophoneMuted_Statics::NewProp_State_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetMicrophoneMuted_Statics::NewProp_State,
@@ -916,16 +984,20 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetNewConnection
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|Voip" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n     * The options set for newly created connections to use. Existing connections will continue\n     * to use their current settings until they are destroyed and recreated.\n     * @param VoipOptions - The new options to be used for newly created connections.\n     */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The options set for newly created connections to use. Existing connections will continue\nto use their current settings until they are destroyed and recreated.\n@param VoipOptions - The new options to be used for newly created connections." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_VoipOptions;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetNewConnectionOptions_Statics::NewProp_VoipOptions = { "VoipOptions", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_SetNewConnectionOptions_Parms, VoipOptions), Z_Construct_UScriptStruct_FOvrVoipOptions, METADATA_PARAMS(0, nullptr) }; // 1107757393
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetNewConnectionOptions_Statics::NewProp_VoipOptions = { "VoipOptions", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_SetNewConnectionOptions_Parms, VoipOptions), Z_Construct_UScriptStruct_FOvrVoipOptions, METADATA_PARAMS(0, nullptr) }; // 3716269658
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetNewConnectionOptions_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetNewConnectionOptions_Statics::NewProp_VoipOptions,
 };
@@ -961,9 +1033,13 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetOutputSampleR
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|Voip" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n     * Sets the output sample rate.  Audio data will be resampled as it is placed into the internal ringbuffer.\n     * \n     * \n     * This function can be safely called from any thread.\n     * @param Rate - The new output sample rate to use.\n     */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sets the output sample rate.  Audio data will be resampled as it is placed into the internal ringbuffer.\n\n\nThis function can be safely called from any thread.\n@param Rate - The new output sample rate to use." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Rate_Underlying;
@@ -972,7 +1048,7 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetOutputSampleR
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetOutputSampleRate_Statics::NewProp_Rate_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetOutputSampleRate_Statics::NewProp_Rate = { "Rate", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_SetOutputSampleRate_Parms, Rate), Z_Construct_UEnum_OVRPlatform_EOvrVoipSampleRate, METADATA_PARAMS(0, nullptr) }; // 619096054
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetOutputSampleRate_Statics::NewProp_Rate = { "Rate", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_SetOutputSampleRate_Parms, Rate), Z_Construct_UEnum_OVRPlatform_EOvrVoipSampleRate, METADATA_PARAMS(0, nullptr) }; // 4186101790
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetOutputSampleRate_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetOutputSampleRate_Statics::NewProp_Rate_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetOutputSampleRate_Statics::NewProp_Rate,
@@ -1009,16 +1085,20 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Start_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|Voip" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n     * Attempts to establish a VoIP session with the specified user.\n     * \n     * A message of type UOvrPlatformSubsystem::OnVoipSystemVoipState() will be posted when the session is\n     * established.\n     * \n     * \n     * \n     * This function can be safely called from any thread.\n     * @param UserID - The ID of the user to establish a VoIP session with.\n     */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Attempts to establish a VoIP session with the specified user.\n\nA message of type UOvrPlatformSubsystem::OnVoipSystemVoipState() will be posted when the session is\nestablished.\n\n\n\nThis function can be safely called from any thread.\n@param UserID - The ID of the user to establish a VoIP session with." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_UserID;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Start_Statics::NewProp_UserID = { "UserID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_Start_Parms, UserID), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3320909238
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Start_Statics::NewProp_UserID = { "UserID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_Start_Parms, UserID), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3472719273
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Start_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Start_Statics::NewProp_UserID,
 };
@@ -1054,16 +1134,20 @@ struct Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Stop_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OvrPlatform|Voip" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n     * Terminates a VoIP session with the specified user.  Note that a muting\n     * functionality should be used to temporarily stop sending audio; restarting\n     * a VoIP session after tearing it down may be an expensive operation.\n     * \n     * \n     * This function can be safely called from any thread.\n     * @param UserID - The ID of the user to terminate the VoIP session with.\n     */" },
+#endif
 		{ "ModuleRelativePath", "Public/OVRPlatformFunctions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Terminates a VoIP session with the specified user.  Note that a muting\nfunctionality should be used to temporarily stop sending audio; restarting\na VoIP session after tearing it down may be an expensive operation.\n\n\nThis function can be safely called from any thread.\n@param UserID - The ID of the user to terminate the VoIP session with." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_UserID;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Stop_Statics::NewProp_UserID = { "UserID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_Stop_Parms, UserID), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3320909238
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Stop_Statics::NewProp_UserID = { "UserID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OvrFunctionsBlueprintLibrary_eventVoip_Stop_Parms, UserID), Z_Construct_UScriptStruct_FOvrId, METADATA_PARAMS(0, nullptr) }; // 3472719273
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Stop_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Stop_Statics::NewProp_UserID,
 };
@@ -1133,27 +1217,27 @@ struct Z_Construct_UClass_UOvrFunctionsBlueprintLibrary_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_ApplicationLifecycle_GetLaunchDetails, "ApplicationLifecycle_GetLaunchDetails" }, // 2077799269
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_ApplicationLifecycle_LogDeeplinkResult, "ApplicationLifecycle_LogDeeplinkResult" }, // 626490458
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Platform_GetLoggedInUserID, "Platform_GetLoggedInUserID" }, // 120062209
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Platform_GetLoggedInUserLocale, "Platform_GetLoggedInUserLocale" }, // 1192304613
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Platform_IsInitialized, "Platform_IsInitialized" }, // 2692381086
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Platform_SetDeveloperAccessToken, "Platform_SetDeveloperAccessToken" }, // 1538275183
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Accept, "Voip_Accept" }, // 2037427759
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetIsConnectionUsingDtx, "Voip_GetIsConnectionUsingDtx" }, // 500656020
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetLocalBitrate, "Voip_GetLocalBitrate" }, // 3420662179
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetOutputBufferMaxSize, "Voip_GetOutputBufferMaxSize" }, // 1713432868
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetPCMSize, "Voip_GetPCMSize" }, // 1766850712
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetRemoteBitrate, "Voip_GetRemoteBitrate" }, // 4005502773
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSyncTimestamp, "Voip_GetSyncTimestamp" }, // 2254952381
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSyncTimestampDifference, "Voip_GetSyncTimestampDifference" }, // 2693694677
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSystemVoipMicrophoneMuted, "Voip_GetSystemVoipMicrophoneMuted" }, // 3251388063
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSystemVoipStatus, "Voip_GetSystemVoipStatus" }, // 3322710975
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetMicrophoneMuted, "Voip_SetMicrophoneMuted" }, // 3537485288
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetNewConnectionOptions, "Voip_SetNewConnectionOptions" }, // 741936953
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetOutputSampleRate, "Voip_SetOutputSampleRate" }, // 544866601
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Start, "Voip_Start" }, // 568419902
-		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Stop, "Voip_Stop" }, // 346377620
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_ApplicationLifecycle_GetLaunchDetails, "ApplicationLifecycle_GetLaunchDetails" }, // 3127467052
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_ApplicationLifecycle_LogDeeplinkResult, "ApplicationLifecycle_LogDeeplinkResult" }, // 530447609
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Platform_GetLoggedInUserID, "Platform_GetLoggedInUserID" }, // 2312627476
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Platform_GetLoggedInUserLocale, "Platform_GetLoggedInUserLocale" }, // 744741329
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Platform_IsInitialized, "Platform_IsInitialized" }, // 3038748780
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Platform_SetDeveloperAccessToken, "Platform_SetDeveloperAccessToken" }, // 4131756632
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Accept, "Voip_Accept" }, // 4015208533
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetIsConnectionUsingDtx, "Voip_GetIsConnectionUsingDtx" }, // 1987095430
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetLocalBitrate, "Voip_GetLocalBitrate" }, // 2501330231
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetOutputBufferMaxSize, "Voip_GetOutputBufferMaxSize" }, // 4051459617
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetPCMSize, "Voip_GetPCMSize" }, // 2008866685
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetRemoteBitrate, "Voip_GetRemoteBitrate" }, // 3629279991
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSyncTimestamp, "Voip_GetSyncTimestamp" }, // 893015736
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSyncTimestampDifference, "Voip_GetSyncTimestampDifference" }, // 3116470853
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSystemVoipMicrophoneMuted, "Voip_GetSystemVoipMicrophoneMuted" }, // 2035221471
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_GetSystemVoipStatus, "Voip_GetSystemVoipStatus" }, // 2929028115
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetMicrophoneMuted, "Voip_SetMicrophoneMuted" }, // 3287031698
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetNewConnectionOptions, "Voip_SetNewConnectionOptions" }, // 1369702973
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_SetOutputSampleRate, "Voip_SetOutputSampleRate" }, // 2847887872
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Start, "Voip_Start" }, // 1195827075
+		{ &Z_Construct_UFunction_UOvrFunctionsBlueprintLibrary_Voip_Stop, "Voip_Stop" }, // 1365206820
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -1199,14 +1283,14 @@ UOvrFunctionsBlueprintLibrary::~UOvrFunctionsBlueprintLibrary() {}
 // End Class UOvrFunctionsBlueprintLibrary
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformFunctions_h_Statics
+struct Z_CompiledInDeferFile_FID_GithubProject_VRAndreMalraux_Plugins_MetaXRPlatform_Source_OVRPlatform_Public_OVRPlatformFunctions_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOvrFunctionsBlueprintLibrary, UOvrFunctionsBlueprintLibrary::StaticClass, TEXT("UOvrFunctionsBlueprintLibrary"), &Z_Registration_Info_UClass_UOvrFunctionsBlueprintLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOvrFunctionsBlueprintLibrary), 3673201964U) },
+		{ Z_Construct_UClass_UOvrFunctionsBlueprintLibrary, UOvrFunctionsBlueprintLibrary::StaticClass, TEXT("UOvrFunctionsBlueprintLibrary"), &Z_Registration_Info_UClass_UOvrFunctionsBlueprintLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOvrFunctionsBlueprintLibrary), 1284109905U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformFunctions_h_3082797235(TEXT("/Script/OVRPlatform"),
-	Z_CompiledInDeferFile_FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformFunctions_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Thirdparty_OculusPlatformSDK_HostProject_Plugins_OculusPlatform_Source_OVRPlatform_Public_OVRPlatformFunctions_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GithubProject_VRAndreMalraux_Plugins_MetaXRPlatform_Source_OVRPlatform_Public_OVRPlatformFunctions_h_2818290503(TEXT("/Script/OVRPlatform"),
+	Z_CompiledInDeferFile_FID_GithubProject_VRAndreMalraux_Plugins_MetaXRPlatform_Source_OVRPlatform_Public_OVRPlatformFunctions_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GithubProject_VRAndreMalraux_Plugins_MetaXRPlatform_Source_OVRPlatform_Public_OVRPlatformFunctions_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration
