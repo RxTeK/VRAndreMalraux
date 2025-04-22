@@ -1,0 +1,36 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.OVRPlatform.1.cpp.obj": [
+			"OVRPlatform.init.gen.cpp.obj",
+			"OVRPlatformEnums.gen.cpp.obj",
+			"OVRPlatformFunctions.gen.cpp.obj",
+			"OVRPlatformModels.gen.cpp.obj"
+		],
+		"Module.OVRPlatform.2.cpp.obj": [
+			"OVRPlatformOptions.gen.cpp.obj",
+			"OVRPlatformPageRequests.gen.cpp.obj",
+			"OVRPlatformRequests.gen.cpp.obj"
+		],
+		"Module.OVRPlatform.3.cpp.obj": [
+			"OVRPlatformRequestsSupport.gen.cpp.obj",
+			"OVRPlatformSubsystem.gen.cpp.obj",
+			"OVRPlatformTypes.gen.cpp.obj",
+			"OVRPlatformUtils.gen.cpp.obj",
+			"OVRPlatform.cpp.obj",
+			"OVRPlatformCppPageRequests.cpp.obj",
+			"OVRPlatformCppRequests.cpp.obj",
+			"OVRPlatformEnums.cpp.obj"
+		],
+		"Module.OVRPlatform.4.cpp.obj": [
+			"OVRPlatformFunctions.cpp.obj",
+			"OVRPlatformModels.cpp.obj",
+			"OVRPlatformPageRequests.cpp.obj",
+			"OVRPlatformRequests.cpp.obj",
+			"OVRPlatformRequestsSupport.cpp.obj",
+			"OVRPlatformSDK.cpp.obj",
+			"OVRPlatformSubsystem.cpp.obj",
+			"OVRPlatformUtils.cpp.obj"
+		]
+	}
+}

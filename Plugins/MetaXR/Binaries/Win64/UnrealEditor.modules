@@ -1,0 +1,21 @@
+{
+	"BuildId": "37670630",
+	"Modules": 
+	{
+		"MRUtilityKit": "UnrealEditor-MRUtilityKit.dll",
+		"MRUtilityKitEditor": "UnrealEditor-MRUtilityKitEditor.dll",
+		"OculusXRAnchors": "UnrealEditor-OculusXRAnchors.dll",
+		"OculusXRAsyncRequest": "UnrealEditor-OculusXRAsyncRequest.dll",
+		"OculusXRColocation": "UnrealEditor-OculusXRColocation.dll",
+		"OculusXREditor": "UnrealEditor-OculusXREditor.dll",
+		"OculusXREyeTracker": "UnrealEditor-OculusXREyeTracker.dll",
+		"OculusXRHMD": "UnrealEditor-OculusXRHMD.dll",
+		"OculusXRInput": "UnrealEditor-OculusXRInput.dll",
+		"OculusXRMR": "UnrealEditor-OculusXRMR.dll",
+		"OculusXRMovement": "UnrealEditor-OculusXRMovement.dll",
+		"OculusXRPassthrough": "UnrealEditor-OculusXRPassthrough.dll",
+		"OculusXRProjectSetupTool": "UnrealEditor-OculusXRProjectSetupTool.dll",
+		"OculusXRScene": "UnrealEditor-OculusXRScene.dll",
+		"OculusXRUncookedOnly": "UnrealEditor-OculusXRUncookedOnly.dll"
+	}
+}

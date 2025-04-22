@@ -1,0 +1,24 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\githubproject\\vrandremalraux\\plugins\\metaxr\\intermediate\\build\\win64\\x64\\unrealgame\\development\\oculusxrasyncrequest\\module.oculusxrasyncrequest.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\githubproject\\vrandremalraux\\intermediate\\build\\win64\\x64\\vrandremalraux\\development\\engine\\sharedpch.engine.project.valapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "f:\\githubproject\\vrandremalraux\\plugins\\metaxr\\intermediate\\build\\win64\\x64\\unrealgame\\development\\oculusxrasyncrequest\\definitions.oculusxrasyncrequest.h",
+            "f:\\githubproject\\vrandremalraux\\plugins\\metaxr\\intermediate\\build\\win64\\unrealgame\\inc\\oculusxrasyncrequest\\uht\\oculusxrasyncrequest.init.gen.cpp",
+            "f:\\githubproject\\vrandremalraux\\plugins\\metaxr\\intermediate\\build\\win64\\unrealgame\\inc\\oculusxrasyncrequest\\uht\\oculusxrasyncrequestsubsystem.gen.cpp",
+            "f:\\githubproject\\vrandremalraux\\plugins\\metaxr\\source\\oculusxrasyncrequest\\private\\oculusxrasyncrequestsubsystem.h",
+            "f:\\githubproject\\vrandremalraux\\plugins\\metaxr\\intermediate\\build\\win64\\unrealgame\\inc\\oculusxrasyncrequest\\uht\\oculusxrasyncrequestsubsystem.generated.h",
+            "f:\\githubproject\\vrandremalraux\\plugins\\metaxr\\source\\oculusxrasyncrequest\\private\\oculusxrasyncrequestmodule.cpp",
+            "f:\\githubproject\\vrandremalraux\\plugins\\metaxr\\source\\oculusxrasyncrequest\\private\\oculusxrasyncrequestmodule.h",
+            "f:\\githubproject\\vrandremalraux\\plugins\\metaxr\\source\\oculusxrasyncrequest\\public\\ioculusxrasyncrequestmodule.h",
+            "f:\\githubproject\\vrandremalraux\\plugins\\metaxr\\source\\oculusxrasyncrequest\\private\\oculusxrasyncrequestsubsystem.cpp",
+            "f:\\githubproject\\vrandremalraux\\plugins\\metaxr\\source\\oculusxrasyncrequest\\public\\oculusxrasyncrequestsystem.h",
+            "f:\\githubproject\\vrandremalraux\\plugins\\metaxr\\source\\oculusxrasyncrequest\\public\\oculusxrasyncrequestbase.h",
+            "f:\\githubproject\\vrandremalraux\\plugins\\metaxr\\source\\oculusxrasyncrequest\\private\\oculusxrasyncrequestsystem.cpp"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

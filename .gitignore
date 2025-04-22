@@ -75,9 +75,11 @@ DerivedDataCache/*
 
 !MetaSimulation/
 !MetaSimulation/**
+!Plugins/
+!Plugins/**
 
 # Within MetaXRPlatform, still ignore build folders
-Plugins/MetaXRPlatform/Binaries/
-Plugins/MetaXRPlatform/Intermediate/
-Plugins/MetaXRPlatform/Saved/
-Plugins/MetaXRPlatform/DerivedDataCache/
+#Plugins/MetaXRPlatform/Binaries/
+#Plugins/MetaXRPlatform/Intermediate/
+#Plugins/MetaXRPlatform/Saved/
+#Plugins/MetaXRPlatform/DerivedDataCache/

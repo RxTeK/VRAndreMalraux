@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\githubproject\\vrandremalraux\\plugins\\metaxr\\intermediate\\build\\win64\\unrealgame\\inc\\oculusxranchors\\uht\\oculusxranchors.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\githubproject\\vrandremalraux\\intermediate\\build\\win64\\x64\\vrandremalraux\\development\\engine\\sharedpch.engine.project.valapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "f:\\githubproject\\vrandremalraux\\plugins\\metaxr\\intermediate\\build\\win64\\x64\\unrealgame\\development\\oculusxranchors\\definitions.oculusxranchors.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
