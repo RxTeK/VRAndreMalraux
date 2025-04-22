@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-OculusXRScene.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"F:\Github\VRAndreMalraux\Intermediate\Build\Win64\x64\VRAndreMalrauxEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderUnreal5_3.h.obj"
+"F:\Github\VRAndreMalraux\Plugins\MetaXR\Intermediate\Build\Win64\x64\UnrealEditor\Development\OculusXRScene\Module.OculusXRScene.cpp.obj"
+"F:\Github\VRAndreMalraux\Plugins\MetaXR\Intermediate\Build\Win64\x64\UnrealEditor\Development\OculusXRScene\Default.rc2.res"
+/OUT:"F:\Github\VRAndreMalraux\Plugins\MetaXR\Intermediate\Build\Win64\x64\UnrealEditor\Development\OculusXRScene\UnrealEditor-OculusXRScene.lib"
