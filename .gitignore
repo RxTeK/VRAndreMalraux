@@ -78,4 +78,5 @@ DerivedDataCache/*
 
 
 # Within MetaXRPlatform, still ignore build folders
-Plugins/MetaXR/Intermediate
+Plugins/MetaXR/Intermediate/
+Plugins/MetaXRPlatform/Intermediate/
