@@ -75,8 +75,14 @@ DerivedDataCache/*
 
 !MetaSimulation/
 !MetaSimulation/**
+!Plugins/MetaXRInteraction/
+!Plugins/MetaXRInteraction/**
+!Plugins/OculusInteractionSamples/
+!Plugins/OculusInteractionSamples/**
 
 
 # Within MetaXRPlatform, still ignore build folders
 Plugins/MetaXR/Intermediate/
 Plugins/MetaXRPlatform/Intermediate/
+Plugins/MetaXRInteraction/Intermediate/
+Plugins/OculusInteractionSamples/Intermediate/
