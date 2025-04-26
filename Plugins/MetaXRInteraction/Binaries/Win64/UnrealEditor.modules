@@ -2,10 +2,10 @@
 	"BuildId": "37670630",
 	"Modules": 
 	{
-		"IsdkDataSourcesMetaXR": "UnrealEditor-IsdkDataSourcesMetaXR.dll",
-		"IsdkDataSourcesOpenXR": "UnrealEditor-IsdkDataSourcesOpenXR.dll",
-		"OculusInteraction": "UnrealEditor-OculusInteraction.dll",
-		"OculusInteractionEditor": "UnrealEditor-OculusInteractionEditor.dll",
-		"OculusInteractionPrebuilts": "UnrealEditor-OculusInteractionPrebuilts.dll"
+		"IsdkDataSourcesMetaXR": "UnrealEditor-IsdkDataSourcesMetaXR-0002.dll",
+		"IsdkDataSourcesOpenXR": "UnrealEditor-IsdkDataSourcesOpenXR-0002.dll",
+		"OculusInteraction": "UnrealEditor-OculusInteraction-0002.dll",
+		"OculusInteractionEditor": "UnrealEditor-OculusInteractionEditor-0002.dll",
+		"OculusInteractionPrebuilts": "UnrealEditor-OculusInteractionPrebuilts-0002.dll"
 	}
 }
