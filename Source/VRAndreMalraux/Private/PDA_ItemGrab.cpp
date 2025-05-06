@@ -17,6 +17,11 @@ UTexture2D* UPDA_ItemGrab::GetBackTexture() const
 	return BackTexture;
 }
 
+FVector UPDA_ItemGrab::GetSizeItem() const
+{
+	return SizeItem;
+}
+
 UTexture2D* UPDA_ItemGrab::GetFrontTexture() const
 {
 	return FrontTexture;

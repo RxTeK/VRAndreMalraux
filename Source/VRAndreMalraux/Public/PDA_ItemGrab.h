@@ -22,11 +22,15 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = Class)
 	TSubclassOf<class AActor> ActorClass;
 
+	UPROPERTY(EditDefaultsOnly, Category = Class)
+	FVector SizeItem;
+
 	UPROPERTY(EditDefaultsOnly)
 	UTexture2D* FrontTexture;
 
 	UPROPERTY(EditDefaultsOnly)
 	UTexture2D* BackTexture;
+	
 
 public:
 	UFUNCTION(BlueprintPure, Category = Class)
@@ -37,4 +41,7 @@ public:
 
 	UFUNCTION(BlueprintPure)
 	UTexture2D* GetBackTexture() const;
+
+	UFUNCTION(BlueprintPure, Category = Class)
+	FVector GetSizeItem() const;
 };
