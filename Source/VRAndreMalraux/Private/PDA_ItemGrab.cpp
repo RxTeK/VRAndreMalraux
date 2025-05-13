@@ -22,6 +22,12 @@ FVector UPDA_ItemGrab::GetSizeItem() const
 	return SizeItem;
 }
 
+FString UPDA_ItemGrab::GetBookName() const
+{
+	return BookName;
+}
+
+
 TSubclassOf<class AActor> UPDA_ItemGrab::GetItemToSpawn() const
 {
 	return ItemToSpawn;

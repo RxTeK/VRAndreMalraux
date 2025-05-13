@@ -28,6 +28,10 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = Class)
 	TSubclassOf<class AActor> ItemToSpawn;
 
+
+	UPROPERTY(EditDefaultsOnly)
+	FString BookName;
+	
 	UPROPERTY(EditDefaultsOnly)
 	UTexture2D* FrontTexture;
 
@@ -44,6 +48,10 @@ public:
 
 	UFUNCTION(BlueprintPure, Category = Class)
 	TSubclassOf<class AActor> GetItemToSpawn() const;
+
+
+	UFUNCTION(BlueprintPure)
+	FString GetBookName() const;
 
 	UFUNCTION(BlueprintPure)
 	UTexture2D* GetFrontTexture() const;
