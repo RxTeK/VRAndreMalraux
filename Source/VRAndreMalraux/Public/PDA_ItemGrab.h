@@ -23,20 +23,23 @@ private:
 	TSubclassOf<class AActor> ActorClass;
 
 	UPROPERTY(EditDefaultsOnly, Category = Class)
-	FVector SizeItem;
+	FVector SizeItem = FVector(1, 1, 1);
 
 	UPROPERTY(EditDefaultsOnly, Category = Class)
 	TSubclassOf<class AActor> ItemToSpawn;
 
 
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(EditDefaultsOnly, Category = Book_Information)
 	FName BookName;
 	
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(EditDefaultsOnly, Category = Book_Information)
 	UTexture2D* FrontTexture;
 
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(EditDefaultsOnly, Category = Book_Information)
 	UTexture2D* BackTexture;
+
+	UPROPERTY(EditDefaultsOnly, Category = Book_Information)
+	UTexture2D* PlancheTexture;
 	
 
 public:
@@ -50,13 +53,16 @@ public:
 	TSubclassOf<class AActor> GetItemToSpawn() const;
 
 
-	UFUNCTION(BlueprintPure)
+	UFUNCTION(BlueprintPure, Category = Book_Information)
 	FName GetBookName() const;
 
-	UFUNCTION(BlueprintPure)
+	UFUNCTION(BlueprintPure, Category = Book_Information)
 	UTexture2D* GetFrontTexture() const;
 
-	UFUNCTION(BlueprintPure)
+	UFUNCTION(BlueprintPure, Category = Book_Information)
 	UTexture2D* GetBackTexture() const;
+
+	UFUNCTION(BlueprintPure, Category = Book_Information)
+	UTexture2D* GetPlancheTexture() const;
 	
 };

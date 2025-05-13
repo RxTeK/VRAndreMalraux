@@ -17,6 +17,11 @@ UTexture2D* UPDA_ItemGrab::GetBackTexture() const
 	return BackTexture;
 }
 
+UTexture2D* UPDA_ItemGrab::GetPlancheTexture() const
+{
+	return PlancheTexture;
+}
+
 FVector UPDA_ItemGrab::GetSizeItem() const
 {
 	return SizeItem;
