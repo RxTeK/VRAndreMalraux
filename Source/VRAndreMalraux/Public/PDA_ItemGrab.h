@@ -30,7 +30,7 @@ private:
 
 
 	UPROPERTY(EditDefaultsOnly)
-	FString BookName;
+	FName BookName;
 	
 	UPROPERTY(EditDefaultsOnly)
 	UTexture2D* FrontTexture;
@@ -51,7 +51,7 @@ public:
 
 
 	UFUNCTION(BlueprintPure)
-	FString GetBookName() const;
+	FName GetBookName() const;
 
 	UFUNCTION(BlueprintPure)
 	UTexture2D* GetFrontTexture() const;

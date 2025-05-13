@@ -22,7 +22,7 @@ FVector UPDA_ItemGrab::GetSizeItem() const
 	return SizeItem;
 }
 
-FString UPDA_ItemGrab::GetBookName() const
+FName UPDA_ItemGrab::GetBookName() const
 {
 	return BookName;
 }
