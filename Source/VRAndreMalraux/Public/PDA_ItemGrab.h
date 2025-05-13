@@ -25,6 +25,9 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = Class)
 	FVector SizeItem;
 
+	UPROPERTY(EditDefaultsOnly, Category = Class)
+	TSubclassOf<class AActor> ItemToSpawn;
+
 	UPROPERTY(EditDefaultsOnly)
 	UTexture2D* FrontTexture;
 
@@ -36,12 +39,16 @@ public:
 	UFUNCTION(BlueprintPure, Category = Class)
 	TSubclassOf<class AActor> GetActorClass() const;
 
+	UFUNCTION(BlueprintPure, Category = Class)
+	FVector GetSizeItem() const;
+
+	UFUNCTION(BlueprintPure, Category = Class)
+	TSubclassOf<class AActor> GetItemToSpawn() const;
+
 	UFUNCTION(BlueprintPure)
 	UTexture2D* GetFrontTexture() const;
 
 	UFUNCTION(BlueprintPure)
 	UTexture2D* GetBackTexture() const;
-
-	UFUNCTION(BlueprintPure, Category = Class)
-	FVector GetSizeItem() const;
+	
 };

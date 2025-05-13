@@ -22,6 +22,11 @@ FVector UPDA_ItemGrab::GetSizeItem() const
 	return SizeItem;
 }
 
+TSubclassOf<class AActor> UPDA_ItemGrab::GetItemToSpawn() const
+{
+	return ItemToSpawn;
+}
+
 UTexture2D* UPDA_ItemGrab::GetFrontTexture() const
 {
 	return FrontTexture;
