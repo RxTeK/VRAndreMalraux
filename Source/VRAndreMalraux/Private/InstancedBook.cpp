@@ -61,22 +61,16 @@ void AInstancedBook::TestFunction()
 
 		FVector Min, Max;
 		RandomMesh->GetLocalBounds(Min, Max);
-		FVector LocalBounds = Min-Max;
+		FVector LocalBounds = Max - Min;
 
 		// Position de l’instance
 		FVector Location = LastPointToSpawn;
-		//Location.Z += -Min.Z; // Pour placer la base du mesh à Z actuel
+		Location.Z += -Min.Z; // Pour placer la base du mesh à Z actuel
 		Location.X -= LocalBounds.X / 2;
 
 		RandomMesh->AddInstance(FTransform(FRotator::ZeroRotator, Location, FVector::OneVector));
 
 		// Incrémenter Z pour empiler vers le haut
-		LastPointToSpawn.Z += LocalBounds.Z - BookSpacing;
+		LastPointToSpawn.Z += LocalBounds.Z + BookSpacing;
 	}
 }
-
-
-
-
-
-
