@@ -41,36 +41,31 @@ void AInstancedBook::TestFunction()
 {
 	FVector LastPointToSpawn = FVector::ZeroVector;
 	AllInstancedStaticMesh.Empty();
-
-	const float BookSpacing = 2.0f;
-
+	float BookSpacing = 0.5f; 
 	for (int32 i = 0; i < AllStaticMesh.Num(); ++i)
 	{
 		FName Name = *FString::Printf(TEXT("InstancedMesh_%d"), i);
-		UInstancedStaticMeshComponent* ISMComp = NewObject<UInstancedStaticMeshComponent>(this, Name);
+		UInstancedStaticMeshComponent* ISMComp = NewObject<UInstancedStaticMeshComponent>(this,Name);
 		ISMComp->RegisterComponent();
 		ISMComp->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 		ISMComp->SetStaticMesh(AllStaticMesh[i]);
 		AllInstancedStaticMesh.Add(ISMComp);
 	}
-
-	while (MaxDistance - LastPointToSpawn.Z > 0.0f)
+	while (MaxDistance - LastPointToSpawn.Z>0.0f)
 	{
 		int32 RandIndex = FMath::RandRange(0, AllInstancedStaticMesh.Num() - 1);
 		UInstancedStaticMeshComponent* RandomMesh = AllInstancedStaticMesh[RandIndex];
 
+		FVector Location = LastPointToSpawn;
+
 		FVector Min, Max;
 		RandomMesh->GetLocalBounds(Min, Max);
-		FVector LocalBounds = Max - Min;
 
-		// Position de l’instance
-		FVector Location = LastPointToSpawn;
-		Location.Z += -Min.Z; // Pour placer la base du mesh à Z actuel
-		Location.X -= LocalBounds.X / 2;
+		FVector LocalBounds = Min-Max;
+		Location.X = LastPointToSpawn.X - (LocalBounds.X/2);
 
 		RandomMesh->AddInstance(FTransform(FRotator::ZeroRotator, Location, FVector::OneVector));
 
-		// Incrémenter Z pour empiler vers le haut
-		LastPointToSpawn.Z += LocalBounds.Z + BookSpacing;
+		LastPointToSpawn.Z = LastPointToSpawn.Z - LocalBounds.Z + BookSpacing;
 	}
 }
