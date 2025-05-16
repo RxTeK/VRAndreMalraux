@@ -3,19 +3,20 @@
 
 #include "InstancedBook.h"
 
+#include "Components/InstancedStaticMeshComponent.h"
+
 // Sets default values
 AInstancedBook::AInstancedBook()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 }
 
-// Called when the game starts or when spawned
+// Dans BeginPlay
 void AInstancedBook::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 // Called every frame
@@ -24,4 +25,58 @@ void AInstancedBook::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
+
+void AInstancedBook::OnConstruction(const FTransform& Transform)
+{
+	Super::OnConstruction(Transform);
+
+	if(Generate)
+	{
+		TestFunction();
+		Generate = false;
+	}
+}
+
+void AInstancedBook::TestFunction()
+{
+	FVector LastPointToSpawn = FVector::ZeroVector;
+	AllInstancedStaticMesh.Empty();
+
+	const float BookSpacing = 2.0f;
+
+	for (int32 i = 0; i < AllStaticMesh.Num(); ++i)
+	{
+		FName Name = *FString::Printf(TEXT("InstancedMesh_%d"), i);
+		UInstancedStaticMeshComponent* ISMComp = NewObject<UInstancedStaticMeshComponent>(this, Name);
+		ISMComp->RegisterComponent();
+		ISMComp->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
+		ISMComp->SetStaticMesh(AllStaticMesh[i]);
+		AllInstancedStaticMesh.Add(ISMComp);
+	}
+
+	while (MaxDistance - LastPointToSpawn.Z > 0.0f)
+	{
+		int32 RandIndex = FMath::RandRange(0, AllInstancedStaticMesh.Num() - 1);
+		UInstancedStaticMeshComponent* RandomMesh = AllInstancedStaticMesh[RandIndex];
+
+		FVector Min, Max;
+		RandomMesh->GetLocalBounds(Min, Max);
+		FVector LocalBounds = Min-Max;
+
+		// Position de l’instance
+		FVector Location = LastPointToSpawn;
+		//Location.Z += -Min.Z; // Pour placer la base du mesh à Z actuel
+		Location.X -= LocalBounds.X / 2;
+
+		RandomMesh->AddInstance(FTransform(FRotator::ZeroRotator, Location, FVector::OneVector));
+
+		// Incrémenter Z pour empiler vers le haut
+		LastPointToSpawn.Z += LocalBounds.Z - BookSpacing;
+	}
+}
+
+
+
+
+
 

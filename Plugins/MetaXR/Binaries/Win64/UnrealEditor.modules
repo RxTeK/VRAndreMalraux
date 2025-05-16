@@ -2,20 +2,20 @@
 	"BuildId": "37670630",
 	"Modules": 
 	{
-		"MRUtilityKit": "UnrealEditor-MRUtilityKit.dll",
-		"MRUtilityKitEditor": "UnrealEditor-MRUtilityKitEditor.dll",
-		"OculusXRAnchors": "UnrealEditor-OculusXRAnchors.dll",
-		"OculusXRAsyncRequest": "UnrealEditor-OculusXRAsyncRequest.dll",
-		"OculusXRColocation": "UnrealEditor-OculusXRColocation.dll",
-		"OculusXREditor": "UnrealEditor-OculusXREditor.dll",
-		"OculusXREyeTracker": "UnrealEditor-OculusXREyeTracker.dll",
-		"OculusXRHMD": "UnrealEditor-OculusXRHMD.dll",
-		"OculusXRInput": "UnrealEditor-OculusXRInput.dll",
-		"OculusXRMR": "UnrealEditor-OculusXRMR.dll",
-		"OculusXRMovement": "UnrealEditor-OculusXRMovement.dll",
-		"OculusXRPassthrough": "UnrealEditor-OculusXRPassthrough.dll",
-		"OculusXRProjectSetupTool": "UnrealEditor-OculusXRProjectSetupTool.dll",
-		"OculusXRScene": "UnrealEditor-OculusXRScene.dll",
-		"OculusXRUncookedOnly": "UnrealEditor-OculusXRUncookedOnly.dll"
+		"MRUtilityKit": "UnrealEditor-MRUtilityKit-0001.dll",
+		"MRUtilityKitEditor": "UnrealEditor-MRUtilityKitEditor-0001.dll",
+		"OculusXRAnchors": "UnrealEditor-OculusXRAnchors-0001.dll",
+		"OculusXRAsyncRequest": "UnrealEditor-OculusXRAsyncRequest-0001.dll",
+		"OculusXRColocation": "UnrealEditor-OculusXRColocation-0001.dll",
+		"OculusXREditor": "UnrealEditor-OculusXREditor-0001.dll",
+		"OculusXREyeTracker": "UnrealEditor-OculusXREyeTracker-0001.dll",
+		"OculusXRHMD": "UnrealEditor-OculusXRHMD-0001.dll",
+		"OculusXRInput": "UnrealEditor-OculusXRInput-0001.dll",
+		"OculusXRMR": "UnrealEditor-OculusXRMR-0001.dll",
+		"OculusXRMovement": "UnrealEditor-OculusXRMovement-0001.dll",
+		"OculusXRPassthrough": "UnrealEditor-OculusXRPassthrough-0001.dll",
+		"OculusXRProjectSetupTool": "UnrealEditor-OculusXRProjectSetupTool-0001.dll",
+		"OculusXRScene": "UnrealEditor-OculusXRScene-0001.dll",
+		"OculusXRUncookedOnly": "UnrealEditor-OculusXRUncookedOnly-0001.dll"
 	}
 }
