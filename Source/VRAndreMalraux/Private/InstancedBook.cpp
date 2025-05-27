@@ -32,16 +32,40 @@ void AInstancedBook::OnConstruction(const FTransform& Transform)
 
 	if(Generate)
 	{
-		TestFunction();
+		InitInstancedStaticMesh();
+		for (const FBookPoint& BookPoint : BooksLocations)
+		{
+			GenerateLineBook(BookPoint.Location, BookPoint.Distance, BookPoint.Rotation);
+		}
 		Generate = false;
 	}
 }
 
-void AInstancedBook::TestFunction()
+void AInstancedBook::GenerateLineBook(FVector InitLocation, float MaxDistance, FRotator Rotation)
 {
-	FVector LastPointToSpawn = FVector::ZeroVector;
-	AllInstancedStaticMesh.Empty();
-	float BookSpacing = 0.5f; 
+	float CustomDistance = MaxDistance; 	
+	while (CustomDistance > 0.0f)
+	{
+		int32 RandIndex = FMath::RandRange(0, AllInstancedStaticMesh.Num() - 1);
+		UInstancedStaticMeshComponent* RandomMesh = AllInstancedStaticMesh[RandIndex];
+
+		FVector Location = InitLocation;
+
+		FVector Min, Max;
+		RandomMesh->GetLocalBounds(Min, Max);
+
+		FVector LocalBounds = Min-Max;
+		Location.X = InitLocation.X - (LocalBounds.X/2);
+
+		RandomMesh->AddInstance(FTransform(Rotation, Location, FVector::OneVector));
+
+		CustomDistance -= - LocalBounds.Z + BookSpacing;
+		InitLocation.Z = InitLocation.Z - LocalBounds.Z + BookSpacing;
+	}
+}
+void AInstancedBook::InitInstancedStaticMesh()
+{
+	AllInstancedStaticMesh.Empty(); //Clear previous Instance
 	for (int32 i = 0; i < AllStaticMesh.Num(); ++i)
 	{
 		FName Name = *FString::Printf(TEXT("InstancedMesh_%d"), i);
@@ -50,22 +74,5 @@ void AInstancedBook::TestFunction()
 		ISMComp->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 		ISMComp->SetStaticMesh(AllStaticMesh[i]);
 		AllInstancedStaticMesh.Add(ISMComp);
-	}
-	while (MaxDistance - LastPointToSpawn.Z>0.0f)
-	{
-		int32 RandIndex = FMath::RandRange(0, AllInstancedStaticMesh.Num() - 1);
-		UInstancedStaticMeshComponent* RandomMesh = AllInstancedStaticMesh[RandIndex];
-
-		FVector Location = LastPointToSpawn;
-
-		FVector Min, Max;
-		RandomMesh->GetLocalBounds(Min, Max);
-
-		FVector LocalBounds = Min-Max;
-		Location.X = LastPointToSpawn.X - (LocalBounds.X/2);
-
-		RandomMesh->AddInstance(FTransform(FRotator::ZeroRotator, Location, FVector::OneVector));
-
-		LastPointToSpawn.Z = LastPointToSpawn.Z - LocalBounds.Z + BookSpacing;
 	}
 }

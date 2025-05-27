@@ -6,6 +6,22 @@
 #include "GameFramework/Actor.h"
 #include "InstancedBook.generated.h"
 
+
+USTRUCT(BlueprintType)
+struct FBookPoint
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, meta = (MakeEditWidget))
+	FVector Location;
+	
+	UPROPERTY(EditAnywhere)
+	float Distance;
+
+	UPROPERTY(EditAnywhere)
+	FRotator Rotation;
+};
+
 UCLASS()
 class VRANDREMALRAUX_API AInstancedBook : public AActor
 {
@@ -22,10 +38,13 @@ public:
 	TArray<UInstancedStaticMeshComponent*> AllInstancedStaticMesh;
 
 	UPROPERTY(EditAnywhere, Category = "Parameters")
-	float MaxDistance;
+	bool Generate = true;
 
 	UPROPERTY(EditAnywhere, Category = "Parameters")
-	bool Generate = true;
+	float BookSpacing = 0.5f;
+
+	UPROPERTY(EditAnywhere, Category = "Parameters",  meta = (MakeEditWidget))
+	TArray<FBookPoint> BooksLocations;
 
 protected:
 	// Called when the game starts or when spawned
@@ -37,8 +56,11 @@ public:
 	virtual void OnConstruction(const FTransform& Transform) override;
 
 	UFUNCTION(BlueprintCallable, Category="Components")
-	void TestFunction();
+	void GenerateLineBook(FVector InitLocation, float MaxDistance, FRotator Rotation);
 
+	UFUNCTION(BlueprintCallable, Category="Components")
+	void InitInstancedStaticMesh();
+	
 	
 
 };
