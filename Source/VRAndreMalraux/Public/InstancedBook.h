@@ -11,6 +11,9 @@ struct FBookPoint
 {
 	GENERATED_BODY()
 
+	UPROPERTY(EditAnywhere)
+	bool AutoGenerate;
+	
 	UPROPERTY(EditAnywhere, meta = (MakeEditWidget))
 	FVector Location;
 
@@ -22,7 +25,8 @@ struct FBookPoint
 
 	// Ajoute ce constructeur par défaut pour initialiser les propriétés
 	FBookPoint()
-		: Location(FVector::ZeroVector)
+		: AutoGenerate(false)
+		, Location(FVector::ZeroVector)
 		, Distance(0.0f)
 		, Rotation(FRotator::ZeroRotator)
 	{}
@@ -51,6 +55,28 @@ public:
 
 	UPROPERTY(EditAnywhere, Category = "Parameters", meta = (MakeEditWidget))
 	TArray<FBookPoint> BooksLocations;
+
+	UPROPERTY(EditAnywhere, Category = "Parameters")
+	TArray<FTransform> ShelfBookTransfrom = {
+		FTransform(FRotator(0.0f, 0.0f, 0.0f), FVector(0.0f, 0.0f, 0.0f)),
+		FTransform(FRotator(0.0f, 0.0f, 0.0f), FVector(-150.0f, 0.0f, 0.0f)),
+		FTransform(FRotator(0.0f, 0.0f, 0.0f), FVector(-150.0f, 0.0f, 240.0f)),
+		FTransform(FRotator(0.0f, 0.0f, 0.0f), FVector(0.0f, 0.0f, 240.0f)),
+		FTransform(FRotator(0.0f, 0.0f, 0.0f), FVector(-75.0f, 0.0f, 240.0f)),
+		FTransform(FRotator(0.0f, 0.0f, 0.0f), FVector(-75.0f, 0.0f, 480.0f)),
+		FTransform(FRotator(0.0f, 0.0f, 0.0f), FVector(0.0f, 0.0f, 480.0f)),
+		FTransform(FRotator(0.0f, 0.0f, 0.0f), FVector(75.0f, 0.0f, 480.0f)),
+		FTransform(FRotator(0.0f, 0.0f, 0.0f), FVector(-150.0f, 0.0f, 480.0f)),
+		FTransform(FRotator(0.0f, 180.0f, 0.0f), FVector(-175.0f, 107.0f, 480.0f)),
+		FTransform(FRotator(0.0f, 180.0f, 0.0f), FVector(-25.0f, 107.0f, 480.0f)),
+		FTransform(FRotator(0.0f, 180.0f, 0.0f), FVector(-25.0f, 107.0f, 240.0f)),
+		FTransform(FRotator(0.0f, 180.0f, 0.0f), FVector(-100.0f, 107.0f, 240.0f)),
+		FTransform(FRotator(0.0f, 180.0f, 0.0f), FVector(-175.0f, 107.0f, 240.0f)),
+		FTransform(FRotator(0.0f, 180.0f, 0.0f), FVector(-175.0f, 107.0f, 0.0f)),
+		FTransform(FRotator(0.0f, 180.0f, 0.0f), FVector(-100.0f, 107.0f, 0.0f)),
+		FTransform(FRotator(0.0f, 180.0f, 0.0f), FVector(-25.0f, 107.0f, 0.0f)),
+		FTransform(FRotator(0.0f, 180.0f, 0.0f), FVector(50.0f, 107.0f, 0.0f))
+};
 
 protected:
 	// Called when the game starts or when spawned

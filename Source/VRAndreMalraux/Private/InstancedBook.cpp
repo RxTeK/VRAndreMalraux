@@ -35,7 +35,16 @@ void AInstancedBook::OnConstruction(const FTransform& Transform)
 		InitInstancedStaticMesh();
 		for (const FBookPoint& BookPoint : BooksLocations)
 		{
-			GenerateLineBook(BookPoint.Location, BookPoint.Distance, BookPoint.Rotation);
+			if (BookPoint.AutoGenerate) //Auto generate on music shelf
+			{
+				for (FTransform TransformIndex : ShelfBookTransfrom)
+				{
+					GenerateLineBook(BookPoint.Location + TransformIndex.GetLocation(), BookPoint.Distance, FRotator(TransformIndex.GetRotation()));
+				}
+			}else //Normal generation
+			{
+				GenerateLineBook(BookPoint.Location, BookPoint.Distance, BookPoint.Rotation);	
+			}
 		}
 		Generate = false;
 	}
