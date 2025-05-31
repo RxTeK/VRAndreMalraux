@@ -6,7 +6,6 @@
 #include "GameFramework/Actor.h"
 #include "InstancedBook.generated.h"
 
-
 USTRUCT(BlueprintType)
 struct FBookPoint
 {
@@ -14,12 +13,19 @@ struct FBookPoint
 
 	UPROPERTY(EditAnywhere, meta = (MakeEditWidget))
 	FVector Location;
-	
+
 	UPROPERTY(EditAnywhere)
 	float Distance;
 
 	UPROPERTY(EditAnywhere)
 	FRotator Rotation;
+
+	// Ajoute ce constructeur par défaut pour initialiser les propriétés
+	FBookPoint()
+		: Location(FVector::ZeroVector)
+		, Distance(0.0f)
+		, Rotation(FRotator::ZeroRotator)
+	{}
 };
 
 UCLASS()
@@ -43,7 +49,7 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Parameters")
 	float BookSpacing = 0.5f;
 
-	UPROPERTY(EditAnywhere, Category = "Parameters",  meta = (MakeEditWidget))
+	UPROPERTY(EditAnywhere, Category = "Parameters", meta = (MakeEditWidget))
 	TArray<FBookPoint> BooksLocations;
 
 protected:
@@ -60,7 +66,4 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category="Components")
 	void InitInstancedStaticMesh();
-	
-	
-
 };
