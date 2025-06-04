@@ -41,6 +41,9 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = Book_Information)
 	UTexture2D* PlancheTexture;
 	
+	UPROPERTY(EditDefaultsOnly, Category = Book_Information)
+	FLinearColor Color = FLinearColor::White;
+	
 
 public:
 	UFUNCTION(BlueprintPure, Category = Class)
@@ -64,5 +67,8 @@ public:
 
 	UFUNCTION(BlueprintPure, Category = Book_Information)
 	UTexture2D* GetPlancheTexture() const;
+	
+	UFUNCTION(BlueprintPure, Category = Book_Information)
+	FLinearColor GetColor() const;
 	
 };
