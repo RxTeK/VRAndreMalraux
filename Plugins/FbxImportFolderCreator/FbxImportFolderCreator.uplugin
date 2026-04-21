@@ -1,0 +1,19 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "1.0",
+  "FriendlyName": "FBX Import Folder Creator",
+  "Description": "Creates matching content folders when FBX assets are imported.",
+  "Category": "Editor",
+  "CanContainContent": false,
+  "EnabledByDefault": true,
+  "IsBetaVersion": false,
+  "Installed": false,
+  "Modules": [
+    {
+      "Name": "FbxImportFolderCreator",
+      "Type": "Editor",
+      "LoadingPhase": "PostEngineInit"
+    }
+  ]
+}
